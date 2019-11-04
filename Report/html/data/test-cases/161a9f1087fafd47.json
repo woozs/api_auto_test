@@ -1,0 +1,148 @@
+{
+  "uid" : "161a9f1087fafd47",
+  "name" : "test_server_snap[case_data0]",
+  "fullName" : "testcase.test_08_server_snap.Test_Server_Snap#test_server_snap",
+  "historyId" : "f31e74c09fda1bed729617e55cc740d3",
+  "time" : {
+    "start" : 1572599846825,
+    "stop" : 1572599847530,
+    "duration" : 705
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572599846602,
+      "stop" : 1572599846822,
+      "duration" : 220
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1572599846826,
+        "stop" : 1572599846829,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d2aaa9c0211152c6",
+        "name" : "创建云主机快照",
+        "source" : "d2aaa9c0211152c6.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "4cf98c97e0acf788",
+        "name" : "http://192.168.54.120:8774/v2/91ab8e7170944a1db9a4405f83ba8680/servers/bba73f7e-5288-4814-bca0-9a0f408c7b2e/action",
+        "source" : "4cf98c97e0acf788.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "920b6f8b00fc8d8e",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': '3e6e6e1adca1492cadabb051fcb96483'}",
+        "source" : "920b6f8b00fc8d8e.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "37276d948568e3c8",
+        "name" : "{'createImage': {'name': 'snap_8JkrX4yjSduLBPHcmTxC'}}",
+        "source" : "37276d948568e3c8.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "481290f911a23ece",
+      "name" : "log",
+      "source" : "481290f911a23ece.txt",
+      "type" : "text/plain",
+      "size" : 5502
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572599847534,
+      "stop" : 1572599847535,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "创建云主机快照"
+  }, {
+    "name" : "story",
+    "value" : "虚拟机快照"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_08_server_snap"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Server_Snap"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "11248-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_08_server_snap"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '创建云主机快照', 'info': '创建云主机快照', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers/${server_id}$/action', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'createImage': {'name': '${server_snap_name}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "161a9f1087fafd47.json",
+  "parameterValues" : [ "{'test_name': '创建云主机快照', 'info': '创建云主机快照', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers/${server_id}$/action', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'createImage': {'name': '${server_snap_name}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+}

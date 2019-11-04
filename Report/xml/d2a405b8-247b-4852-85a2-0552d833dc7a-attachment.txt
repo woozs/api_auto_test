@@ -1,0 +1,17 @@
+INFO     root:Log.py:79 [INFO 2019-10-29 16:30:38]初始化关联文件
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 16:30:38]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 16:30:38]初始关联内容数据处理后：   {'name': '6', 'type': 'Web', 'version': 'pGVQLzHjYc', 'description': 'api_auto_bRNU5YWcgL', 'project_id': '067d6b75de0e46659b1ecb8a30527146', 'token_id': 'deadf57240904f949b77484d93e252c4', 'project_name': 'brPHGECis0f4qyYvnA9h', 'network_name': 's8YG1HB32xP6SAI9tcQE_netwrok', 'subnet_name': 'o3BvT2cZqg9yaQ1Ukn68_subnet', 'network_id': '1b3a2b04-46f7-4ca7-a570-007ccf048193', 'subnet_id': 'b1a6caad-eaa3-4aa7-99a4-d9401f5a3580', 'image_id': 'b4e9e907-686e-440d-bc1a-d73a8decfa54', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_nRHuxc81Jd9e6a43rBpL', 'server_id': '742be6ac-a9a5-4ce8-8a80-6e79c703de0b', 'project_token_name': '1L8Q4F5w3evcObPNqVGS', 'admin_id': '0ec82b7380cb4d0c80058501938cdf48', 'admin_role_id': 'cc33f2c3a47247329d0ee7043c4f475f', 'volume_name': 'volume_Ilq2t96WieELFH1oXBTx', 'volume_id': '53423b93-011c-475d-aeb8-cf84e722339e', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': 'eaedbfde-43b5-4761-9c7c-699f6f212ae6', 'network_name_for_check': 'Sxv6rgqtDLCP5dYyEZ2H_netwrok'}
+INFO     root:Log.py:79 [INFO 2019-10-29 16:30:38]====================================================================================================
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 16:30:38]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'deadf57240904f949b77484d93e252c4'}
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 16:30:38]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'deadf57240904f949b77484d93e252c4'}
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 16:30:38]host处理结果：  192.168.54.120
+INFO     root:Log.py:79 [INFO 2019-10-29 16:30:38]请求接口：查看子网
+INFO     root:Log.py:79 [INFO 2019-10-29 16:30:38]请求地址：http://192.168.54.120:9696/v2.0/subnets/b1a6caad-eaa3-4aa7-99a4-d9401f5a3580
+INFO     root:Log.py:79 [INFO 2019-10-29 16:30:38]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': 'deadf57240904f949b77484d93e252c4'}
+INFO     root:Log.py:79 [INFO 2019-10-29 16:30:38]请求参数: {'subnet': {'admin_state_up': True, 'name': 'o3BvT2cZqg9yaQ1Ukn68_subnet', 'tenant_id': '067d6b75de0e46659b1ecb8a30527146'}}
+INFO     root:Log.py:79 [INFO 2019-10-29 16:30:38]GET请求接口
+DEBUG    urllib3.connectionpool:connectionpool.py:205 Starting new HTTP connection (1): 192.168.54.120:9696
+DEBUG    urllib3.connectionpool:connectionpool.py:393 http://192.168.54.120:9696 "GET /v2.0/subnets/b1a6caad-eaa3-4aa7-99a4-d9401f5a3580?subnet=admin_state_up&subnet=name&subnet=tenant_id HTTP/1.1" 200 487
+INFO     root:Log.py:79 [INFO 2019-10-29 16:30:38]接口请求结果：
+                         (200, {'subnet': {'name': 'XiWVdhNKeIY3ApnfrSlR_subnet', 'enable_dhcp': True, 'network_id': '1b3a2b04-46f7-4ca7-a570-007ccf048193', 'tenant_id': '067d6b75de0e46659b1ecb8a30527146', 'dns_nameservers': [], 'gateway_ip': '192.168.199.1', 'ipv6_ra_mode': None, 'allocation_pools': [{'start': '192.168.199.2', 'end': '192.168.199.254'}], 'host_routes': [], 'ip_version': 4, 'ipv6_address_mode': None, 'cidr': '192.168.199.0/24', 'id': 'b1a6caad-eaa3-4aa7-99a4-d9401f5a3580', 'subnetpool_id': None}})
+INFO     root:Log.py:79 [INFO 2019-10-29 16:30:38]保存subnet_id到全局配置文件

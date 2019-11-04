@@ -1,0 +1,151 @@
+{
+  "uid" : "a49d31d1b4295347",
+  "name" : "test_volume_snap[case_data1]",
+  "fullName" : "testcase.test_07_volume_snap.Test_Volume_Snap#test_volume_snap",
+  "historyId" : "54a00ab16a9c473babfa9237f451cc5c",
+  "time" : {
+    "start" : 1572789522396,
+    "stop" : 1572789522472,
+    "duration" : 76
+  },
+  "description" : "创建卷快照",
+  "descriptionHtml" : "<p>创建卷快照</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572789521816,
+      "stop" : 1572789522116,
+      "duration" : 300
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "创建卷快照",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET请求接口",
+      "time" : {
+        "start" : 1572789522401,
+        "stop" : 1572789522405,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6537bc585bf39e68",
+        "name" : "创建卷快照",
+        "source" : "6537bc585bf39e68.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "808b61c73f2cc9bf",
+        "name" : "http://192.168.54.103:8776/v2/6aab179f964d4b94a75aa56a2f281573/snapshots/863930d5-ddad-416f-88a6-a62a3c273c67",
+        "source" : "808b61c73f2cc9bf.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "de10270202ae126d",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': '142b5a05bd784401bac2d0491a889e7c'}",
+        "source" : "de10270202ae126d.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "71fa16e72b8b4ab5",
+        "name" : "{'snapshot': {'name': 'Volume_reVnU2NB3kGEbiLFZcyI'}}",
+        "source" : "71fa16e72b8b4ab5.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "44ff1a97b8fa32c0",
+      "name" : "log",
+      "source" : "44ff1a97b8fa32c0.txt",
+      "type" : "text/plain",
+      "size" : 3312
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572789522474,
+      "stop" : 1572789522474,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "卷快照"
+  }, {
+    "name" : "feature",
+    "value" : "创建卷快照"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_07_volume_snap"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Volume_Snap"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "13404-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_07_volume_snap"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '创建卷快照', 'info': '创建卷快照', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/snapshots/${volume_snapshot_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'snapshot': {'name': 'Volume_$RandomString(20)$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': {}}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a49d31d1b4295347.json",
+  "parameterValues" : [ "{'test_name': '创建卷快照', 'info': '创建卷快照', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/snapshots/${volume_snapshot_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'snapshot': {'name': 'Volume_$RandomString(20)$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': {}}], 'relevance': None}" ]
+}

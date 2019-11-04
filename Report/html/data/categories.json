@@ -1,0 +1,60 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: http状态码错误！\n 200 != 404",
+      "children" : [ {
+        "name" : "test_volume_snap_delete[case_data1]",
+        "uid" : "51c94e6edaf1ee23",
+        "parentUid" : "19445f714d3c25c5139619bbfdbd345f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1572790357644,
+          "stop" : 1572790367716,
+          "duration" : 10072
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除卷快照后查看询', 'info': '删除卷快照后查看询', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/snapshots/${volume_snapshot_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '18f325b2c738416692dd847db79cb514'}, 'timeout': 20, 'sleep_time': 10, 'parameter': {'volume': {'size': 1}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 404, 'expected_request': {}}], 'relevance': None}" ]
+      } ],
+      "uid" : "19445f714d3c25c5139619bbfdbd345f"
+    }, {
+      "name" : "AssertionError: http状态码错误！\n 404 != 202",
+      "children" : [ {
+        "name" : "test_server_snap[case_data0]",
+        "uid" : "636b4b0de15f1ff8",
+        "parentUid" : "0500726dad31f701feadfacea4fa804d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1572790368465,
+          "stop" : 1572790368522,
+          "duration" : 57
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除虚拟机快照', 'info': '删除虚拟机快照', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2/images/${server}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '0ab2aadbbdf24fdb89d5e8e59b54d9a8'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'volume': {'size': 1, 'name': 'volume_jJMqpR6nVaexIlQCPwH0'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+      } ],
+      "uid" : "0500726dad31f701feadfacea4fa804d"
+    }, {
+      "name" : "AssertionError: http状态码错误！\n 400 != 202",
+      "children" : [ {
+        "name" : "test_delete_volume[case_data0]",
+        "uid" : "d26c100bc5cc7f92",
+        "parentUid" : "3c4957db627513c2a4181318f1e0e571",
+        "status" : "failed",
+        "time" : {
+          "start" : 1572790408742,
+          "stop" : 1572790408960,
+          "duration" : 218
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除卷', 'info': '删除卷', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/volumes/${volume_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'volume': {'size': 1, 'name': '${volume_name}$'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+      } ],
+      "uid" : "3c4957db627513c2a4181318f1e0e571"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

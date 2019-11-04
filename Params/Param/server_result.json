@@ -1,0 +1,24 @@
+[{
+	"json": [{
+
+    }],
+
+	"test_name": "创建虚拟机"
+},
+	{
+	"json": [{
+	"server": {
+        "status": "ACTIVE",
+        "image": {
+            "id": "${image_id}$"
+        },
+        "OS-EXT-STS:vm_state": "active",
+        "flavor": {
+            "id": "${flavor_id}$"
+        },
+        "tenant_id": "${project_id}$"
+        }
+	}],
+	"test_name": "查看虚拟机"
+}
+]

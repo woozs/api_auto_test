@@ -1,0 +1,178 @@
+{
+  "uid" : "3644c3b6c413958c",
+  "name" : "test_os_volume_attachments[case_data1]",
+  "fullName" : "testcase.test_06_os_volume_attachments.Test_Os_Volume_Attachments#test_os_volume_attachments",
+  "historyId" : "872159a0f5af17c6903079a7f41ed47f",
+  "time" : {
+    "start" : 1572789521029,
+    "stop" : 1572789521803,
+    "duration" : 774
+  },
+  "description" : "云主机与磁盘卸载",
+  "descriptionHtml" : "<p>云主机与磁盘卸载</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572789499949,
+      "stop" : 1572789500178,
+      "duration" : 229
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "云主机与磁盘卸载",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "DELETE请求接口",
+      "time" : {
+        "start" : 1572789521037,
+        "stop" : 1572789521044,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "af03b1ad62e060fc",
+        "name" : "云主机与磁盘卸载",
+        "source" : "af03b1ad62e060fc.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "8475dfd9f0641d9c",
+        "name" : "http://192.168.54.103:8774/v2/6aab179f964d4b94a75aa56a2f281573/servers/4d4fa869-41a1-404b-8945-61c138c87234/os-volume_attachments/e75b2a0f-bad5-4e53-a28d-3f8f67dd972a",
+        "source" : "8475dfd9f0641d9c.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "fcbe4d507c7c58d",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': '1d9dc352112e4750a07d25b2d2664b4a'}",
+        "source" : "fcbe4d507c7c58d.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "ccc590dad7220f67",
+        "name" : "{'volumeAttachment': {'volumeId': 'e75b2a0f-bad5-4e53-a28d-3f8f67dd972a'}}",
+        "source" : "ccc590dad7220f67.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "校验HTTP状态",
+      "time" : {
+        "start" : 1572789521799,
+        "stop" : 1572789521802,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e8460df5893fc7e7",
+        "name" : "202",
+        "source" : "e8460df5893fc7e7.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "57aac2dac9da66e8",
+        "name" : "202",
+        "source" : "57aac2dac9da66e8.attach",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "67221192c9672f86",
+      "name" : "log",
+      "source" : "67221192c9672f86.txt",
+      "type" : "text/plain",
+      "size" : 3066
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572789521806,
+      "stop" : 1572789521806,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "虚拟机挂载和卸载"
+  }, {
+    "name" : "feature",
+    "value" : "云主机与磁盘挂载"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_06_os_volume_attachments"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Os_Volume_Attachments"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "13404-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_06_os_volume_attachments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '云主机与磁盘卸载', 'info': '云主机与磁盘卸载', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers/${server_id}$/os-volume_attachments/${volume_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 10, 'parameter': {'volumeAttachment': {'volumeId': '${volume_id}$'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3644c3b6c413958c.json",
+  "parameterValues" : [ "{'test_name': '云主机与磁盘卸载', 'info': '云主机与磁盘卸载', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers/${server_id}$/os-volume_attachments/${volume_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 10, 'parameter': {'volumeAttachment': {'volumeId': '${volume_id}$'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+}

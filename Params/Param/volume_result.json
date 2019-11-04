@@ -1,0 +1,22 @@
+[{
+	"json": [{
+
+
+    }],
+
+	"test_name": "创建卷"
+},
+	{
+	"json": [{
+	"volume": {
+        "replication_status": "disabled",
+        "id": "${volume_id}$",
+        "size": 1,
+        "user_id": "${admin_id}$",
+        "os-vol-tenant-attr:tenant_id": "${project_id}$",
+        "status": "available"
+    }
+	}],
+	"test_name": "查看卷"
+}
+]

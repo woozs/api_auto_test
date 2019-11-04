@@ -1,0 +1,175 @@
+{
+  "uid" : "e71bfbcdccd21352",
+  "name" : "test_delete_subnet[case_data0]",
+  "fullName" : "testcase.test_13_delete_subnet.Test_Delete_Subnet#test_delete_subnet",
+  "historyId" : "fd11ad5c9b47ffd37ff0175765d91104",
+  "time" : {
+    "start" : 1572599870939,
+    "stop" : 1572599871750,
+    "duration" : 811
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572599870689,
+      "stop" : 1572599870928,
+      "duration" : 239
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "DELETE请求接口",
+      "time" : {
+        "start" : 1572599871545,
+        "stop" : 1572599871556,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e373c775f57d829e",
+        "name" : "删除子网",
+        "source" : "e373c775f57d829e.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "569fad2eedb2fda3",
+        "name" : "http://192.168.54.120:9696/v2.0/subnets/7627b375-7250-4756-8cc2-f519dc952dd4",
+        "source" : "569fad2eedb2fda3.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "489cefd02672ccd8",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': '6c71793a4b6a4e1f8a3ad2756e344258'}",
+        "source" : "489cefd02672ccd8.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "4b75114a02d3e7b0",
+        "name" : "{'subnet': {'network_id': '4ceca06f-1552-4d6c-8a27-7082e59df91b'}}",
+        "source" : "4b75114a02d3e7b0.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "校验HTTP状态",
+      "time" : {
+        "start" : 1572599871744,
+        "stop" : 1572599871750,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f841e91e82341d9e",
+        "name" : "204",
+        "source" : "f841e91e82341d9e.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "5156e7a6beef059f",
+        "name" : "204",
+        "source" : "5156e7a6beef059f.attach",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "20f03a9b06fe0931",
+      "name" : "log",
+      "source" : "20f03a9b06fe0931.txt",
+      "type" : "text/plain",
+      "size" : 7772
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572599873859,
+      "stop" : 1572599873859,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "删除子网"
+  }, {
+    "name" : "story",
+    "value" : "子网"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_13_delete_subnet"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Delete_Subnet"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "11248-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_13_delete_subnet"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '删除子网', 'info': '删除子网', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2.0/subnets/${subnet_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'subnet': {'network_id': '${network_id}$'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 204, 'expected_request': None}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e71bfbcdccd21352.json",
+  "parameterValues" : [ "{'test_name': '删除子网', 'info': '删除子网', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2.0/subnets/${subnet_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'subnet': {'network_id': '${network_id}$'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 204, 'expected_request': None}], 'relevance': None}" ]
+}

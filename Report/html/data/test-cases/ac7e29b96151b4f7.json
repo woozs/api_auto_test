@@ -1,0 +1,175 @@
+{
+  "uid" : "ac7e29b96151b4f7",
+  "name" : "test_server[case_data0]",
+  "fullName" : "testcase.test_04_server.Test_Server#test_server",
+  "historyId" : "22ccfd02c6ef103576f7f404136a2f8a",
+  "time" : {
+    "start" : 1572783558880,
+    "stop" : 1572783561809,
+    "duration" : 2929
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572783558650,
+      "stop" : 1572783558877,
+      "duration" : 227
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1572783558883,
+        "stop" : 1572783558885,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1fa9aff11a4d907c",
+        "name" : "创建虚拟机",
+        "source" : "1fa9aff11a4d907c.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "3d8ebc48367e2474",
+        "name" : "http://192.168.54.120:8774/v2/623116cf4d274453ba803e753fda2e69/servers",
+        "source" : "3d8ebc48367e2474.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "d236358fc9567576",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': '3199bce8ae494849801d116930a66d52'}",
+        "source" : "d236358fc9567576.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "7e79755469523619",
+        "name" : "{'server': {'imageRef': 'b4e9e907-686e-440d-bc1a-d73a8decfa54', 'flavorRef': 'flavor-1-1-1', 'name': 'wuzs_6ZFsjEIGu4Yxf2NT0SLn', 'networks': [{'uuid': 'af23f0b5-978f-4f65-9c8c-ed7685b92bc4'}]}}",
+        "source" : "7e79755469523619.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "校验HTTP状态",
+      "time" : {
+        "start" : 1572783561806,
+        "stop" : 1572783561809,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "57a5d605c94d08bf",
+        "name" : "202",
+        "source" : "57a5d605c94d08bf.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "2125b75f174a8ef7",
+        "name" : "202",
+        "source" : "2125b75f174a8ef7.attach",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "dba15a99a304b699",
+      "name" : "log",
+      "source" : "dba15a99a304b699.txt",
+      "type" : "text/plain",
+      "size" : 6171
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572783602167,
+      "stop" : 1572783602167,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "创建虚拟机"
+  }, {
+    "name" : "story",
+    "value" : "虚拟机"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_04_server"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Server"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "18680-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_04_server"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '创建虚拟机', 'info': '创建虚拟机', 'sleep_time': 1, 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'server': {'imageRef': '${image_id}$', 'flavorRef': '${flavor_id}$', 'name': '${server_name}$', 'networks': [{'uuid': '${network_id}$'}]}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 202, 'expected_request': 'server_result.json'}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ac7e29b96151b4f7.json",
+  "parameterValues" : [ "{'test_name': '创建虚拟机', 'info': '创建虚拟机', 'sleep_time': 1, 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'server': {'imageRef': '${image_id}$', 'flavorRef': '${flavor_id}$', 'name': '${server_name}$', 'networks': [{'uuid': '${network_id}$'}]}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 202, 'expected_request': 'server_result.json'}], 'relevance': None}" ]
+}

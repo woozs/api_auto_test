@@ -1,0 +1,175 @@
+{
+  "uid" : "6407c2c0fc844e15",
+  "name" : "test_delete_volume[case_data0]",
+  "fullName" : "testcase.test_15_delete_volume.Test_Delete_volume#test_delete_volume",
+  "historyId" : "26d0c42eae7e6264ecd8510772f377d7",
+  "time" : {
+    "start" : 1572338128989,
+    "stop" : 1572338129210,
+    "duration" : 221
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572338128773,
+      "stop" : 1572338128987,
+      "duration" : 214
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "DELETE请求接口",
+      "time" : {
+        "start" : 1572338128991,
+        "stop" : 1572338128993,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a7fc49eeef442d2b",
+        "name" : "删除卷",
+        "source" : "a7fc49eeef442d2b.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "99f2edacabb7d5c",
+        "name" : "http://192.168.54.120:8776/v2/067d6b75de0e46659b1ecb8a30527146/volumes/d4e08d27-6069-428c-a070-2b96cd371626",
+        "source" : "99f2edacabb7d5c.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "908cd5d57694a130",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': '97484318aa47452e90fc253a7f0d16f6'}",
+        "source" : "908cd5d57694a130.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "c6c4d47d4c8519b1",
+        "name" : "{'volume': {'size': 1, 'name': 'volume_YBPe7KX5OLRufNJAHZEG'}}",
+        "source" : "c6c4d47d4c8519b1.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "校验HTTP状态",
+      "time" : {
+        "start" : 1572338129208,
+        "stop" : 1572338129210,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2ffe71f71f933d19",
+        "name" : "202",
+        "source" : "2ffe71f71f933d19.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "5ce18f5e6b658ef8",
+        "name" : "202",
+        "source" : "5ce18f5e6b658ef8.attach",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "de3f63ebd25fc2f8",
+      "name" : "log",
+      "source" : "de3f63ebd25fc2f8.txt",
+      "type" : "text/plain",
+      "size" : 5512
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572338139424,
+      "stop" : 1572338139424,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "卷"
+  }, {
+    "name" : "feature",
+    "value" : "删除卷"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_15_delete_volume"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Delete_volume"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "8912-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_15_delete_volume"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '删除卷', 'info': '删除卷', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/volumes/${volume_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'volume': {'size': 1, 'name': '${volume_name}$'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6407c2c0fc844e15.json",
+  "parameterValues" : [ "{'test_name': '删除卷', 'info': '删除卷', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/volumes/${volume_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'volume': {'size': 1, 'name': '${volume_name}$'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+}

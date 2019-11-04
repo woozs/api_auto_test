@@ -1,0 +1,169 @@
+{
+  "uid" : "a2172079ee2dcc03",
+  "name" : "test_project_crate[case_data0]",
+  "fullName" : "testcase.test_01_project.TestAddProject#test_project_crate",
+  "historyId" : "d861b94be048f0fba05b97d99fce3e06",
+  "time" : {
+    "start" : 1572783555337,
+    "stop" : 1572783555408,
+    "duration" : 71
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572783555048,
+      "stop" : 1572783555325,
+      "duration" : 277
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1572783555343,
+        "stop" : 1572783555347,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6bb53500e1c38448",
+        "name" : "正常创建项目",
+        "source" : "6bb53500e1c38448.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "44097177d604b22c",
+        "name" : "http://192.168.54.120:5000/v3/projects",
+        "source" : "44097177d604b22c.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "6ef3a0370de8c844",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': 'b4547f54a1734e739c5332378134aad5'}",
+        "source" : "6ef3a0370de8c844.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "23f2894c9cfebe72",
+        "name" : "{'project': {'description': 'Automation_wuzs', 'domain_id': 'default', 'enabled': True, 'is_domain': False, 'name': 'KPYIfUOQAJdSBT7s41cM'}}",
+        "source" : "23f2894c9cfebe72.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "ac21f59345afdf10",
+      "name" : "log",
+      "source" : "ac21f59345afdf10.txt",
+      "type" : "text/plain",
+      "size" : 8678
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572783555409,
+      "stop" : 1572783555470,
+      "duration" : 61
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "给项目添加权限",
+      "time" : {
+        "start" : 1572783555417,
+        "stop" : 1572783555418,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "70dffadee419e650",
+        "name" : "a0b200ff-4a6c-4f6f-ad71-e8995a994125-attachment.attach",
+        "source" : "70dffadee419e650.attach",
+        "type" : "text/plain",
+        "size" : 131
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "添加项目"
+  }, {
+    "name" : "feature",
+    "value" : "创建项目"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_01_project"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAddProject"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "18680-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_01_project"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '正常创建项目', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v3/projects', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'project': {'description': 'Automation_wuzs', 'domain_id': 'default', 'enabled': True, 'is_domain': False, 'name': '${project_name}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': {}}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a2172079ee2dcc03.json",
+  "parameterValues" : [ "{'test_name': '正常创建项目', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v3/projects', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'project': {'description': 'Automation_wuzs', 'domain_id': 'default', 'enabled': True, 'is_domain': False, 'name': '${project_name}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': {}}], 'relevance': None}" ]
+}

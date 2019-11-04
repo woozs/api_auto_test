@@ -1,0 +1,17 @@
+INFO     root:Log.py:79 [INFO 2019-11-03 20:31:27]初始化关联文件
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 20:31:27]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 20:31:27]初始关联内容数据处理后：   {'name': '5', 'type': 'Web', 'version': 'GnYwgDvQCc', 'description': 'api_auto_K1Mwvozinm', 'project_id': '72695eb0907c49a8bdc61419202f93f0', 'token_id': 'fb14434777c94a109b19ee92d5c8bf9a', 'project_name': 'R8wUq3nNPkGavCXBcm1d', 'network_name': 'Niw1p3KGTnxObQBFt5DL_netwrok', 'subnet_name': 'dFEi6WtJpxbaf3OTkN0A_subnet', 'network_id': 'e230d4e4-3cad-4388-9530-6121c7ff8d12', 'subnet_id': 'd4dacc66-ae0f-4b86-87a2-ede584a80d3b', 'image_id': 'b4e9e907-686e-440d-bc1a-d73a8decfa54', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_QgeLlqPi60VSmZEpD8Hz', 'server_id': 'd1a9af77-3a5e-406d-b073-9c5297cebdb5', 'project_token_name': 'Fts5kgWa6R7h4B8XLZSE', 'admin_id': '0ec82b7380cb4d0c80058501938cdf48', 'admin_role_id': 'cc33f2c3a47247329d0ee7043c4f475f', 'volume_name': 'volume_XsrAblGQToqOHLS9yKJV', 'volume_id': '2de7c20e-f75e-45fa-aad4-47586902619b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '2cd6c8e7-0a47-4d18-b4b7-e445790b6b6f', 'network_name_for_check': '2n8bMgjXy7modiqBZrTY_netwrok'}
+INFO     root:Log.py:79 [INFO 2019-11-03 20:31:27]====================================================================================================
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 20:31:27]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'fb14434777c94a109b19ee92d5c8bf9a'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 20:31:27]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'fb14434777c94a109b19ee92d5c8bf9a'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 20:31:27]host处理结果：  192.168.54.120
+INFO     root:Log.py:79 [INFO 2019-11-03 20:31:27]请求接口：云主机与磁盘卸载
+INFO     root:Log.py:79 [INFO 2019-11-03 20:31:27]请求地址：http://192.168.54.120:8774/v2/72695eb0907c49a8bdc61419202f93f0/servers/d1a9af77-3a5e-406d-b073-9c5297cebdb5/os-volume_attachments/2de7c20e-f75e-45fa-aad4-47586902619b
+INFO     root:Log.py:79 [INFO 2019-11-03 20:31:27]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': 'fb14434777c94a109b19ee92d5c8bf9a'}
+INFO     root:Log.py:79 [INFO 2019-11-03 20:31:27]请求参数: {'volumeAttachment': {'volumeId': '2de7c20e-f75e-45fa-aad4-47586902619b'}}
+INFO     root:Log.py:79 [INFO 2019-11-03 20:31:27]DELETE请求接口
+DEBUG    urllib3.connectionpool:connectionpool.py:205 Starting new HTTP connection (1): 192.168.54.120:8774
+DEBUG    urllib3.connectionpool:connectionpool.py:393 http://192.168.54.120:8774 "DELETE /v2/72695eb0907c49a8bdc61419202f93f0/servers/d1a9af77-3a5e-406d-b073-9c5297cebdb5/os-volume_attachments/2de7c20e-f75e-45fa-aad4-47586902619b?volumeAttachment=volumeId HTTP/1.1" 404 103
+INFO     root:Log.py:79 [INFO 2019-11-03 20:31:27]接口请求结果：
+                         (404, {'itemNotFound': {'message': 'volume_id not found: 2de7c20e-f75e-45fa-aad4-47586902619b', 'code': 404}})
+ERROR    root:Log.py:91 [ERROR 2019-11-03 20:31:27]statusCode error, expected_code is 202, statusCode is 404

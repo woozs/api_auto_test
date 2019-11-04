@@ -1,0 +1,178 @@
+{
+  "uid" : "7ddbbd029abc72d5",
+  "name" : "test_volume_snap_delete[case_data1]",
+  "fullName" : "testcase.test_10_delete_volume_snap.Test_Volume_Snap_Delete#test_volume_snap_delete",
+  "historyId" : "d296b6c1962d030fd46bb3e7f361476e",
+  "time" : {
+    "start" : 1572784289781,
+    "stop" : 1572784299863,
+    "duration" : 10082
+  },
+  "description" : "删除卷快照后查看询",
+  "descriptionHtml" : "<p>删除卷快照后查看询</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572784289274,
+      "stop" : 1572784289487,
+      "duration" : 213
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "删除卷快照后查看询",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET请求接口",
+      "time" : {
+        "start" : 1572784299790,
+        "stop" : 1572784299800,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "80033e48711d2b6d",
+        "name" : "删除卷快照后查看询",
+        "source" : "80033e48711d2b6d.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "9fbfc2cb05367076",
+        "name" : "http://192.168.54.120:8776/v2/72695eb0907c49a8bdc61419202f93f0/snapshots/ba54bdde-8dc1-49dd-8352-ff87355714cd",
+        "source" : "9fbfc2cb05367076.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "6ca3891521cb4368",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': '39e49e6a7e344097b66baa7a919eb627'}",
+        "source" : "6ca3891521cb4368.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "a8a3109750e46b4",
+        "name" : "{'volume': {'size': 1}}",
+        "source" : "a8a3109750e46b4.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "校验HTTP状态",
+      "time" : {
+        "start" : 1572784299858,
+        "stop" : 1572784299863,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6bbc838896573d20",
+        "name" : "404",
+        "source" : "6bbc838896573d20.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "756c5e354d1c9bee",
+        "name" : "404",
+        "source" : "756c5e354d1c9bee.attach",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "e5d9577165bbbf80",
+      "name" : "log",
+      "source" : "e5d9577165bbbf80.txt",
+      "type" : "text/plain",
+      "size" : 2996
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572784299868,
+      "stop" : 1572784299868,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "删除卷快照"
+  }, {
+    "name" : "feature",
+    "value" : "删除卷快照"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_10_delete_volume_snap"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Volume_Snap_Delete"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "15108-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_10_delete_volume_snap"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '删除卷快照后查看询', 'info': '删除卷快照后查看询', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/snapshots/${volume_snapshot_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 10, 'parameter': {'volume': {'size': 1}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 404, 'expected_request': {}}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7ddbbd029abc72d5.json",
+  "parameterValues" : [ "{'test_name': '删除卷快照后查看询', 'info': '删除卷快照后查看询', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/snapshots/${volume_snapshot_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 10, 'parameter': {'volume': {'size': 1}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 404, 'expected_request': {}}], 'relevance': None}" ]
+}

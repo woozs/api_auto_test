@@ -1,0 +1,30 @@
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:42]初始化关联文件
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:42]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:42]初始关联内容数据处理后：   {'name': '8', 'type': 'Web', 'version': 'TkbOwGWPBA', 'description': 'api_auto_iVNJWTtdzx', 'project_id': '21cdf2e8f7954564929717040e6b5256', 'token_id': 'fc9c3abcecfc465db3e9917db78ea2e9', 'project_name': 'i7STgbRnFOd3cvVC6tGU', 'network_name': 'SI8z2AqZ7FsHkRW5C03j_netwrok', 'subnet_name': '4VPeCBkthr1EJZ8uwxoy_subnet', 'network_id': '48d1d1b7-605c-4cff-a997-c43becf9eaba', 'subnet_id': '5ef0ea7b-3dde-4728-a6d9-5d6b7d0761cd', 'image_id': 'b4e9e907-686e-440d-bc1a-d73a8decfa54', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_5IyxgeHKsWckJqNlE6jm', 'server_id': '742be6ac-a9a5-4ce8-8a80-6e79c703de0b', 'project_token_name': 'alNRDKC8qOsciur4h6VX', 'admin_id': '0ec82b7380cb4d0c80058501938cdf48', 'admin_role_id': 'cc33f2c3a47247329d0ee7043c4f475f', 'volume_name': 'volume_LVsr8w6KQCquGOld5bSA', 'volume_id': '150cfa06-94d6-4568-9492-1a48bfb4cd1a', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'volume_snapshot_id': '3eb6dcf8-b3a9-41af-9bad-610b2f9b44e1', 'network_name_for_check': 'l0hgJ8VeKLPmpsvSaEyo_netwrok'}
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:42]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:42]login_url：http://192.168.54.120:5000/v3/auth/tokens
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:42]处理认证参数
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:42]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "alNRDKC8qOsciur4h6VX"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:42]获取token
+DEBUG    urllib3.connectionpool:connectionpool.py:205 Starting new HTTP connection (1): 192.168.54.120:5000
+DEBUG    urllib3.connectionpool:connectionpool.py:393 http://192.168.54.120:5000 "POST /v3/auth/tokens HTTP/1.1" 201 7692
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:42]response：<Response [201]>
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:42]成功获取token:3759199a588349d88b5047dc553c43f4
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:42]保存token_id：3759199a588349d88b5047dc553c43f4到配置文件
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:42]初始化关联文件
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:42]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:42]初始关联内容数据处理后：   {'name': '1', 'type': 'Web', 'version': 'HkqmOW3eyD', 'description': 'api_auto_mcsreQ2GDS', 'project_id': '21cdf2e8f7954564929717040e6b5256', 'token_id': '3759199a588349d88b5047dc553c43f4', 'project_name': 'FUe1xK0WGsIyzt7cQlCJ', 'network_name': 'DSkVJ1f5OojaxWmlpsiQ_netwrok', 'subnet_name': 'z3Wsj4DyhYvmraHqeQA9_subnet', 'network_id': '48d1d1b7-605c-4cff-a997-c43becf9eaba', 'subnet_id': '5ef0ea7b-3dde-4728-a6d9-5d6b7d0761cd', 'image_id': 'b4e9e907-686e-440d-bc1a-d73a8decfa54', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_wo7d02xycSPrEWA5D89U', 'server_id': '742be6ac-a9a5-4ce8-8a80-6e79c703de0b', 'project_token_name': 'alNRDKC8qOsciur4h6VX', 'admin_id': '0ec82b7380cb4d0c80058501938cdf48', 'admin_role_id': 'cc33f2c3a47247329d0ee7043c4f475f', 'volume_name': 'volume_wGDtExkj7FcNize4mhgC', 'volume_id': '150cfa06-94d6-4568-9492-1a48bfb4cd1a', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'volume_snapshot_id': '3eb6dcf8-b3a9-41af-9bad-610b2f9b44e1', 'network_name_for_check': 'l0hgJ8VeKLPmpsvSaEyo_netwrok'}
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:42]====================================================================================================
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:42]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '3759199a588349d88b5047dc553c43f4'}
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:42]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '3759199a588349d88b5047dc553c43f4'}
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:42]host处理结果：  192.168.54.120
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:42]请求接口：云主机与磁盘挂载
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:42]请求地址：http://192.168.54.120:8774/v2/21cdf2e8f7954564929717040e6b5256/servers/742be6ac-a9a5-4ce8-8a80-6e79c703de0b/os-volume_attachments
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:42]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '3759199a588349d88b5047dc553c43f4'}
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:42]请求参数: {'volumeAttachment': {'volumeId': '150cfa06-94d6-4568-9492-1a48bfb4cd1a'}}
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:42]POST请求接口
+DEBUG    urllib3.connectionpool:connectionpool.py:205 Starting new HTTP connection (1): 192.168.54.120:8774
+DEBUG    urllib3.connectionpool:connectionpool.py:393 http://192.168.54.120:8774 "POST /v2/21cdf2e8f7954564929717040e6b5256/servers/742be6ac-a9a5-4ce8-8a80-6e79c703de0b/os-volume_attachments HTTP/1.1" 200 194
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:43]接口请求结果：
+                         (200, {'volumeAttachment': {'device': '/dev/sdb', 'serverId': '742be6ac-a9a5-4ce8-8a80-6e79c703de0b', 'id': '150cfa06-94d6-4568-9492-1a48bfb4cd1a', 'volumeId': '150cfa06-94d6-4568-9492-1a48bfb4cd1a'}})
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:43]挂载中...........

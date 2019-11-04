@@ -1,0 +1,13 @@
+INFO     root:Log.py:79 [INFO 2019-11-03 20:06:33]初始化关联文件
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 20:06:33]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 20:06:33]初始关联内容数据处理后：   {'name': '6', 'type': 'Web', 'version': '5GN1YRpBK4', 'description': 'api_auto_V6wqFOHc59', 'project_id': 'aefce3ec4285494296df7ecb9f0da3c7', 'token_id': 'a308dccbba05463cabe4627e30e32fcf', 'project_name': 'uts8Wr0Bbwnygal9O46I', 'network_name': 'fLwa5XC4toFkqnrcI27m_netwrok', 'subnet_name': 'Vs5FgrmuhKAB63foxQkW_subnet', 'network_id': '4ceca06f-1552-4d6c-8a27-7082e59df91b', 'subnet_id': '7627b375-7250-4756-8cc2-f519dc952dd4', 'image_id': 'b4e9e907-686e-440d-bc1a-d73a8decfa54', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_wvqDFdgmbeEZLtKQk0or', 'server_id': 'bba73f7e-5288-4814-bca0-9a0f408c7b2e', 'project_token_name': 'npKCvUBlsFQfAmMjHGe4', 'admin_id': '0ec82b7380cb4d0c80058501938cdf48', 'admin_role_id': 'cc33f2c3a47247329d0ee7043c4f475f', 'volume_name': 'volume_yRhvwD623JdPxtNYnlKO', 'volume_id': 'b1d5cbd5-1cb7-45ce-81cb-d43009ff12a0', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '8929f975-0d7f-4ab6-8fe2-fa92f8b51de7', 'network_name_for_check': 'OHzX9BxtmeJhDMEpjNi1_netwrok'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 20:06:33]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 20:06:33]login_url：http://192.168.54.120:5000/v3/auth/tokens
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 20:06:33]处理认证参数
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 20:06:33]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "npKCvUBlsFQfAmMjHGe4"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+INFO     root:Log.py:79 [INFO 2019-11-03 20:06:33]获取token
+DEBUG    urllib3.connectionpool:connectionpool.py:205 Starting new HTTP connection (1): 192.168.54.120:5000
+DEBUG    urllib3.connectionpool:connectionpool.py:393 http://192.168.54.120:5000 "POST /v3/auth/tokens HTTP/1.1" 401 207
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 20:06:33]response：<Response [401]>
+INFO     root:Log.py:79 [INFO 2019-11-03 20:06:33]成功获取token:None
+INFO     root:Log.py:79 [INFO 2019-11-03 20:06:33]保存token_id：None到配置文件

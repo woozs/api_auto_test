@@ -1,0 +1,74 @@
+testinfo:
+      id: test_02_create_network        # 用例ID， 用于识别     string,需要用于用例排序
+      title: 创建网络                 # 用例标题，在报告中作为一级目录显示  必填 string
+      port: 9696          # 请求的端口号
+      address: /v2.0/networks # 请求地址 选填（此处不填，每条用例必填） string
+
+# 前置条件，case之前需关联的接口
+premise:
+
+# 测试用例
+test_case:
+      # 第一条case，info可不填
+    - test_name: 创建网络       # 必填，parameter为文件路径时
+      info: 创建网络
+      http_type: http          # 请求协议
+      request_type: post      # 请求类型
+      parameter_type: raw     # 参数类型
+      address: /v2.0/networks
+      headers:                # 请求头
+            Content-Type: application/json
+            X-Auth-Token: ${token_id}$
+      timeout: 20
+      parameter:
+        network:
+          admin_state_up: true
+#          dns_domain:
+#          mtu: 1500
+          name: ${network_name}$
+#          port_security_enabled:
+#          project_id: ${project_id}$
+#          provider:network_type:
+#          provider:physical_network:
+#          provider:segmentation_id:
+#          qos_policy_id:
+#          router:external:
+#          segments:
+#          shared: Flase
+          tenant_id:  ${project_id}$
+#          vlan_transparent:
+#          description: "auto_wuzs"
+#          is_default:
+#          availability_zone_hints:
+      file: false
+      check:             # 校验列表  list or dict
+          - check_type: json # 校验类型 string   不校验时 datebase， expected_code, expected_request 均可不填
+            datebase:
+            expected_code: 201
+            expected_request: network_result.json
+      relevance:  # 关联键
+
+    - test_name: 查看网络
+      info: 查询网络
+      http_type: http          # 请求协议
+      request_type: get      # 请求类型
+      parameter_type: raw     # 参数类型
+      address: /v2.0/networks/${network_id}$
+      headers:                # 请求头
+        Content-Type: application/json
+        X-Auth-Token: ${token_id}$
+      timeout: 20
+      parameter:
+        network:
+          admin_state_up: true
+          name: ${network_name}$
+          tenant_id:  ${project_id}$
+      file: false
+      check:             # 校验列表  list or dict
+          - check_type: json # 校验类型 string   不校验时 datebase， expected_code, expected_request 均可不填,目前可选：json，only_check_status
+            datebase:
+            expected_code: 200
+            expected_request: {}
+      relevance:  # 关联键
+
+

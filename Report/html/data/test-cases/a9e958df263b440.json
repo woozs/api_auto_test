@@ -1,0 +1,216 @@
+{
+  "uid" : "a9e958df263b440",
+  "name" : "test_volume_snap[case_data0]",
+  "fullName" : "testcase.test_07_volume_snap.Test_Volume_Snap#test_volume_snap",
+  "historyId" : "38a48a909ce6c874ddb32c639313466a",
+  "time" : {
+    "start" : 1572790323986,
+    "stop" : 1572790324248,
+    "duration" : 262
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572790323788,
+      "stop" : 1572790323976,
+      "duration" : 188
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1572790323994,
+        "stop" : 1572790323999,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "785d855f44d290ca",
+        "name" : "创建卷快照",
+        "source" : "785d855f44d290ca.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "c7da06ce166e3580",
+        "name" : "http://192.168.54.103:8776/v2/c9aad29894b84640927e9765b528e0e1/snapshots",
+        "source" : "c7da06ce166e3580.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "65e5b39634159916",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': '8b4e160ae46d48b780cb3b330651a8d6'}",
+        "source" : "65e5b39634159916.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "b7883ef3e8d0a9f3",
+        "name" : "{'snapshot': {'name': 'Volume_eK9uqBYtZRJoTMpAhc2a', 'description': 'Daily backup', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'force': True}}",
+        "source" : "b7883ef3e8d0a9f3.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "6de13656b6e50c95",
+      "name" : "log",
+      "source" : "6de13656b6e50c95.txt",
+      "type" : "text/plain",
+      "size" : 5882
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572790324529,
+      "stop" : 1572790324529,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "卷快照"
+  }, {
+    "name" : "feature",
+    "value" : "创建卷快照"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_07_volume_snap"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Volume_Snap"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "15736-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_07_volume_snap"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '创建卷快照', 'info': '创建卷快照', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/snapshots', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'snapshot': {'name': 'Volume_$RandomString(20)$', 'description': 'Daily backup', 'volume_id': '${volume_id}$', 'force': True}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b76a61eb0a03809d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572789522124,
+        "stop" : 1572789522386,
+        "duration" : 262
+      }
+    }, {
+      "uid" : "6e1ec314bd6328f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572784287625,
+        "stop" : 1572784287911,
+        "duration" : 286
+      }
+    }, {
+      "uid" : "59bb2e8e9c390474",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572783747457,
+        "stop" : 1572783748290,
+        "duration" : 833
+      }
+    }, {
+      "uid" : "ab2f64dfefe8cec8",
+      "status" : "broken",
+      "statusDetails" : "TypeError: option values must be strings",
+      "time" : {
+        "start" : 1572782793099,
+        "stop" : 1572782793099,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "485424db7f5208d6",
+      "status" : "broken",
+      "statusDetails" : "TypeError: option values must be strings",
+      "time" : {
+        "start" : 1572782546023,
+        "stop" : 1572782546023,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "949d29adf3fa0183",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572599846111,
+        "stop" : 1572599846420,
+        "duration" : 309
+      }
+    }, {
+      "uid" : "6cdfe5f4de7156cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572338104272,
+        "stop" : 1572338104601,
+        "duration" : 329
+      }
+    }, {
+      "uid" : "d412fd7e9d9e7a3f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572317044468,
+        "stop" : 1572317044698,
+        "duration" : 230
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a9e958df263b440.json",
+  "parameterValues" : [ "{'test_name': '创建卷快照', 'info': '创建卷快照', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/snapshots', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'snapshot': {'name': 'Volume_$RandomString(20)$', 'description': 'Daily backup', 'volume_id': '${volume_id}$', 'force': True}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+}

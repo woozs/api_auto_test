@@ -1,0 +1,28 @@
+[{
+	"json": [{
+		"subnet": {
+			"enable_dhcp": true,
+			"cidr": "192.168.224.0/24",
+			"tenant_id": "${project_id}$",
+			"gateway_ip": "192.168.224.1",
+			"network_id": "${network_id}$",
+			"ip_version": 4
+		}
+	}
+    ],
+	"test_name": "创建子网"
+},
+	{
+	"json": [{
+		"subnet": {
+			"enable_dhcp": true,
+			"cidr": "192.168.224.0/24",
+			"tenant_id": "${project_id}$",
+			"gateway_ip": "192.168.224.1",
+			"network_id": "${network_id}$",
+			"ip_version": 4
+		}}],
+
+	"test_name": "查看子网"
+}
+]

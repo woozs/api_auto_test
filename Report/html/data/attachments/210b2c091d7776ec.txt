@@ -1,0 +1,17 @@
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:53]初始化关联文件
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:53]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:53]初始关联内容数据处理后：   {'name': '3', 'type': 'Web', 'version': 'BhgRfxwVuW', 'description': 'api_auto_FTcsdo5XAI', 'project_id': '21cdf2e8f7954564929717040e6b5256', 'token_id': '3759199a588349d88b5047dc553c43f4', 'project_name': '3NezinWfj6kdCR7sO9QE', 'network_name': 'O5hirBmoYUaCw7AGfWeV_netwrok', 'subnet_name': 'BnOMhQJazL3pNgTtmZU1_subnet', 'network_id': '48d1d1b7-605c-4cff-a997-c43becf9eaba', 'subnet_id': '5ef0ea7b-3dde-4728-a6d9-5d6b7d0761cd', 'image_id': 'b4e9e907-686e-440d-bc1a-d73a8decfa54', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_Fhz6IObZpd0NGUETxXBA', 'server_id': '742be6ac-a9a5-4ce8-8a80-6e79c703de0b', 'project_token_name': 'alNRDKC8qOsciur4h6VX', 'admin_id': '0ec82b7380cb4d0c80058501938cdf48', 'admin_role_id': 'cc33f2c3a47247329d0ee7043c4f475f', 'volume_name': 'volume_Ccwh6zLRrdJmsvq5Wlf7', 'volume_id': '150cfa06-94d6-4568-9492-1a48bfb4cd1a', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'volume_snapshot_id': '3eb6dcf8-b3a9-41af-9bad-610b2f9b44e1', 'network_name_for_check': 'l0hgJ8VeKLPmpsvSaEyo_netwrok'}
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:53]====================================================================================================
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:53]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '3759199a588349d88b5047dc553c43f4'}
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:53]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '3759199a588349d88b5047dc553c43f4'}
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:43:53]host处理结果：  192.168.54.120
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:53]请求接口：云主机与磁盘卸载
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:53]请求地址：http://192.168.54.120:8774/v2/21cdf2e8f7954564929717040e6b5256/servers/742be6ac-a9a5-4ce8-8a80-6e79c703de0b/os-volume_attachments/150cfa06-94d6-4568-9492-1a48bfb4cd1a
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:53]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '3759199a588349d88b5047dc553c43f4'}
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:53]请求参数: {'volumeAttachment': {'volumeId': '150cfa06-94d6-4568-9492-1a48bfb4cd1a'}}
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:53]DELETE请求接口
+DEBUG    urllib3.connectionpool:connectionpool.py:205 Starting new HTTP connection (1): 192.168.54.120:8774
+DEBUG    urllib3.connectionpool:connectionpool.py:393 http://192.168.54.120:8774 "DELETE /v2/21cdf2e8f7954564929717040e6b5256/servers/742be6ac-a9a5-4ce8-8a80-6e79c703de0b/os-volume_attachments/150cfa06-94d6-4568-9492-1a48bfb4cd1a?volumeAttachment=volumeId HTTP/1.1" 202 0
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:54]接口请求结果：
+                         (202, '')
+INFO     root:Log.py:79 [INFO 2019-10-29 10:43:54]挂载中...........

@@ -1,0 +1,19 @@
+INFO     root:Log.py:79 [INFO 2019-10-29 10:40:37]初始化关联文件
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:40:37]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:40:37]初始关联内容数据处理后：   {'name': '7', 'type': 'Web', 'version': 'p7Unu6P9z5', 'description': 'api_auto_ZVHYOTUIPJ', 'project_id': '21cdf2e8f7954564929717040e6b5256', 'token_id': '0f29fb1ddb82485f8287b294e9bde5ef', 'project_name': 'hjXPvRctUoi1VIk8WFTG', 'network_name': 'OS56HWMxEvwmXh2lBuoD_netwrok', 'subnet_name': '47hzHO9ftCdqQARFByL3_subnet', 'network_id': '48d1d1b7-605c-4cff-a997-c43becf9eaba', 'subnet_id': '6fe252ac-5156-4cde-bfa5-362bff18757c', 'image_id': 'b4e9e907-686e-440d-bc1a-d73a8decfa54', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_JLvBgeRMNqftnY5xm8VG', 'server_id': 'cb990345-640d-4b06-8add-bc0c598f4760', 'project_token_name': 'alNRDKC8qOsciur4h6VX', 'admin_id': '0ec82b7380cb4d0c80058501938cdf48', 'admin_role_id': 'cc33f2c3a47247329d0ee7043c4f475f', 'volume_name': 'volume_SZXqGwcz6NmuCiayUT9V', 'volume_id': '703ba21e-d339-4353-ad86-11f5dd89385e', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'volume_snapshot_id': '3eb6dcf8-b3a9-41af-9bad-610b2f9b44e1', 'network_name_for_check': 'l0hgJ8VeKLPmpsvSaEyo_netwrok'}
+INFO     root:Log.py:79 [INFO 2019-10-29 10:40:37]====================================================================================================
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:40:37]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '0f29fb1ddb82485f8287b294e9bde5ef'}
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:40:37]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '0f29fb1ddb82485f8287b294e9bde5ef'}
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:40:37]host处理结果：  192.168.54.120
+INFO     root:Log.py:79 [INFO 2019-10-29 10:40:37]请求接口：查看网络
+INFO     root:Log.py:79 [INFO 2019-10-29 10:40:37]请求地址：http://192.168.54.120:9696/v2.0/networks/48d1d1b7-605c-4cff-a997-c43becf9eaba
+INFO     root:Log.py:79 [INFO 2019-10-29 10:40:37]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '0f29fb1ddb82485f8287b294e9bde5ef'}
+INFO     root:Log.py:79 [INFO 2019-10-29 10:40:37]请求参数: {'network': {'admin_state_up': True, 'name': 'OS56HWMxEvwmXh2lBuoD_netwrok', 'tenant_id': '21cdf2e8f7954564929717040e6b5256'}}
+INFO     root:Log.py:79 [INFO 2019-10-29 10:40:37]GET请求接口
+DEBUG    urllib3.connectionpool:connectionpool.py:205 Starting new HTTP connection (1): 192.168.54.120:9696
+DEBUG    urllib3.connectionpool:connectionpool.py:393 http://192.168.54.120:9696 "GET /v2.0/networks/48d1d1b7-605c-4cff-a997-c43becf9eaba?network=admin_state_up&network=name&network=tenant_id HTTP/1.1" 200 391
+INFO     root:Log.py:79 [INFO 2019-10-29 10:40:37]接口请求结果：
+                         (200, {'network': {'status': 'ACTIVE', 'subnets': [], 'name': 'l0hgJ8VeKLPmpsvSaEyo_netwrok', 'provider:physical_network': 'physnet2', 'admin_state_up': True, 'tenant_id': '21cdf2e8f7954564929717040e6b5256', 'mtu': 0, 'router:external': False, 'qos_policy_id': None, 'shared': False, 'provider:network_type': 'vlan', 'id': '48d1d1b7-605c-4cff-a997-c43becf9eaba', 'provider:segmentation_id': 1027}})
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:40:37]data:{'network': {'status': 'ACTIVE', 'subnets': [], 'name': 'l0hgJ8VeKLPmpsvSaEyo_netwrok', 'provider:physical_network': 'physnet2', 'admin_state_up': True, 'tenant_id': '21cdf2e8f7954564929717040e6b5256', 'mtu': 0, 'router:external': False, 'qos_policy_id': None, 'shared': False, 'provider:network_type': 'vlan', 'id': '48d1d1b7-605c-4cff-a997-c43becf9eaba', 'provider:segmentation_id': 1027}}
+INFO     root:Log.py:79 [INFO 2019-10-29 10:40:37]保存network_id到全局配置文件
+DEBUG    root:Log.py:73 [DEBUG 2019-10-29 10:40:37]保存network_name到全局配置文件,用于虚拟校验

@@ -1,0 +1,175 @@
+{
+  "uid" : "62ff94568a93cea0",
+  "name" : "test_delete_project[case_data0]",
+  "fullName" : "testcase.test_16_delete_project.Test_Delete_project#test_delete_project",
+  "historyId" : "10a8ecd1236bef8bc49108921012c290",
+  "time" : {
+    "start" : 1572783794987,
+    "stop" : 1572783797899,
+    "duration" : 2912
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572783794763,
+      "stop" : 1572783794983,
+      "duration" : 220
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "DELETE请求接口",
+      "time" : {
+        "start" : 1572783794989,
+        "stop" : 1572783794992,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cd4aa84737919dce",
+        "name" : "删除项目",
+        "source" : "cd4aa84737919dce.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "8a98f89ffbab0a65",
+        "name" : "http://192.168.54.120:5000/v3/projects/623116cf4d274453ba803e753fda2e69",
+        "source" : "8a98f89ffbab0a65.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "ac4a856d5101952c",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': 'c3b0f8a32dd54f4db2982e94303232a3'}",
+        "source" : "ac4a856d5101952c.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "a3445d81844ba40e",
+        "name" : "{'project': {'description': 'Automation_wuzs'}}",
+        "source" : "a3445d81844ba40e.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "校验HTTP状态",
+      "time" : {
+        "start" : 1572783797893,
+        "stop" : 1572783797898,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "45bb0a420d756fcf",
+        "name" : "204",
+        "source" : "45bb0a420d756fcf.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "cfe19b870b0fe8de",
+        "name" : "204",
+        "source" : "cfe19b870b0fe8de.attach",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "bdcbef18e412d8c0",
+      "name" : "log",
+      "source" : "bdcbef18e412d8c0.txt",
+      "type" : "text/plain",
+      "size" : 5424
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572783797965,
+      "stop" : 1572783797965,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "删除项目"
+  }, {
+    "name" : "feature",
+    "value" : "删除"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_16_delete_project"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Delete_project"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "18680-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_16_delete_project"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '删除项目', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v3/projects/${project_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'project': {'description': 'Automation_wuzs'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 204, 'expected_request': {}}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "62ff94568a93cea0.json",
+  "parameterValues" : [ "{'test_name': '删除项目', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v3/projects/${project_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'project': {'description': 'Automation_wuzs'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 204, 'expected_request': {}}], 'relevance': None}" ]
+}

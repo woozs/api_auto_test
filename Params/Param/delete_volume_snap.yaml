@@ -1,0 +1,56 @@
+testinfo:
+      id: test_10_delete_volume_snap
+      title: 删除卷快照
+      port: 8776
+      address: /v2/${project_id}$/snapshots/${volume_snapshot_id}$
+
+premise:
+
+# 测试用例
+test_case:
+        # 第一条case，info可不填
+        - test_name: 删除卷快照       # 必填，parameter为文件路径时
+          info: 删除卷快照
+          http_type: http          # 请求协议
+          request_type: delete      # 请求类型
+          parameter_type: raw     # 参数类型
+          address:  /v2/${project_id}$/snapshots/${volume_snapshot_id}$
+          headers:                # 请求头
+            Content-Type: application/json
+            X-Auth-Token: ${token_id}$
+          timeout: 20
+          sleep_time: 0
+          parameter:
+            volume:
+              size: 1
+              name: ${volume_name}$
+
+          file: false
+          check:
+            - check_type: only_check_status
+              datebase:
+              expected_code: 202
+              expected_request: {}
+          relevance:
+
+        - test_name: 删除卷快照后查看询
+          info: 删除卷快照后查看询
+          http_type: http
+          request_type: get
+          parameter_type: raw
+          address:  /v2/${project_id}$/snapshots/${volume_snapshot_id}$
+          headers:
+            Content-Type: application/json
+            X-Auth-Token: ${token_id}$
+          timeout: 20
+          sleep_time: 10
+          parameter:
+            volume:
+              size: 1
+          file: false
+          check:
+            - check_type: only_check_status
+              datebase:
+              expected_code: 404
+              expected_request: {}
+          relevance:

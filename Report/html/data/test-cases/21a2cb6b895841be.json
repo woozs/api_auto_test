@@ -1,0 +1,155 @@
+{
+  "uid" : "21a2cb6b895841be",
+  "name" : "test_os_volume_attachments[case_data1]",
+  "fullName" : "testcase.test_06_os_volume_attachments.Test_Os_Volume_Attachments#test_os_volume_attachments",
+  "historyId" : "872159a0f5af17c6903079a7f41ed47f",
+  "time" : {
+    "start" : 1572338103707,
+    "stop" : 1572338104025,
+    "duration" : 318
+  },
+  "description" : "云主机与磁盘卸载",
+  "descriptionHtml" : "<p>云主机与磁盘卸载</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <testcase.test_06_os_volume_attachments.Test_Os_Volume_Attachments object at 0x046360B0>\ncase_data = {'address': '/v2/${project_id}$/servers/${server_id}$/os-volume_attachments/${volume_id}$', 'check': [{'check_type': '...file': False, 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '201ffee868684373a0ce7133bf62189f'}, ...}\n\n    @pytest.mark.parametrize(\"case_data\", case_dict[\"test_case\"])\n    @allure.story(\"虚拟机挂载和卸载\")\n    # @pytest.mark.scenarios_8(1)\n    def test_os_volume_attachments(self,case_data):\n    \n        # 参数化修改test_add_project 注释\n        for k, v in enumerate(case_dict[\"test_case\"]):  # 遍历用例文件中所有用例的索引和值\n            try:\n                if case_data == v:\n                    # 修改方法的__doc__在下一次调用时生效，此为展示在报告中的用例描述\n                    Test_Os_Volume_Attachments.test_os_volume_attachments.__doc__ = case_dict[\"test_case\"][k + 1][\"info\"]\n            except IndexError:\n                pass\n    \n        if not self.result[\"result\"]:\n            # 查看类变量result的值，如果未False，则前一接口校验错误，此接口标记未失败，节约测试时间\n            pytest.xfail(\"前置接口测试失败，此接口标记为失败\")\n    \n        #send_request(_data, _host, _address,_port, _relevance, path, _success)\n        code, data = requestSend.send_request(case_data, case_dict[\"testinfo\"].get(\"host\"),\n                                              case_dict[\"testinfo\"].get(\"address\"),str(case_dict[\"testinfo\"].get(\"port\")), self.relevance, CASE_PATH, self.result)\n        expected_code = case_data[\"check\"][0][\"expected_code\"]\n>       self.Assert.assert_code(code,expected_code)\n\ntestcase\\test_06_os_volume_attachments.py:72: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Common.Assert.Assertions object at 0x04636C70>, code = 404\nexpected_code = 202\n\n    def assert_code(self, code, expected_code):\n        \"\"\"\n        验证response状态码\n        :param code:\n        :param expected_code:\n        :return:\n        \"\"\"\n        try:\n>           assert code == expected_code\nE           AssertionError\n\nCommon\\Assert.py:30: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572338103181,
+      "stop" : 1572338103399,
+      "duration" : 218
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "云主机与磁盘卸载",
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <testcase.test_06_os_volume_attachments.Test_Os_Volume_Attachments object at 0x046360B0>\ncase_data = {'address': '/v2/${project_id}$/servers/${server_id}$/os-volume_attachments/${volume_id}$', 'check': [{'check_type': '...file': False, 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '201ffee868684373a0ce7133bf62189f'}, ...}\n\n    @pytest.mark.parametrize(\"case_data\", case_dict[\"test_case\"])\n    @allure.story(\"虚拟机挂载和卸载\")\n    # @pytest.mark.scenarios_8(1)\n    def test_os_volume_attachments(self,case_data):\n    \n        # 参数化修改test_add_project 注释\n        for k, v in enumerate(case_dict[\"test_case\"]):  # 遍历用例文件中所有用例的索引和值\n            try:\n                if case_data == v:\n                    # 修改方法的__doc__在下一次调用时生效，此为展示在报告中的用例描述\n                    Test_Os_Volume_Attachments.test_os_volume_attachments.__doc__ = case_dict[\"test_case\"][k + 1][\"info\"]\n            except IndexError:\n                pass\n    \n        if not self.result[\"result\"]:\n            # 查看类变量result的值，如果未False，则前一接口校验错误，此接口标记未失败，节约测试时间\n            pytest.xfail(\"前置接口测试失败，此接口标记为失败\")\n    \n        #send_request(_data, _host, _address,_port, _relevance, path, _success)\n        code, data = requestSend.send_request(case_data, case_dict[\"testinfo\"].get(\"host\"),\n                                              case_dict[\"testinfo\"].get(\"address\"),str(case_dict[\"testinfo\"].get(\"port\")), self.relevance, CASE_PATH, self.result)\n        expected_code = case_data[\"check\"][0][\"expected_code\"]\n>       self.Assert.assert_code(code,expected_code)\n\ntestcase\\test_06_os_volume_attachments.py:72: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Common.Assert.Assertions object at 0x04636C70>, code = 404\nexpected_code = 202\n\n    def assert_code(self, code, expected_code):\n        \"\"\"\n        验证response状态码\n        :param code:\n        :param expected_code:\n        :return:\n        \"\"\"\n        try:\n>           assert code == expected_code\nE           AssertionError\n\nCommon\\Assert.py:30: AssertionError",
+    "steps" : [ {
+      "name" : "DELETE请求接口",
+      "time" : {
+        "start" : 1572338103712,
+        "stop" : 1572338103718,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7c23ad1649deecea",
+        "name" : "云主机与磁盘卸载",
+        "source" : "7c23ad1649deecea.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "65bd3029c1a2c32",
+        "name" : "http://192.168.54.120:8774/v2/067d6b75de0e46659b1ecb8a30527146/servers/17d083ba-62e3-4ee9-a3a6-5280f772fb22/os-volume_attachments/d4e08d27-6069-428c-a070-2b96cd371626",
+        "source" : "65bd3029c1a2c32.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "6f7924e210ccbe5b",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': '201ffee868684373a0ce7133bf62189f'}",
+        "source" : "6f7924e210ccbe5b.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "5a04edef411df5a8",
+        "name" : "{'volumeAttachment': {'volumeId': 'd4e08d27-6069-428c-a070-2b96cd371626'}}",
+        "source" : "5a04edef411df5a8.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "67ba43c4214ae8b",
+      "name" : "log",
+      "source" : "67ba43c4214ae8b.txt",
+      "type" : "text/plain",
+      "size" : 3278
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572338104053,
+      "stop" : 1572338104053,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "虚拟机挂载和卸载"
+  }, {
+    "name" : "feature",
+    "value" : "云主机与磁盘挂载"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_06_os_volume_attachments"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Os_Volume_Attachments"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "8912-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_06_os_volume_attachments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '云主机与磁盘卸载', 'info': '云主机与磁盘卸载', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers/${server_id}$/os-volume_attachments/${volume_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'volumeAttachment': {'volumeId': '${volume_id}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "21a2cb6b895841be.json",
+  "parameterValues" : [ "{'test_name': '云主机与磁盘卸载', 'info': '云主机与磁盘卸载', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers/${server_id}$/os-volume_attachments/${volume_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'volumeAttachment': {'volumeId': '${volume_id}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+}

@@ -1,0 +1,190 @@
+{
+  "uid" : "afb7fc6d2026dd96",
+  "name" : "test_subnet[case_data1]",
+  "fullName" : "testcase.test_03_subnet.Test_Subnet#test_subnet",
+  "historyId" : "79b61a56ad65034335940bba1f2218fd",
+  "time" : {
+    "start" : 1572599739855,
+    "stop" : 1572599739933,
+    "duration" : 78
+  },
+  "description" : "查询子网",
+  "descriptionHtml" : "<p>查询子网</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572599739397,
+      "stop" : 1572599739620,
+      "duration" : 223
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "查询子网",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET请求接口",
+      "time" : {
+        "start" : 1572599739857,
+        "stop" : 1572599739860,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "98ecf8d337f4f8a0",
+        "name" : "查看子网",
+        "source" : "98ecf8d337f4f8a0.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "98da328941e6ff91",
+        "name" : "http://192.168.54.120:9696/v2.0/subnets/7627b375-7250-4756-8cc2-f519dc952dd4",
+        "source" : "98da328941e6ff91.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "930c480abd990ae9",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': 'ea6d7a9fe780407ea61504f368909893'}",
+        "source" : "930c480abd990ae9.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "7e66d1432d2b8acd",
+        "name" : "{'subnet': {'admin_state_up': True, 'name': '6jguzdAKlFJqDWxfS5wb_subnet', 'tenant_id': '91ab8e7170944a1db9a4405f83ba8680'}}",
+        "source" : "7e66d1432d2b8acd.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "JSON格式校验",
+      "time" : {
+        "start" : 1572599739931,
+        "stop" : 1572599739933,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "529763c624a1ae4e",
+        "name" : "200",
+        "source" : "529763c624a1ae4e.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "ad7f05fd2c9eedf",
+        "name" : "{'subnet': {'enable_dhcp': True, 'cidr': '192.168.234.0/24', 'tenant_id': '91ab8e7170944a1db9a4405f83ba8680', 'gateway_ip': '192.168.234.1', 'network_id': '4ceca06f-1552-4d6c-8a27-7082e59df91b', 'ip_version': 4}}",
+        "source" : "ad7f05fd2c9eedf.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "7377585f5b181820",
+        "name" : "200",
+        "source" : "7377585f5b181820.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "18cd3bcb87defc5f",
+        "name" : "{'subnet': {'name': 'kndOERp4tASLqjJeKgGI_subnet', 'enable_dhcp': True, 'network_id': '4ceca06f-1552-4d6c-8a27-7082e59df91b', 'tenant_id': '91ab8e7170944a1db9a4405f83ba8680', 'dns_nameservers': [], 'gateway_ip': '192.168.234.1', 'ipv6_ra_mode': None, 'allocation_pools': [{'start': '192.168.234.2', 'end': '192.168.234.254'}], 'host_routes': [], 'ip_version': 4, 'ipv6_address_mode': None, 'cidr': '192.168.234.0/24', 'id': '7627b375-7250-4756-8cc2-f519dc952dd4', 'subnetpool_id': None}}",
+        "source" : "18cd3bcb87defc5f.attach",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "778c0c27ce25dee5",
+      "name" : "log",
+      "source" : "778c0c27ce25dee5.txt",
+      "type" : "text/plain",
+      "size" : 3517
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572599739935,
+      "stop" : 1572599739935,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "创建子网"
+  }, {
+    "name" : "story",
+    "value" : "子网"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_subnet"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Subnet"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "11248-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_03_subnet"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '查看子网', 'info': '查询子网', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2.0/subnets/${subnet_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'subnet': {'admin_state_up': True, 'name': '${subnet_name}$', 'tenant_id': '${project_id}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': 'subnet_result.json'}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "afb7fc6d2026dd96.json",
+  "parameterValues" : [ "{'test_name': '查看子网', 'info': '查询子网', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2.0/subnets/${subnet_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'subnet': {'admin_state_up': True, 'name': '${subnet_name}$', 'tenant_id': '${project_id}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': 'subnet_result.json'}], 'relevance': None}" ]
+}

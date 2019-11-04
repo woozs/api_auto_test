@@ -1,0 +1,187 @@
+{
+  "uid" : "234147f4dc826ef4",
+  "name" : "test_subnet[case_data0]",
+  "fullName" : "testcase.test_03_subnet.Test_Subnet#test_subnet",
+  "historyId" : "f11031fa706d86107d87278ba51e3487",
+  "time" : {
+    "start" : 1572599739622,
+    "stop" : 1572599739850,
+    "duration" : 228
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572599739397,
+      "stop" : 1572599739620,
+      "duration" : 223
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1572599739624,
+        "stop" : 1572599739626,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "64d253fca347cf94",
+        "name" : "创建子网",
+        "source" : "64d253fca347cf94.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "23a2edfde89cdab5",
+        "name" : "http://192.168.54.120:9696/v2.0/subnets",
+        "source" : "23a2edfde89cdab5.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "f024215e6464c02e",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': 'ea6d7a9fe780407ea61504f368909893'}",
+        "source" : "f024215e6464c02e.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "3836ac8155e017b0",
+        "name" : "{'subnet': {'network_id': '4ceca06f-1552-4d6c-8a27-7082e59df91b', 'ip_version': 4, 'name': 'kndOERp4tASLqjJeKgGI_subnet', 'tenant_id': '91ab8e7170944a1db9a4405f83ba8680', 'cidr': '192.168.234.0/24', 'gateway_ip': '192.168.234.1', 'enable_dhcp': True}}",
+        "source" : "3836ac8155e017b0.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "JSON格式校验",
+      "time" : {
+        "start" : 1572599739848,
+        "stop" : 1572599739850,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fa535589fa25929b",
+        "name" : "201",
+        "source" : "fa535589fa25929b.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "d5e3f7a597ab4d64",
+        "name" : "{'subnet': {'enable_dhcp': True, 'cidr': '192.168.234.0/24', 'tenant_id': '91ab8e7170944a1db9a4405f83ba8680', 'gateway_ip': '192.168.234.1', 'network_id': '4ceca06f-1552-4d6c-8a27-7082e59df91b', 'ip_version': 4}}",
+        "source" : "d5e3f7a597ab4d64.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "f1df3bd3e0862b2f",
+        "name" : "201",
+        "source" : "f1df3bd3e0862b2f.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "9e1fc1e287a240c3",
+        "name" : "{'subnet': {'name': 'kndOERp4tASLqjJeKgGI_subnet', 'enable_dhcp': True, 'network_id': '4ceca06f-1552-4d6c-8a27-7082e59df91b', 'tenant_id': '91ab8e7170944a1db9a4405f83ba8680', 'dns_nameservers': [], 'gateway_ip': '192.168.234.1', 'ipv6_ra_mode': None, 'allocation_pools': [{'start': '192.168.234.2', 'end': '192.168.234.254'}], 'host_routes': [], 'ip_version': 4, 'ipv6_address_mode': None, 'cidr': '192.168.234.0/24', 'id': '7627b375-7250-4756-8cc2-f519dc952dd4', 'subnetpool_id': None}}",
+        "source" : "9e1fc1e287a240c3.attach",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "71d3c4dc51f170a1",
+      "name" : "log",
+      "source" : "71d3c4dc51f170a1.txt",
+      "type" : "text/plain",
+      "size" : 6114
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572599739935,
+      "stop" : 1572599739935,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "创建子网"
+  }, {
+    "name" : "story",
+    "value" : "子网"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_subnet"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Subnet"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "11248-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_03_subnet"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '创建子网', 'info': '创建子网', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2.0/subnets', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'subnet': {'network_id': '${network_id}$', 'ip_version': 4, 'name': '${subnet_name}$', 'tenant_id': '${project_id}$', 'cidr': '192.168.234.0/24', 'gateway_ip': '192.168.234.1', 'enable_dhcp': True}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 201, 'expected_request': 'subnet_result.json'}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "234147f4dc826ef4.json",
+  "parameterValues" : [ "{'test_name': '创建子网', 'info': '创建子网', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2.0/subnets', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'subnet': {'network_id': '${network_id}$', 'ip_version': 4, 'name': '${subnet_name}$', 'tenant_id': '${project_id}$', 'cidr': '192.168.234.0/24', 'gateway_ip': '192.168.234.1', 'enable_dhcp': True}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 201, 'expected_request': 'subnet_result.json'}], 'relevance': None}" ]
+}

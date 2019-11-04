@@ -1,0 +1,190 @@
+{
+  "uid" : "b77d2eb248e107e4",
+  "name" : "test_network[case_data1]",
+  "fullName" : "testcase.test_02_network.Test_Network#test_network",
+  "historyId" : "a80721a7c9341af144c4e94572c25205",
+  "time" : {
+    "start" : 1572597031379,
+    "stop" : 1572597031470,
+    "duration" : 91
+  },
+  "description" : "查询网络",
+  "descriptionHtml" : "<p>查询网络</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572597028938,
+      "stop" : 1572597029152,
+      "duration" : 214
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "查询网络",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET请求接口",
+      "time" : {
+        "start" : 1572597031384,
+        "stop" : 1572597031389,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c0d817f249448c4",
+        "name" : "查看网络",
+        "source" : "c0d817f249448c4.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "d9b2741fe428f67e",
+        "name" : "http://192.168.54.120:9696/v2.0/networks/028321f3-ee9b-4671-a58d-628cddea43d5",
+        "source" : "d9b2741fe428f67e.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "216ba79eef1d3180",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': '676ad69ab23a4d8bb1c326411fdb64bc'}",
+        "source" : "216ba79eef1d3180.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "28877a1ad007875",
+        "name" : "{'network': {'admin_state_up': True, 'name': '6phjnZoDbVJTeFkQEvHy_netwrok', 'tenant_id': 'e91277c3429141dd81a3073e1f7a10e3'}}",
+        "source" : "28877a1ad007875.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "JSON格式校验",
+      "time" : {
+        "start" : 1572597031467,
+        "stop" : 1572597031470,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "23d03f9673aacc2c",
+        "name" : "200",
+        "source" : "23d03f9673aacc2c.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "d5511d4caaad46d4",
+        "name" : "{}",
+        "source" : "d5511d4caaad46d4.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "7bd5abf030212922",
+        "name" : "200",
+        "source" : "7bd5abf030212922.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "56cab73596ab7c49",
+        "name" : "{'network': {'status': 'ACTIVE', 'subnets': [], 'name': 'XLy0kaMjb7xuV8YAgPFm_netwrok', 'provider:physical_network': 'physnet2', 'admin_state_up': True, 'tenant_id': 'e91277c3429141dd81a3073e1f7a10e3', 'mtu': 0, 'router:external': False, 'qos_policy_id': None, 'shared': False, 'provider:network_type': 'vlan', 'id': '028321f3-ee9b-4671-a58d-628cddea43d5', 'provider:segmentation_id': 1011}}",
+        "source" : "56cab73596ab7c49.attach",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "35388d5113726cc3",
+      "name" : "log",
+      "source" : "35388d5113726cc3.txt",
+      "type" : "text/plain",
+      "size" : 3899
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572597031471,
+      "stop" : 1572597031471,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试网络"
+  }, {
+    "name" : "feature",
+    "value" : "创建网络"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_network"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Network"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "1080-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_02_network"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '查看网络', 'info': '查询网络', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2.0/networks/${network_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'network': {'admin_state_up': True, 'name': '${network_name}$', 'tenant_id': '${project_id}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': {}}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b77d2eb248e107e4.json",
+  "parameterValues" : [ "{'test_name': '查看网络', 'info': '查询网络', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2.0/networks/${network_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'network': {'admin_state_up': True, 'name': '${network_name}$', 'tenant_id': '${project_id}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': {}}], 'relevance': None}" ]
+}

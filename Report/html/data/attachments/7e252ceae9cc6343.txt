@@ -1,0 +1,29 @@
+INFO     root:Log.py:79 [INFO 2019-11-03 22:00:02]初始化关联文件
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:00:02]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:00:02]初始关联内容数据处理后：   {'name': '2', 'type': 'Web', 'version': 'HetizQIASV', 'description': 'api_auto_KdVCtJh7Mz', 'project_id': '6aab179f964d4b94a75aa56a2f281573', 'token_id': '42fee3d617ba456c9478b3a216bb073e', 'project_name': '8n9AChmSvlRk2PHNpsV4', 'network_name': 'kvPLNuoRV8zl5e3OYE9J_netwrok', 'subnet_name': 'CMgSlZ8ub5rJR6AWhqad_subnet', 'network_id': '8e461104-fc5f-460c-8901-9556bc4c43f8', 'subnet_id': 'c483aee1-f68b-4990-ae24-07399e0dc80a', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_K1kYE2ZoBc9ygMeP6f0Q', 'server_id': '4d4fa869-41a1-404b-8945-61c138c87234', 'project_token_name': '65uqbacQOLlvo8pVfksB', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_jf0o59Jy8DEH4RcbV2zs', 'volume_id': 'e75b2a0f-bad5-4e53-a28d-3f8f67dd972a', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '863930d5-ddad-416f-88a6-a62a3c273c67', 'network_name_for_check': 'relowxNLZXJdACO6qKhB_netwrok'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:00:02]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:00:02]login_url：http://192.168.54.103:5000/v3/auth/tokens
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:00:02]处理认证参数
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:00:02]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "65uqbacQOLlvo8pVfksB"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+INFO     root:Log.py:79 [INFO 2019-11-03 22:00:02]获取token
+DEBUG    urllib3.connectionpool:connectionpool.py:205 Starting new HTTP connection (1): 192.168.54.103:5000
+DEBUG    urllib3.connectionpool:connectionpool.py:393 http://192.168.54.103:5000 "POST /v3/auth/tokens HTTP/1.1" 201 9057
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:00:02]response：<Response [201]>
+INFO     root:Log.py:79 [INFO 2019-11-03 22:00:02]成功获取token:26b6f783c45c4a3d8352faac739db4dc
+INFO     root:Log.py:79 [INFO 2019-11-03 22:00:02]保存token_id：26b6f783c45c4a3d8352faac739db4dc到配置文件
+INFO     root:Log.py:79 [INFO 2019-11-03 22:00:02]初始化关联文件
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:00:02]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:00:02]初始关联内容数据处理后：   {'name': '2', 'type': 'Web', 'version': '56XG3sOzyf', 'description': 'api_auto_F35dPoXuTc', 'project_id': '6aab179f964d4b94a75aa56a2f281573', 'token_id': '26b6f783c45c4a3d8352faac739db4dc', 'project_name': 'aFtTHDu4BErvGMzIgQA2', 'network_name': 'A2WQ5JZGwHjyMFkufK70_netwrok', 'subnet_name': 'AuvlDwX0ISZekmnR18fy_subnet', 'network_id': '8e461104-fc5f-460c-8901-9556bc4c43f8', 'subnet_id': 'c483aee1-f68b-4990-ae24-07399e0dc80a', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_XauQow0pkgPnBSfqtKsv', 'server_id': '4d4fa869-41a1-404b-8945-61c138c87234', 'project_token_name': '65uqbacQOLlvo8pVfksB', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_Tc1ZVvKrOLweh35d9t6H', 'volume_id': 'e75b2a0f-bad5-4e53-a28d-3f8f67dd972a', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '863930d5-ddad-416f-88a6-a62a3c273c67', 'network_name_for_check': 'relowxNLZXJdACO6qKhB_netwrok'}
+INFO     root:Log.py:79 [INFO 2019-11-03 22:00:02]====================================================================================================
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:00:02]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '26b6f783c45c4a3d8352faac739db4dc'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:00:02]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '26b6f783c45c4a3d8352faac739db4dc'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:00:02]host处理结果：  192.168.54.103
+INFO     root:Log.py:79 [INFO 2019-11-03 22:00:02]请求接口：删除网络
+INFO     root:Log.py:79 [INFO 2019-11-03 22:00:02]请求地址：http://192.168.54.103:9696/v2.0/networks/8e461104-fc5f-460c-8901-9556bc4c43f8
+INFO     root:Log.py:79 [INFO 2019-11-03 22:00:02]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '26b6f783c45c4a3d8352faac739db4dc'}
+INFO     root:Log.py:79 [INFO 2019-11-03 22:00:02]请求参数: {'subnet': {'network_id': '8e461104-fc5f-460c-8901-9556bc4c43f8'}}
+INFO     root:Log.py:79 [INFO 2019-11-03 22:00:02]DELETE请求接口
+DEBUG    urllib3.connectionpool:connectionpool.py:205 Starting new HTTP connection (1): 192.168.54.103:9696
+DEBUG    urllib3.connectionpool:connectionpool.py:393 http://192.168.54.103:9696 "DELETE /v2.0/networks/8e461104-fc5f-460c-8901-9556bc4c43f8?subnet=network_id HTTP/1.1" 204 0
+INFO     root:Log.py:79 [INFO 2019-11-03 22:00:04]接口请求结果：
+                         (204, '')

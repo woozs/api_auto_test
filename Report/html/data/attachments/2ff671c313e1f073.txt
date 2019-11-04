@@ -1,0 +1,61 @@
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:47]初始化关联文件
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:47]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:47]初始关联内容数据处理后：   {'name': '7', 'type': 'Web', 'version': 'xDUgesiYv1', 'description': 'api_auto_0Qj3lHwO7p', 'project_id': 'c9aad29894b84640927e9765b528e0e1', 'token_id': 'e7a2eed1df3c4020b93026d5dd846cb8', 'project_name': '74oE0ZVg3SjmXiFfRq69', 'network_name': 'POq06e5iVd9uN1HW7glZ_netwrok', 'subnet_name': 'DM0dQ9T6uiz5OVUj4SyP_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_pR13QTluDGx7tFAKbgnr', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'LrFyQgel3zSGEapDPj71', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_KD3zYmaRkjSw5bCZLhcU', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:47]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:47]login_url：http://192.168.54.103:5000/v3/auth/tokens
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:47]处理认证参数
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:47]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "LrFyQgel3zSGEapDPj71"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:47]获取token
+DEBUG    urllib3.connectionpool:connectionpool.py:205 Starting new HTTP connection (1): 192.168.54.103:5000
+DEBUG    urllib3.connectionpool:connectionpool.py:393 http://192.168.54.103:5000 "POST /v3/auth/tokens HTTP/1.1" 201 9057
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:47]response：<Response [201]>
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:47]成功获取token:0ab2aadbbdf24fdb89d5e8e59b54d9a8
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:47]保存token_id：0ab2aadbbdf24fdb89d5e8e59b54d9a8到配置文件
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:47]初始化关联文件
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:47]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:47]初始关联内容数据处理后：   {'name': '10', 'type': 'Web', 'version': 'FeiDt85gZ3', 'description': 'api_auto_BJSdTswQvl', 'project_id': 'c9aad29894b84640927e9765b528e0e1', 'token_id': '0ab2aadbbdf24fdb89d5e8e59b54d9a8', 'project_name': 'wrCpIEFoBKAVkOPvsu3l', 'network_name': 'hMmNQVE8p6Le1XFnowB0_netwrok', 'subnet_name': 'flFzc73h6uIiCSPb4E1v_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_BI98TXJ3echmuHFxL60r', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'LrFyQgel3zSGEapDPj71', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_jJMqpR6nVaexIlQCPwH0', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:47]====================================================================================================
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:47]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '0ab2aadbbdf24fdb89d5e8e59b54d9a8'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:47]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '0ab2aadbbdf24fdb89d5e8e59b54d9a8'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:47]host处理结果：  192.168.54.103
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:47]请求接口：删除虚拟机快照
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:47]请求地址：http://192.168.54.103:9292/v2/images/${server}$
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:47]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '0ab2aadbbdf24fdb89d5e8e59b54d9a8'}
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:47]请求参数: {'volume': {'size': 1, 'name': 'volume_jJMqpR6nVaexIlQCPwH0'}}
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:47]DELETE请求接口
+DEBUG    urllib3.connectionpool:connectionpool.py:205 Starting new HTTP connection (1): 192.168.54.103:9292
+DEBUG    urllib3.connectionpool:connectionpool.py:393 http://192.168.54.103:9292 "DELETE /v2/images/$%7Bserver%7D$?volume=size&volume=name HTTP/1.1" 404 163
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]接口请求结果：
+                         (404, '')
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]初始化关联文件
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:48]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:48]初始关联内容数据处理后：   {'name': '6', 'type': 'Web', 'version': 'P967IOhRCn', 'description': 'api_auto_jvwYu1aMIJ', 'project_id': 'c9aad29894b84640927e9765b528e0e1', 'token_id': '0ab2aadbbdf24fdb89d5e8e59b54d9a8', 'project_name': 'h4q2uGbZPO507YHWjKn8', 'network_name': '96VuxWkv75cUjT84nBDm_netwrok', 'subnet_name': '6RdSjs3JTDYf1lwPFK24_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_dyuCa4hXEmFVZ5TKokj6', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'LrFyQgel3zSGEapDPj71', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_xomcJlRaCSOXdYUyZ4rn', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]====================================================================================================
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:48]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '0ab2aadbbdf24fdb89d5e8e59b54d9a8'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:48]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '0ab2aadbbdf24fdb89d5e8e59b54d9a8'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:48]host处理结果：  192.168.54.103
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]请求接口：删除虚拟机快照
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]请求地址：http://192.168.54.103:9292/v2/images/${server}$
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '0ab2aadbbdf24fdb89d5e8e59b54d9a8'}
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]请求参数: {'volume': {'size': 1, 'name': 'volume_jJMqpR6nVaexIlQCPwH0'}}
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]DELETE请求接口
+DEBUG    urllib3.connectionpool:connectionpool.py:205 Starting new HTTP connection (1): 192.168.54.103:9292
+DEBUG    urllib3.connectionpool:connectionpool.py:393 http://192.168.54.103:9292 "DELETE /v2/images/$%7Bserver%7D$?volume=size&volume=name HTTP/1.1" 404 163
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]接口请求结果：
+                         (404, '')
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]初始化关联文件
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:48]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:48]初始关联内容数据处理后：   {'name': '4', 'type': 'Web', 'version': 'wmZiys5pRz', 'description': 'api_auto_4KjcEHawzb', 'project_id': 'c9aad29894b84640927e9765b528e0e1', 'token_id': '0ab2aadbbdf24fdb89d5e8e59b54d9a8', 'project_name': 'ZsrpmwzHxR6bqvTtiODg', 'network_name': 'rF850BTayPtqCMx2jzDg_netwrok', 'subnet_name': 'qjAVS4DwfLcvHT7hm1Xz_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_eAMEncaCs2JofFbjghrv', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'LrFyQgel3zSGEapDPj71', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_wgDy1oFxX9LPsAk2ZUlf', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]====================================================================================================
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:48]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '0ab2aadbbdf24fdb89d5e8e59b54d9a8'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:48]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '0ab2aadbbdf24fdb89d5e8e59b54d9a8'}
+DEBUG    root:Log.py:73 [DEBUG 2019-11-03 22:12:48]host处理结果：  192.168.54.103
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]请求接口：删除虚拟机快照
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]请求地址：http://192.168.54.103:9292/v2/images/${server}$
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '0ab2aadbbdf24fdb89d5e8e59b54d9a8'}
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]请求参数: {'volume': {'size': 1, 'name': 'volume_jJMqpR6nVaexIlQCPwH0'}}
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]DELETE请求接口
+DEBUG    urllib3.connectionpool:connectionpool.py:205 Starting new HTTP connection (1): 192.168.54.103:9292
+DEBUG    urllib3.connectionpool:connectionpool.py:393 http://192.168.54.103:9292 "DELETE /v2/images/$%7Bserver%7D$?volume=size&volume=name HTTP/1.1" 404 163
+INFO     root:Log.py:79 [INFO 2019-11-03 22:12:48]接口请求结果：
+                         (404, '')

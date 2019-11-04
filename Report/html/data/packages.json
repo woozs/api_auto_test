@@ -1,0 +1,450 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "testcase",
+    "children" : [ {
+      "name" : "test_01_project",
+      "children" : [ {
+        "name" : "test_project_crate[case_data0]",
+        "uid" : "b5918122059989f4",
+        "parentUid" : "30f558b96abfcfb7c52b119e84a5f36f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790154003,
+          "stop" : 1572790154087,
+          "duration" : 84
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '正常创建项目', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v3/projects', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'project': {'description': 'Automation_wuzs', 'domain_id': 'default', 'enabled': True, 'is_domain': False, 'name': '${project_name}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': {}}], 'relevance': None}" ]
+      } ],
+      "uid" : "30f558b96abfcfb7c52b119e84a5f36f"
+    }, {
+      "name" : "test_02_network",
+      "children" : [ {
+        "name" : "test_network[case_data0]",
+        "uid" : "caa0b1a1021d8ce1",
+        "parentUid" : "8ed77d37fa19c07542f7254d404f8d1b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790154408,
+          "stop" : 1572790156729,
+          "duration" : 2321
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '创建网络', 'info': '创建网络', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2.0/networks', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'network': {'admin_state_up': True, 'name': '${network_name}$', 'tenant_id': '${project_id}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 201, 'expected_request': 'network_result.json'}], 'relevance': None}" ]
+      }, {
+        "name" : "test_network[case_data1]",
+        "uid" : "97c0794f1ff4a800",
+        "parentUid" : "8ed77d37fa19c07542f7254d404f8d1b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790156747,
+          "stop" : 1572790156820,
+          "duration" : 73
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '查看网络', 'info': '查询网络', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2.0/networks/${network_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'network': {'admin_state_up': True, 'name': '${network_name}$', 'tenant_id': '${project_id}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': {}}], 'relevance': None}" ]
+      } ],
+      "uid" : "8ed77d37fa19c07542f7254d404f8d1b"
+    }, {
+      "name" : "test_03_subnet",
+      "children" : [ {
+        "name" : "test_subnet[case_data0]",
+        "uid" : "d361a8292d8f9ca5",
+        "parentUid" : "f04977779e70c9d72b803ef3ceb41995",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790157063,
+          "stop" : 1572790157350,
+          "duration" : 287
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '创建子网', 'info': '创建子网', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2.0/subnets', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'subnet': {'network_id': '${network_id}$', 'ip_version': 4, 'name': '${subnet_name}$', 'tenant_id': '${project_id}$', 'cidr': '192.168.224.0/24', 'gateway_ip': '192.168.224.1', 'enable_dhcp': True}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 201, 'expected_request': 'subnet_result.json'}], 'relevance': None}" ]
+      }, {
+        "name" : "test_subnet[case_data1]",
+        "uid" : "c80100fe76ad0d5d",
+        "parentUid" : "f04977779e70c9d72b803ef3ceb41995",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790157356,
+          "stop" : 1572790157427,
+          "duration" : 71
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '查看子网', 'info': '查询子网', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2.0/subnets/${subnet_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'subnet': {'admin_state_up': True, 'name': '${subnet_name}$', 'tenant_id': '${project_id}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': 'subnet_result.json'}], 'relevance': None}" ]
+      } ],
+      "uid" : "f04977779e70c9d72b803ef3ceb41995"
+    }, {
+      "name" : "test_04_server",
+      "children" : [ {
+        "name" : "test_server[case_data0]",
+        "uid" : "7b22634158a1ed52",
+        "parentUid" : "5f220d2d827f1b230a3f73cb0e400087",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790157674,
+          "stop" : 1572790159553,
+          "duration" : 1879
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '创建虚拟机', 'info': '创建虚拟机', 'sleep_time': 1, 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'server': {'imageRef': '${image_id}$', 'flavorRef': '${flavor_id}$', 'name': '${server_name}$', 'networks': [{'uuid': '${network_id}$'}]}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 202, 'expected_request': 'server_result.json'}], 'relevance': None}" ]
+      }, {
+        "name" : "test_server[case_data1]",
+        "uid" : "6fd80e216381e8bb",
+        "parentUid" : "5f220d2d827f1b230a3f73cb0e400087",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790240727,
+          "stop" : 1572790281036,
+          "duration" : 40309
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '查看虚拟机', 'sleep_time': 40, 'info': '查询虚拟机', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers/${server_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '7ea1699331584a759566b7e997b01350'}, 'timeout': 20, 'parameter': {'server': {'admin_state_up': True, 'name': 'XWzmNhfl1RGrJspqyIaS_netwrok', 'tenant_id': 'c9aad29894b84640927e9765b528e0e1'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': 'server_result.json'}], 'relevance': None}" ]
+      } ],
+      "uid" : "5f220d2d827f1b230a3f73cb0e400087"
+    }, {
+      "name" : "test_05_volume",
+      "children" : [ {
+        "name" : "test_volume[case_data0]",
+        "uid" : "a765dcd998bc64a9",
+        "parentUid" : "bee9b9e12a28b90091bfa93052152f9d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790281303,
+          "stop" : 1572790281687,
+          "duration" : 384
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '创建卷', 'info': '创建卷', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/volumes', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'volume': {'size': 1, 'name': '${volume_name}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+      }, {
+        "name" : "test_volume[case_data1]",
+        "uid" : "2a267f98a2b2a3ab",
+        "parentUid" : "bee9b9e12a28b90091bfa93052152f9d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790281703,
+          "stop" : 1572790302024,
+          "duration" : 20321
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '查看卷', 'info': '查询卷', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/volumes/${volume_id}$', 'sleep_time': 20, 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'server': {'admin_state_up': True, 'name': '${network_name}$', 'tenant_id': '${project_id}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': 'volume_result.json'}], 'relevance': None}" ]
+      } ],
+      "uid" : "bee9b9e12a28b90091bfa93052152f9d"
+    }, {
+      "name" : "test_06_os_volume_attachments",
+      "children" : [ {
+        "name" : "test_os_volume_attachments[case_data0]",
+        "uid" : "511b5e3e0d184d2",
+        "parentUid" : "2e9d4e3cbd18ea361f30f61979da8cf6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790302250,
+          "stop" : 1572790323019,
+          "duration" : 20769
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '云主机与磁盘挂载', 'info': '云主机与磁盘挂载', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers/${server_id}$/os-volume_attachments', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 20, 'parameter': {'volumeAttachment': {'volumeId': '${volume_id}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': 'os_volume_attach_adn_detach_result.json'}], 'relevance': None}" ]
+      }, {
+        "name" : "test_os_volume_attachments[case_data1]",
+        "uid" : "33f37520799d1062",
+        "parentUid" : "2e9d4e3cbd18ea361f30f61979da8cf6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790323039,
+          "stop" : 1572790323771,
+          "duration" : 732
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '云主机与磁盘卸载', 'info': '云主机与磁盘卸载', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers/${server_id}$/os-volume_attachments/${volume_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 10, 'parameter': {'volumeAttachment': {'volumeId': '${volume_id}$'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+      } ],
+      "uid" : "2e9d4e3cbd18ea361f30f61979da8cf6"
+    }, {
+      "name" : "test_07_volume_snap",
+      "children" : [ {
+        "name" : "test_volume_snap[case_data0]",
+        "uid" : "a9e958df263b440",
+        "parentUid" : "b119d219041fa17e0c4da7816f80d3de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790323986,
+          "stop" : 1572790324248,
+          "duration" : 262
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '创建卷快照', 'info': '创建卷快照', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/snapshots', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'snapshot': {'name': 'Volume_$RandomString(20)$', 'description': 'Daily backup', 'volume_id': '${volume_id}$', 'force': True}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+      }, {
+        "name" : "test_volume_snap[case_data1]",
+        "uid" : "d32021ef45159376",
+        "parentUid" : "b119d219041fa17e0c4da7816f80d3de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790324268,
+          "stop" : 1572790324523,
+          "duration" : 255
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '创建卷快照', 'info': '创建卷快照', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/snapshots/${volume_snapshot_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'snapshot': {'name': 'Volume_$RandomString(20)$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': {}}], 'relevance': None}" ]
+      } ],
+      "uid" : "b119d219041fa17e0c4da7816f80d3de"
+    }, {
+      "name" : "test_08_server_snap",
+      "children" : [ {
+        "name" : "test_server_snap[case_data0]",
+        "uid" : "e6ce7a88e175af88",
+        "parentUid" : "2feb60923914ad1fa84f639b6647781b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790324740,
+          "stop" : 1572790325511,
+          "duration" : 771
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '创建云主机快照', 'info': '创建云主机快照', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers/${server_id}$/action', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'createImage': {'name': '${server_snap_name}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+      } ],
+      "uid" : "2feb60923914ad1fa84f639b6647781b"
+    }, {
+      "name" : "test_09_get_server_snap",
+      "children" : [ {
+        "name" : "test_get_server_snap[case_data0]",
+        "uid" : "38c826b63caf2c66",
+        "parentUid" : "008505fdd3c65a6aace44d514f8038d5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790325753,
+          "stop" : 1572790325948,
+          "duration" : 195
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '查看云主机快照', 'info': '查看云主机快照', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v1/images/detail?sort_key=created_at&sort_dir=desc&limit=1000&image_type=snapshot&name=${server_snap_name}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'createImage': {'name': 'snap_$RandomString(20)$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': 'get_server_snap_result.json'}], 'relevance': None}" ]
+      } ],
+      "uid" : "008505fdd3c65a6aace44d514f8038d5"
+    }, {
+      "name" : "test_10_delete_volume_snap",
+      "children" : [ {
+        "name" : "test_volume_snap_delete[case_data0]",
+        "uid" : "b756ece3113e7ce4",
+        "parentUid" : "79a912e73da328464106cb16aeac2dec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790326203,
+          "stop" : 1572790326459,
+          "duration" : 256
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除卷快照', 'info': '删除卷快照', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/snapshots/${volume_snapshot_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'volume': {'size': 1, 'name': '${volume_name}$'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+      }, {
+        "name" : "test_volume_snap_delete[case_data1]",
+        "uid" : "51c94e6edaf1ee23",
+        "parentUid" : "79a912e73da328464106cb16aeac2dec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1572790357644,
+          "stop" : 1572790367716,
+          "duration" : 10072
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除卷快照后查看询', 'info': '删除卷快照后查看询', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/snapshots/${volume_snapshot_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '18f325b2c738416692dd847db79cb514'}, 'timeout': 20, 'sleep_time': 10, 'parameter': {'volume': {'size': 1}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 404, 'expected_request': {}}], 'relevance': None}" ]
+      } ],
+      "uid" : "79a912e73da328464106cb16aeac2dec"
+    }, {
+      "name" : "test_11_delete_server_snap",
+      "children" : [ {
+        "name" : "test_server_snap[case_data0]",
+        "uid" : "636b4b0de15f1ff8",
+        "parentUid" : "b55f53b87e4480374eb727482445fa09",
+        "status" : "failed",
+        "time" : {
+          "start" : 1572790368465,
+          "stop" : 1572790368522,
+          "duration" : 57
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除虚拟机快照', 'info': '删除虚拟机快照', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2/images/${server}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '0ab2aadbbdf24fdb89d5e8e59b54d9a8'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'volume': {'size': 1, 'name': 'volume_jJMqpR6nVaexIlQCPwH0'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+      }, {
+        "name" : "test_server_snap[case_data1]",
+        "uid" : "fd8fad8ddd2134e0",
+        "parentUid" : "b55f53b87e4480374eb727482445fa09",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790368554,
+          "stop" : 1572790388600,
+          "duration" : 20046
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除虚拟机快照后查看询', 'info': '删除虚拟机快照后查看询', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/snapshots/${volume_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 20, 'parameter': {'volume': {'size': 1}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 404, 'expected_request': {}}], 'relevance': None}" ]
+      } ],
+      "uid" : "b55f53b87e4480374eb727482445fa09"
+    }, {
+      "name" : "test_12_delete_server",
+      "children" : [ {
+        "name" : "test_server[case_data0]",
+        "uid" : "444feaf6a5a144cc",
+        "parentUid" : "c34edc43e4c26569805668665661b64e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790388833,
+          "stop" : 1572790390226,
+          "duration" : 1393
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除虚拟机', 'info': '删除虚拟机', 'sleep_time': 1, 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers/${server_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'server': None}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 204, 'expected_request': 'server_result.json'}], 'relevance': None}" ]
+      }, {
+        "name" : "test_server[case_data1]",
+        "uid" : "a26763e429039b22",
+        "parentUid" : "c34edc43e4c26569805668665661b64e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790390241,
+          "stop" : 1572790400362,
+          "duration" : 10121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除后查看虚拟机', 'sleep_time': 10, 'info': '删除后查看查询虚拟机', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/servers/${server_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'server': {'admin_state_up': True, 'name': '${network_name}$', 'tenant_id': '${project_id}$'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 404, 'expected_request': 'server_result.json'}], 'relevance': None}" ]
+      } ],
+      "uid" : "c34edc43e4c26569805668665661b64e"
+    }, {
+      "name" : "test_13_delete_subnet",
+      "children" : [ {
+        "name" : "test_delete_subnet[case_data0]",
+        "uid" : "818b9e54a7f3b7e0",
+        "parentUid" : "5a5a8c2d0e7ec0b2e833ef61562873be",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790400602,
+          "stop" : 1572790401728,
+          "duration" : 1126
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除子网', 'info': '删除子网', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2.0/subnets/${subnet_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'subnet': {'network_id': '${network_id}$'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 204, 'expected_request': None}], 'relevance': None}" ]
+      }, {
+        "name" : "test_delete_subnet[case_data1]",
+        "uid" : "8dad47ba6b88bbab",
+        "parentUid" : "5a5a8c2d0e7ec0b2e833ef61562873be",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790401755,
+          "stop" : 1572790403892,
+          "duration" : 2137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除子网后查看子网', 'info': '删除子网后查询子网', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2.0/subnets/${subnet_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 2, 'parameter': {'subnet': {'admin_state_up': True}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 404, 'expected_request': {}}], 'relevance': None}" ]
+      } ],
+      "uid" : "5a5a8c2d0e7ec0b2e833ef61562873be"
+    }, {
+      "name" : "test_14_delete_network",
+      "children" : [ {
+        "name" : "test_delete_network[case_data0]",
+        "uid" : "7b42b297464f8068",
+        "parentUid" : "cbf36cbbec75117e7ccfdd25773ba79b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790404136,
+          "stop" : 1572790406421,
+          "duration" : 2285
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除网络', 'info': '删除网络', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2.0/networks/${network_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'subnet': {'network_id': '${network_id}$'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 204, 'expected_request': None}], 'relevance': None}" ]
+      }, {
+        "name" : "test_delete_network[case_data1]",
+        "uid" : "d48cdf30ba9772e2",
+        "parentUid" : "cbf36cbbec75117e7ccfdd25773ba79b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790406438,
+          "stop" : 1572790408499,
+          "duration" : 2061
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除网络后查看网络', 'info': '删除网络后查询网络', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2.0/networks/${network_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 2, 'parameter': {'subnet': {'admin_state_up': True}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 404, 'expected_request': {}}], 'relevance': None}" ]
+      } ],
+      "uid" : "cbf36cbbec75117e7ccfdd25773ba79b"
+    }, {
+      "name" : "test_15_delete_volume",
+      "children" : [ {
+        "name" : "test_delete_volume[case_data0]",
+        "uid" : "d26c100bc5cc7f92",
+        "parentUid" : "2e9fb81f9d26394f9f0870e8422bd844",
+        "status" : "failed",
+        "time" : {
+          "start" : 1572790408742,
+          "stop" : 1572790408960,
+          "duration" : 218
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除卷', 'info': '删除卷', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/volumes/${volume_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'volume': {'size': 1, 'name': '${volume_name}$'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+      }, {
+        "name" : "test_delete_volume[case_data1]",
+        "uid" : "f8448a329991f3f8",
+        "parentUid" : "2e9fb81f9d26394f9f0870e8422bd844",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1572790408985,
+          "stop" : 1572790408985,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除卷后查看询', 'info': '删除卷后查看询', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/volumes/${volume_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 10, 'parameter': {'volume': {'size': 1}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 404, 'expected_request': {}}], 'relevance': None}" ]
+      } ],
+      "uid" : "2e9fb81f9d26394f9f0870e8422bd844"
+    }, {
+      "name" : "test_16_delete_project",
+      "children" : [ {
+        "name" : "test_delete_project[case_data0]",
+        "uid" : "7cfa4d15f65eeb81",
+        "parentUid" : "12a545098fd9a51130d70a52101047a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790409310,
+          "stop" : 1572790410039,
+          "duration" : 729
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除项目', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v3/projects/${project_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'project': {'description': 'Automation_wuzs'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 204, 'expected_request': {}}], 'relevance': None}" ]
+      }, {
+        "name" : "test_delete_project[case_data1]",
+        "uid" : "b6333a69517a9a19",
+        "parentUid" : "12a545098fd9a51130d70a52101047a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1572790410057,
+          "stop" : 1572790410094,
+          "duration" : 37
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test_name': '删除项目', 'info': '删除项目后查看', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v3/projects/${project_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'project': {'description': 'Automation_wuzs'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 401, 'expected_request': {}}], 'relevance': None}" ]
+      } ],
+      "uid" : "12a545098fd9a51130d70a52101047a5"
+    } ],
+    "uid" : "559e15d0a5469c40d1629e36b5ae40ea"
+  } ]
+}

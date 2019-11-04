@@ -1,0 +1,187 @@
+{
+  "uid" : "22a2068ec3cfe6e9",
+  "name" : "test_network[case_data0]",
+  "fullName" : "testcase.test_02_network.Test_Network#test_network",
+  "historyId" : "78788b0cabfdddef6ea90d61bf82fc35",
+  "time" : {
+    "start" : 1572784098654,
+    "stop" : 1572784100840,
+    "duration" : 2186
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572784098435,
+      "stop" : 1572784098650,
+      "duration" : 215
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1572784098658,
+        "stop" : 1572784098663,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "67c3542e8889a534",
+        "name" : "创建网络",
+        "source" : "67c3542e8889a534.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "308d00eb993da258",
+        "name" : "http://192.168.54.120:9696/v2.0/networks",
+        "source" : "308d00eb993da258.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "a14ffe43b47a1a15",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': '28303a768a0845e38a8a4daf7444742b'}",
+        "source" : "a14ffe43b47a1a15.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "34e2b79a809c8912",
+        "name" : "{'network': {'admin_state_up': True, 'name': '2n8bMgjXy7modiqBZrTY_netwrok', 'tenant_id': '72695eb0907c49a8bdc61419202f93f0'}}",
+        "source" : "34e2b79a809c8912.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "JSON格式校验",
+      "time" : {
+        "start" : 1572784100836,
+        "stop" : 1572784100840,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5eaa16f83a8bfa04",
+        "name" : "201",
+        "source" : "5eaa16f83a8bfa04.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "d34903188efda64e",
+        "name" : "{'network': {'status': 'ACTIVE', 'subnets': [], 'provider:physical_network': 'physnet2', 'admin_state_up': True, 'mtu': 0, 'router:external': False, 'qos_policy_id': None, 'shared': False, 'provider:network_type': 'vlan'}}",
+        "source" : "d34903188efda64e.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "5207d38338b2af79",
+        "name" : "201",
+        "source" : "5207d38338b2af79.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "fb9b6b2c208fbe30",
+        "name" : "{'network': {'status': 'ACTIVE', 'subnets': [], 'name': '2n8bMgjXy7modiqBZrTY_netwrok', 'provider:physical_network': 'physnet2', 'admin_state_up': True, 'tenant_id': '72695eb0907c49a8bdc61419202f93f0', 'mtu': 0, 'router:external': False, 'qos_policy_id': None, 'shared': False, 'provider:network_type': 'vlan', 'id': 'e230d4e4-3cad-4388-9530-6121c7ff8d12', 'provider:segmentation_id': 1028}}",
+        "source" : "fb9b6b2c208fbe30.attach",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "4e30bfcf799cb9da",
+      "name" : "log",
+      "source" : "4e30bfcf799cb9da.txt",
+      "type" : "text/plain",
+      "size" : 6454
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572784100977,
+      "stop" : 1572784100977,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "创建网络"
+  }, {
+    "name" : "story",
+    "value" : "测试网络"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_network"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Network"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "15108-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_02_network"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '创建网络', 'info': '创建网络', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2.0/networks', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'network': {'admin_state_up': True, 'name': '${network_name}$', 'tenant_id': '${project_id}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 201, 'expected_request': 'network_result.json'}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "22a2068ec3cfe6e9.json",
+  "parameterValues" : [ "{'test_name': '创建网络', 'info': '创建网络', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2.0/networks', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'parameter': {'network': {'admin_state_up': True, 'name': '${network_name}$', 'tenant_id': '${project_id}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 201, 'expected_request': 'network_result.json'}], 'relevance': None}" ]
+}

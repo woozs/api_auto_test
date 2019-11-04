@@ -1,0 +1,51 @@
+[{
+	"json": [
+    {
+    "images":
+        {
+            "status": "active",
+            "name": "snap",
+            "deleted": false,
+            "disk_format": "vmdk",
+            "is_public": false,
+            "properties": {
+                "instance_uuid": "${server_id}$",
+                "image_type": "snapshot",
+                "hypervisor_type": "vmware",
+                "vmware_disktype": "streamOptimized",
+                "vmware_image_version": "1",
+                "vmware_adaptertype": "ide",
+                "vmware_ostype": "centos64Guest"
+            }
+        }
+
+}],
+
+	"test_name": "查看云主机快照"
+},{
+	"json": [
+    {
+    "images": [
+        {
+            "status": "active",
+            "name": "snap",
+            "deleted": false,
+            "disk_format": "vmdk",
+            "is_public": false,
+            "properties": {
+                "instance_uuid": "${server_id}$",
+                "image_type": "snapshot",
+                "hypervisor_type": "vmware",
+                "vmware_disktype": "streamOptimized",
+                "vmware_image_version": "1",
+                "vmware_adaptertype": "ide",
+                "vmware_ostype": "centos64Guest"
+            }
+        }
+    ]
+}],
+
+	"test_name": "查看云主机快照0001"
+}
+
+]

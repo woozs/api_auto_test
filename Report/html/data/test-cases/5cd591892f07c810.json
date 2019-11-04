@@ -1,0 +1,187 @@
+{
+  "uid" : "5cd591892f07c810",
+  "name" : "test_volume[case_data0]",
+  "fullName" : "testcase.test_05_volume.Test_Volume#test_volume",
+  "historyId" : "ce4a470e393ff5c0f49058fa806b6fe7",
+  "time" : {
+    "start" : 1572316961796,
+    "stop" : 1572316962283,
+    "duration" : 487
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1572316961541,
+      "stop" : 1572316961786,
+      "duration" : 245
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST请求接口",
+      "time" : {
+        "start" : 1572316961801,
+        "stop" : 1572316962024,
+        "duration" : 223
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8c35a8bfccec7cfe",
+        "name" : "创建卷",
+        "source" : "8c35a8bfccec7cfe.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "617009a4cffeaa4b",
+        "name" : "http://192.168.54.120:8776/v2/21cdf2e8f7954564929717040e6b5256/volumes",
+        "source" : "617009a4cffeaa4b.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "d6a5ceda635fde67",
+        "name" : "{'Content-Type': 'application/json', 'X-Auth-Token': 'fc9c3abcecfc465db3e9917db78ea2e9'}",
+        "source" : "d6a5ceda635fde67.attach",
+        "type" : "text/plain",
+        "size" : 9
+      }, {
+        "uid" : "fb8c85dc95b49f86",
+        "name" : "{'volume': {'size': 1, 'name': 'volume_opREF9qwQhufD7bliCgN'}}",
+        "source" : "fb8c85dc95b49f86.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "JSON格式校验",
+      "time" : {
+        "start" : 1572316962272,
+        "stop" : 1572316962282,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d93f15ebfec76f63",
+        "name" : "202",
+        "source" : "d93f15ebfec76f63.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "7735765e73f0317",
+        "name" : "{}",
+        "source" : "7735765e73f0317.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "4d203aa12b4c34ea",
+        "name" : "202",
+        "source" : "4d203aa12b4c34ea.attach",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "6ecda9906da952b3",
+        "name" : "{'volume': {'status': 'creating', 'migration_status': None, 'user_id': '0ec82b7380cb4d0c80058501938cdf48', 'attachments': [], 'links': [{'href': 'http://192.168.54.120:8776/v2/21cdf2e8f7954564929717040e6b5256/volumes/150cfa06-94d6-4568-9492-1a48bfb4cd1a', 'rel': 'self'}, {'href': 'http://192.168.54.120:8776/21cdf2e8f7954564929717040e6b5256/volumes/150cfa06-94d6-4568-9492-1a48bfb4cd1a', 'rel': 'bookmark'}], 'availability_zone': 'nova', 'bootable': 'false', 'encrypted': False, 'created_at': '2019-10-29T02:42:06.360275', 'description': None, 'volume_type': None, 'name': 'volume_opREF9qwQhufD7bliCgN', 'replication_status': 'disabled', 'consistencygroup_id': None, 'source_volid': None, 'snapshot_id': None, 'multiattach': False, 'metadata': {}, 'id': '150cfa06-94d6-4568-9492-1a48bfb4cd1a', 'size': 1}}",
+        "source" : "6ecda9906da952b3.attach",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "168998650eb6fdac",
+      "name" : "log",
+      "source" : "168998650eb6fdac.txt",
+      "type" : "text/plain",
+      "size" : 6259
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1572317022612,
+      "stop" : 1572317022612,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "创建卷"
+  }, {
+    "name" : "story",
+    "value" : "卷"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_05_volume"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Volume"
+  }, {
+    "name" : "host",
+    "value" : "wuzs"
+  }, {
+    "name" : "thread",
+    "value" : "2728-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_05_volume"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_data",
+    "value" : "{'test_name': '创建卷', 'info': '创建卷', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/volumes', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'volume': {'size': 1, 'name': '${volume_name}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5cd591892f07c810.json",
+  "parameterValues" : [ "{'test_name': '创建卷', 'info': '创建卷', 'http_type': 'http', 'request_type': 'post', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/volumes', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'volume': {'size': 1, 'name': '${volume_name}$'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
+}

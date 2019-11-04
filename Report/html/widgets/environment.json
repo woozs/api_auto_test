@@ -1,0 +1,37 @@
+[ {
+  "values" : [ "v2" ],
+  "name" : "cinder_api"
+}, {
+  "values" : [ "192.168.54.103" ],
+  "name" : "environment"
+}, {
+  "values" : [ "VMware" ],
+  "name" : "virtual"
+}, {
+  "values" : [ "v2" ],
+  "name" : "nova_api"
+}, {
+  "values" : [ "{\"auth\": {\"scope\": {\"project\": {\"domain\":{\"id\": \"default\"},\"name\": \"${project_token_name}$\"}}, \"identity\":{\"password\": {\"user\": {\"domain\":{\"id\": \"default\"},\"password\":\"admin\",\"name\":\"admin\"}},\"methods\":[\"password\"]}}}" ],
+  "name" : "logininfo"
+}, {
+  "values" : [ "192.168.54.103" ],
+  "name" : "host"
+}, {
+  "values" : [ "wuzushun" ],
+  "name" : "tester"
+}, {
+  "values" : [ "v2" ],
+  "name" : "glance_api"
+}, {
+  "values" : [ "liberty" ],
+  "name" : "openstack_version"
+}, {
+  "values" : [ "1." ],
+  "name" : "versioncode"
+}, {
+  "values" : [ "v3" ],
+  "name" : "keystone_api"
+}, {
+  "values" : [ "v2" ],
+  "name" : "neutron_api"
+} ]
