@@ -5,29 +5,20 @@
 # @Site    : 
 # @File    : test_server_snap_snap.py
 # @Software: PyCharm
-
-import allure
-import pytest
 import os
+import allure,pytest
 
-from Common import Assert
 from unit import load_yaml, Token
-from Common import requestSend
+from Common import requestSend,Log,Assert
 from Conf import  ConfRelevance
-from Common import Log
-
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CASE_PATH = BASE_PATH + "\\Params\\Param"
+CASE_PATH = BASE_PATH + "\\Params\\Param\\server_snapshot"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
-
-case_dict = load_yaml.load_case(CASE_PATH+"\\Server_Snap.yaml")
-
+case_dict = load_yaml.load_case(CASE_PATH+"\\server_snap.yaml")
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
 class Test_Server_Snap:
-
-
     @classmethod
     def setup_class(cls):
         #初始化用例参数，将全局变量替换成配置文件中得变量
@@ -38,12 +29,9 @@ class Test_Server_Snap:
         cls.token.save_token()
         cls.log = Log.MyLog()
         cls.Assert =  Assert.Assertions()
-        #
+
     def setup(self):
         self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
-
-
-        # self.relevance = init.ini_request(case_dict, self.relevance, PATH, self.result)
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
     @allure.story("虚拟机快照")
@@ -67,7 +55,7 @@ class Test_Server_Snap:
                                               case_dict["testinfo"].get("address"),str(case_dict["testinfo"].get("port")), self.relevance, CASE_PATH, self.result)
         expected_code = case_data["check"][0]["expected_code"]
         self.Assert.assert_code(code,expected_code)
-
+        print(data)
 
 
 

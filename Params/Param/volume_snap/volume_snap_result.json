@@ -1,0 +1,21 @@
+[{
+	"json": [{
+	"snapshot": {
+		"volume_id": "${volume_id}$"
+    }
+}],
+
+	"test_name": "创建卷快照"
+},
+	{
+	"json": [{
+	"snapshot": {
+		"status": "available",
+		"volume_id": "${volume_id}$",
+		"size": 1,
+		"id": "${volume_snapshot_id}$"
+	}
+}],
+	"test_name": "查询卷快照"
+}
+]

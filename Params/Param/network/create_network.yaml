@@ -1,0 +1,71 @@
+testinfo:
+      id: test_02_create_network
+      title: 网络
+      port: 9696
+      address: /v2.0/networks # 请求地址 选填（此处不填，每条用例必填） string
+premise:
+
+test_case:
+
+    - test_name: 创建网络
+      info: 创建网络
+      http_type: http
+      request_type: post
+      parameter_type: raw
+      address: /v2.0/networks
+      headers:
+            Content-Type: application/json
+            X-Auth-Token: ${token_id}$
+      timeout: 20
+      parameter:
+        network:
+          admin_state_up: true
+#          dns_domain:
+#          mtu: 1500
+          name: ${network_name}$
+#          port_security_enabled:
+#          project_id: ${project_id}$
+          provider:network_type: "vlan"
+          provider:physical_network: "physnet2"
+#          provider:segmentation_id:
+#          qos_policy_id:
+#          router:external:
+#          segments:
+#          shared: Flase
+          tenant_id:  ${project_id}$
+#          vlan_transparent:
+#          description: "auto_wuzs"
+#          is_default:
+#          availability_zone_hints:
+      file: false
+      check:
+          - check_type: json
+            datebase:
+            expected_code: 201
+            expected_request: network_result.json
+      relevance:
+
+    - test_name: 查看网络
+      info: 查询网络
+      http_type: http
+      request_type: get
+      parameter_type: raw
+      address: /v2.0/networks/${network_id}$
+      headers:
+        Content-Type: application/json
+        X-Auth-Token: ${token_id}$
+      timeout: 20
+      parameter:
+        network:
+          admin_state_up: true
+          name: ${network_name}$
+          tenant_id:  ${project_id}$
+      file: false
+      check:
+          - check_type: json
+            datebase:
+            expected_code: 200
+            expected_request: {}
+      relevance:
+
+

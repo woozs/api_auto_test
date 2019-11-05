@@ -1,0 +1,24 @@
+[{
+	"json": [
+      {
+    "volumeAttachment": {
+        "serverId": "${server_id}$",
+        "volumeId": "${volume_id}$"
+    }
+}
+    ],
+
+	"test_name": "云主机与磁盘挂载"
+},
+  {
+	"json": [{
+	"server": {
+		"os-extended-volumes:volumes_attached": [
+			{
+				"id": "${volume_id}$"
+			}
+		]}}
+    ],
+	"test_name": "挂载后查看虚拟机"
+}
+]

@@ -6,28 +6,20 @@
 # @File    : test_07_volume_snap.py
 # @Software: PyCharm
 
-import allure
-import pytest
-import os
-
+import os,time
+import allure,pytest
 from Conf.Config import Config
-from Common import Assert
-from unit import load_yaml, Token
-from Common import requestSend
 from Conf import  ConfRelevance
-from Common import Log
-
+from unit import load_yaml, Token
+from Common import requestSend,Assert,Log,CheckResult
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CASE_PATH = BASE_PATH + "\\Params\\Param"
+CASE_PATH = BASE_PATH + "\\Params\\Param\\volume_snap"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
-
-case_dict = load_yaml.load_case(CASE_PATH+"\\Volume_Snap.yaml")
-
+case_dict = load_yaml.load_case(CASE_PATH+"\\volume_snap.yaml")
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
 class Test_Volume_Snap:
-
 
     @classmethod
     def setup_class(cls):
@@ -39,17 +31,13 @@ class Test_Volume_Snap:
         cls.token.save_token()
         cls.log = Log.MyLog()
         cls.Assert =  Assert.Assertions()
-        #
 
     def setup(self):
         self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
 
-
-        # self.relevance = init.ini_request(case_dict, self.relevance, PATH, self.result)
-
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
     @allure.story("卷快照")
-    # @pytest.mark.scenarios_7(1)
+    @pytest.mark.flaky(reruns=3)
     def test_volume_snap(self,case_data):
 
         # 参数化修改test_add_project 注释
@@ -65,10 +53,13 @@ class Test_Volume_Snap:
             # 查看类变量result的值，如果未False，则前一接口校验错误，此接口标记未失败，节约测试时间
             pytest.xfail("前置接口测试失败，此接口标记为失败")
 
+        if case_data["request_type"] == "get":
+            time.sleep(case_data["sleep_time"])
 
         code, data = requestSend.send_request(case_data, case_dict["testinfo"].get("host"),
-                                              case_dict["testinfo"].get("address"),str(case_dict["testinfo"].get("port")), self.relevance, CASE_PATH, self.result)
-
+                                              case_dict["testinfo"].get("address"),
+                                              str(case_dict["testinfo"].get("port")),
+                                              self.relevance, CASE_PATH, self.result)
         expected_code = case_data["check"][0]["expected_code"]
         snapshot_id = data["snapshot"]["id"]
 
@@ -76,11 +67,9 @@ class Test_Volume_Snap:
             self.log.info("保存volume_snapshot_id到全局配置文件")
             conf = Config()
             conf.set_conf("test_data", "volume_snapshot_id", snapshot_id)
-
         self.Assert.assert_code(code,expected_code)
-
-
-
+        CheckResult.check(case_data["test_name"], case_data["check"][0],
+                          code, data, self.relevance, CASE_PATH,self.result)
 
 
 if __name__ == "__main__":

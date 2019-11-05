@@ -1,0 +1,49 @@
+testinfo:
+      id: test_16_delete_project         
+      title: 项目                  
+      port: 5000           
+      address:
+premise:
+test_case:
+       
+    - test_name: 删除项目        
+      info: 删除项目
+      http_type: http           
+      request_type: delete       
+      parameter_type: raw      
+      address: /v3/projects/${project_id}$
+      headers:                 
+            Content-Type: application/json
+            X-Auth-Token: ${token_id}$
+      timeout: 20
+      parameter:
+        project:
+          description: Automation_wuzs
+      file: false
+      check:              
+          - check_type: only_check_status  
+            datebase:
+            expected_code: 204
+            expected_request: {}
+      relevance:
+
+    - test_name: 删除项目        
+      info: 删除项目后查看已删除
+      http_type: http           
+      request_type: get       
+      parameter_type: raw      
+      address: /v3/projects/${project_id}$
+      headers:                 
+        Content-Type: application/json
+        X-Auth-Token: ${token_id}$
+      timeout: 20
+      parameter:
+        project:
+          description: Automation_wuzs
+      file: false
+      check:              
+        - check_type: only_check_status  
+          datebase:
+          expected_code: 401
+          expected_request: {}
+      relevance:   

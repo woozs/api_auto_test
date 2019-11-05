@@ -1,37 +1,26 @@
-# #!/usr/bin/env.ini python
-# # -*- coding: utf-8 -*-
-# # @Time    : 2019/9/20 11:06
-# # @Author  : mrwuzs
-# # @Site    :
-# # @File    : test_03_subnet.py
-# # @Software: PyCharm
-#
-#
-#
-import allure
-import pytest
+#!/usr/bin/env.ini python
+# -*- coding: utf-8 -*-
+# @Time    : 2019/9/20 11:06
+# @Author  : mrwuzs
+# @Site    :
+# @File    : test_03_subnet.py
+# @Software: PyCharm
+
 import os
-
+import allure,pytest
 from Conf.Config import Config
-from Common import Assert
-from unit import load_yaml, Token
-from Common import requestSend
 from Conf import  ConfRelevance
-from Common import Log
-from Common import CheckResult
-
+from unit import load_yaml, Token
+from Common import requestSend,CheckResult,Log,Assert
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CASE_PATH = BASE_PATH + "\\Params\\Param"
+CASE_PATH = BASE_PATH + "\\Params\\Param\\subnet"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
-
 case_dict = load_yaml.load_case(CASE_PATH+"\\Subnet.yaml")
 
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
 class Test_Subnet:
-
-
     @classmethod
     def setup_class(cls):
         #初始化用例参数，将全局变量替换成配置文件中得变量
@@ -42,13 +31,10 @@ class Test_Subnet:
         cls.token.save_token()
         cls.log = Log.MyLog()
         cls.Assert =  Assert.Assertions()
-        #
 
     def setup(self):
         self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
 
-
-        # self.relevance = init.ini_request(case_dict, self.relevance, PATH, self.result)
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
     @allure.story("子网")
@@ -70,7 +56,9 @@ class Test_Subnet:
 
         #send_request(_data, _host, _address,_port, _relevance, path, _success)
         code, data = requestSend.send_request(case_data, case_dict["testinfo"].get("host"),
-                                              case_dict["testinfo"].get("address"),str(case_dict["testinfo"].get("port")), self.relevance, CASE_PATH, self.result)
+                                              case_dict["testinfo"].get("address"),
+                                              str(case_dict["testinfo"].get("port")),
+                                              self.relevance, CASE_PATH, self.result)
         expected_code = case_data["check"][0]["expected_code"]
         subnet_id = data["subnet"]["id"]
         self.Assert.assert_code(code,expected_code)
@@ -79,9 +67,6 @@ class Test_Subnet:
         conf.set_conf("test_data","subnet_id",subnet_id)
         CheckResult.check(case_data["test_name"], case_data["check"][0], code, data, self.relevance, CASE_PATH,
                           self.result)
-
-
-
 
 if __name__ == "__main__":
     pytest.main(["-s", "test_03_subnet.py"])

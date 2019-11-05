@@ -21,16 +21,12 @@ from Common import CheckResult
 
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CASE_PATH = BASE_PATH + "\\Params\\Param"
+CASE_PATH = BASE_PATH + "\\Params\\Param\\network"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
-
 case_dict = load_yaml.load_case(CASE_PATH+"\\delete_network.yaml")
-
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
 class Test_Delete_network:
-
-
     @classmethod
     def setup_class(cls):
         #初始化用例参数，将全局变量替换成配置文件中得变量
@@ -41,13 +37,9 @@ class Test_Delete_network:
         cls.token.save_token()
         cls.log = Log.MyLog()
         cls.Assert =  Assert.Assertions()
-        #
 
     def setup(self):
         self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
-
-
-        # self.relevance = init.ini_request(case_dict, self.relevance, PATH, self.result)
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
     @allure.story("网络")

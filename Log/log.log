@@ -15766,3 +15766,672 @@
  (401, {'error': {'message': 'The request you have made requires authentication.', 'code': 401, 'title': 'Unauthorized'}})
 [INFO 2019-11-03 22:13:30]执行allure，生成测试报告
 [INFO 2019-11-03 22:13:44]配置为不发送邮件
+[INFO 2019-11-05 11:23:57]初始化关联文件
+[DEBUG 2019-11-05 11:23:57]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 11:23:57]初始关联内容数据处理后：   {'name': '8', 'type': 'Web', 'version': '20baXrNID6', 'description': 'api_auto_YReAKk7dvu', 'project_id': 'c9aad29894b84640927e9765b528e0e1', 'token_id': 'b030e4eadb7b4ffea24ab04f732ddce5', 'project_name': 'smlDjN2IPXrghoaT1HYb', 'network_name': 'RFztxuvn8yP3aeW9MVNS_netwrok', 'subnet_name': 'zj1edgYc7kPruTF0aMOx_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_T72IN1aAiQZ5wkDUsyF6', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'admin', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_clFDhbCRYGQk0usSKzIr', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[DEBUG 2019-11-05 11:23:57]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 11:23:57]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 11:23:57]处理认证参数
+[DEBUG 2019-11-05 11:23:57]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "admin"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 11:23:57]获取token
+[DEBUG 2019-11-05 11:23:57]response：<Response [201]>
+[INFO 2019-11-05 11:23:57]成功获取token:d414b520ac044298beab49aa72c1ba9c
+[DEBUG 2019-11-05 11:23:57]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 11:23:57]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 11:23:57]处理认证参数
+[DEBUG 2019-11-05 11:23:57]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "admin"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 11:23:57]获取token
+[DEBUG 2019-11-05 11:23:57]response：<Response [201]>
+[INFO 2019-11-05 11:23:57]成功获取token:ebbd9871750341a1a8339efe55d6c310
+[INFO 2019-11-05 11:23:57]保存token_id：ebbd9871750341a1a8339efe55d6c310到配置文件
+[INFO 2019-11-05 18:15:48]设置project_token_name为amdin
+[INFO 2019-11-05 18:15:48]初始化关联文件
+[DEBUG 2019-11-05 18:15:48]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:15:48]初始关联内容数据处理后：   {'name': '9', 'type': 'Web', 'version': 'XTlaRYCFQS', 'description': 'api_auto_Udi764wK2y', 'project_id': 'c9aad29894b84640927e9765b528e0e1', 'token_id': 'ebbd9871750341a1a8339efe55d6c310', 'project_name': 'AxOs7dBlJzwXQTtkyC6e', 'network_name': 'k1l0Ua8MAiyqPsQW364h_netwrok', 'subnet_name': 'ocLXT0eDpvazkntlbE8Y_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_igUqDpZSHRlc76OtwxmI', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'admin', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_kvAwMpLm3Xs7gdCxGY06', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[DEBUG 2019-11-05 18:15:48]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 18:15:48]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 18:15:48]处理认证参数
+[DEBUG 2019-11-05 18:15:48]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "admin"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 18:15:48]获取token
+[DEBUG 2019-11-05 18:15:49]response：<Response [201]>
+[INFO 2019-11-05 18:15:49]成功获取token:89deaea0ff5144bf8a89adf473fa3ba7
+[INFO 2019-11-05 18:15:49]保存token_id：89deaea0ff5144bf8a89adf473fa3ba7到配置文件
+[INFO 2019-11-05 18:15:49]初始化关联文件
+[DEBUG 2019-11-05 18:15:49]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:15:49]初始关联内容数据处理后：   {'name': '5', 'type': 'Web', 'version': 'zSLeY6aZm4', 'description': 'api_auto_5U8YSK9ezn', 'project_id': 'c9aad29894b84640927e9765b528e0e1', 'token_id': '89deaea0ff5144bf8a89adf473fa3ba7', 'project_name': 'uUP10b42EKXfv7TCy6tM', 'network_name': 'yOXu7gtBw1fdMCsNALGV_netwrok', 'subnet_name': '1ZcgXEhe2C6JU87GtSVj_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_aKu08M9vL21WHzy6YqNP', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'admin', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_dRzlM3OuXBhVyPZw5aLi', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[INFO 2019-11-05 18:15:49]====================================================================================================
+[DEBUG 2019-11-05 18:15:49]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '89deaea0ff5144bf8a89adf473fa3ba7'}
+[DEBUG 2019-11-05 18:15:49]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '89deaea0ff5144bf8a89adf473fa3ba7'}
+[DEBUG 2019-11-05 18:15:49]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:15:49]请求接口：创建项目
+[INFO 2019-11-05 18:15:49]请求地址：http://192.168.54.103:5000/v3/projects
+[INFO 2019-11-05 18:15:49]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '89deaea0ff5144bf8a89adf473fa3ba7'}
+[INFO 2019-11-05 18:15:49]请求参数: {'project': {'description': 'Automation_wuzs', 'domain_id': 'default', 'enabled': True, 'is_domain': False, 'name': 'uUP10b42EKXfv7TCy6tM'}}
+[INFO 2019-11-05 18:15:49]POST请求接口
+[INFO 2019-11-05 18:15:49]接口请求结果：
+ (201, {'project': {'is_domain': False, 'description': 'Automation_wuzs', 'links': {'self': 'http://192.168.54.103:5000/v3/projects/2dbe1b17688045e6bd2d6bfd456247e8'}, 'enabled': True, 'id': '2dbe1b17688045e6bd2d6bfd456247e8', 'parent_id': None, 'domain_id': 'default', 'name': 'uUP10b42EKXfv7TCy6tM'}})
+[INFO 2019-11-05 18:15:49]保存project_id到全局配置文件
+[INFO 2019-11-05 18:15:49]保存项目名称为project_token_name到全局配置文件
+[INFO 2019-11-05 18:15:49]给新建项目赋权
+[INFO 2019-11-05 18:15:49]初始化关联文件
+[DEBUG 2019-11-05 18:15:49]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:15:49]初始关联内容数据处理后：   {'name': '1', 'type': 'Web', 'version': 'ex9d5qu1LP', 'description': 'api_auto_rTKwGBPUfz', 'project_id': '2dbe1b17688045e6bd2d6bfd456247e8', 'token_id': '89deaea0ff5144bf8a89adf473fa3ba7', 'project_name': 'k56IiO8sy9mPWlAn7tKD', 'network_name': 'XK8d3ZyTLIaehUix67Qs_netwrok', 'subnet_name': '3NYjqzoP81Ec6grDxuQO_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_8f7Uku2xWypz0oQvbdJO', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'uUP10b42EKXfv7TCy6tM', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_HEPnK1ZrFI2pNbxouwMa', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[DEBUG 2019-11-05 18:15:49]处理header
+[DEBUG 2019-11-05 18:15:49]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json', 'X-Auth-Token': '89deaea0ff5144bf8a89adf473fa3ba7'}
+[DEBUG 2019-11-05 18:15:49]处理address
+[DEBUG 2019-11-05 18:15:49]address:{'address': '/v3/projects/2dbe1b17688045e6bd2d6bfd456247e8/users/f42a1487dd4e4a6baab6eb65f50f8db0/roles/f8d49cf5c0d74f7b85c462219b300f78'}
+[DEBUG 2019-11-05 18:15:49]login_url：http://192.168.54.103:5000/v3/projects/2dbe1b17688045e6bd2d6bfd456247e8/users/f42a1487dd4e4a6baab6eb65f50f8db0/roles/f8d49cf5c0d74f7b85c462219b300f78
+[INFO 2019-11-05 18:15:49]给项目添加admin权限
+[INFO 2019-11-05 18:15:49]项目成功添加admin权限
+[INFO 2019-11-05 18:18:21]初始化关联文件
+[DEBUG 2019-11-05 18:18:21]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:18:21]初始关联内容数据处理后：   {'name': '4', 'type': 'Web', 'version': 'S0lysobYBx', 'description': 'api_auto_J5C4LMOfTe', 'project_id': '2dbe1b17688045e6bd2d6bfd456247e8', 'token_id': '89deaea0ff5144bf8a89adf473fa3ba7', 'project_name': 'yXLhTCVRBtqj8i1eUAxw', 'network_name': 'DXme7TsyrdCz8VQEIBFJ_netwrok', 'subnet_name': 'ALzsFG7Txj8nedZqSvPb_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_rCVk7MwvSptD4KBgEP1e', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'uUP10b42EKXfv7TCy6tM', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_O8DekTw6BoYG4CAtFxNu', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[DEBUG 2019-11-05 18:18:21]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 18:18:21]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 18:18:21]处理认证参数
+[DEBUG 2019-11-05 18:18:21]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "uUP10b42EKXfv7TCy6tM"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 18:18:21]获取token
+[DEBUG 2019-11-05 18:18:21]response：<Response [201]>
+[INFO 2019-11-05 18:18:21]成功获取token:fd43ea3118ab471eb960b68eb04bbc69
+[INFO 2019-11-05 18:18:21]保存token_id：fd43ea3118ab471eb960b68eb04bbc69到配置文件
+[INFO 2019-11-05 18:18:21]初始化关联文件
+[DEBUG 2019-11-05 18:18:21]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:18:21]初始关联内容数据处理后：   {'name': '6', 'type': 'Web', 'version': 'NlC3n7SGet', 'description': 'api_auto_2NG6fQgryt', 'project_id': '2dbe1b17688045e6bd2d6bfd456247e8', 'token_id': 'fd43ea3118ab471eb960b68eb04bbc69', 'project_name': '8RzD3NGB2CpASYeOKPsZ', 'network_name': 'FclwUd8MfzHaY6on5hQV_netwrok', 'subnet_name': 'IxfFsEMcZCiQ25nY4g6v_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_7KyaLdQ8obsS03f6OcEk', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'uUP10b42EKXfv7TCy6tM', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_fFdNxPBvR7TLaoAgUkyl', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[INFO 2019-11-05 18:18:21]====================================================================================================
+[DEBUG 2019-11-05 18:18:21]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'fd43ea3118ab471eb960b68eb04bbc69'}
+[DEBUG 2019-11-05 18:18:21]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'fd43ea3118ab471eb960b68eb04bbc69'}
+[DEBUG 2019-11-05 18:18:21]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:18:21]请求接口：删除项目
+[INFO 2019-11-05 18:18:21]请求地址：http://192.168.54.103:5000/v3/projects/2dbe1b17688045e6bd2d6bfd456247e8
+[INFO 2019-11-05 18:18:21]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': 'fd43ea3118ab471eb960b68eb04bbc69'}
+[INFO 2019-11-05 18:18:21]请求参数: {'project': {'description': 'Automation_wuzs'}}
+[INFO 2019-11-05 18:18:21]DELETE请求接口
+[INFO 2019-11-05 18:18:23]接口请求结果：
+ (204, '')
+[INFO 2019-11-05 18:18:23]初始化关联文件
+[DEBUG 2019-11-05 18:18:23]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:18:23]初始关联内容数据处理后：   {'name': '9', 'type': 'Web', 'version': 'iqVTYCxv06', 'description': 'api_auto_Ulj9PL12xc', 'project_id': '2dbe1b17688045e6bd2d6bfd456247e8', 'token_id': 'fd43ea3118ab471eb960b68eb04bbc69', 'project_name': 'SeRBLhtXWuCyVvZxaOlp', 'network_name': 'md7Wr6x1ROkTLPoS3HI8_netwrok', 'subnet_name': 'SE6Oi7ZYH20DuotVAvqI_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_PMLuwcSQATHlE0higZCU', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'uUP10b42EKXfv7TCy6tM', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_lELVmuWgxaBFy9sh2e4v', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[INFO 2019-11-05 18:18:23]====================================================================================================
+[DEBUG 2019-11-05 18:18:23]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'fd43ea3118ab471eb960b68eb04bbc69'}
+[DEBUG 2019-11-05 18:18:23]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'fd43ea3118ab471eb960b68eb04bbc69'}
+[DEBUG 2019-11-05 18:18:23]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:18:23]请求接口：删除项目
+[INFO 2019-11-05 18:18:23]请求地址：http://192.168.54.103:5000/v3/projects/2dbe1b17688045e6bd2d6bfd456247e8
+[INFO 2019-11-05 18:18:23]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': 'fd43ea3118ab471eb960b68eb04bbc69'}
+[INFO 2019-11-05 18:18:23]请求参数: {'project': {'description': 'Automation_wuzs'}}
+[INFO 2019-11-05 18:18:23]GET请求接口
+[INFO 2019-11-05 18:18:23]接口请求结果：
+ (401, {'error': {'message': 'The request you have made requires authentication.', 'code': 401, 'title': 'Unauthorized'}})
+[INFO 2019-11-05 18:21:20]设置project_token_name为amdin
+[INFO 2019-11-05 18:21:20]初始化关联文件
+[DEBUG 2019-11-05 18:21:20]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:21:20]初始关联内容数据处理后：   {'name': '10', 'type': 'Web', 'version': 'PKwSqRN5DI', 'description': 'api_auto_AwrX94xo5j', 'project_id': '2dbe1b17688045e6bd2d6bfd456247e8', 'token_id': 'fd43ea3118ab471eb960b68eb04bbc69', 'project_name': 'iGApWtkmno2Zl50IjSB9', 'network_name': 'P7GyIxcjLKkalnbBtEse_netwrok', 'subnet_name': 'n9xPBokGwM6ezKal5uqH_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_WTUmdkKoC3lpB7AqQgfD', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'admin', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_5WHg6qKCidtAo1QyGYfp', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[DEBUG 2019-11-05 18:21:20]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 18:21:20]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 18:21:20]处理认证参数
+[DEBUG 2019-11-05 18:21:20]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "admin"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 18:21:20]获取token
+[DEBUG 2019-11-05 18:21:20]response：<Response [201]>
+[INFO 2019-11-05 18:21:20]成功获取token:b0038150c72f476b822456a5287a6672
+[INFO 2019-11-05 18:21:20]保存token_id：b0038150c72f476b822456a5287a6672到配置文件
+[INFO 2019-11-05 18:21:20]初始化关联文件
+[DEBUG 2019-11-05 18:21:20]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:21:20]初始关联内容数据处理后：   {'name': '0', 'type': 'Web', 'version': 'DanpUo92v5', 'description': 'api_auto_zPQVFscvpi', 'project_id': '2dbe1b17688045e6bd2d6bfd456247e8', 'token_id': 'b0038150c72f476b822456a5287a6672', 'project_name': 'ec5kSH0RAnZbyEKDmdOv', 'network_name': 'YgIUrALz39eato2S6Mns_netwrok', 'subnet_name': 'bVjAzL8U7Don4HwC26uI_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_EOjRFkfx4vlcPALgYyw7', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'admin', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_hPtqix6EBTXkNuzyGFc5', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[INFO 2019-11-05 18:21:20]====================================================================================================
+[DEBUG 2019-11-05 18:21:20]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'b0038150c72f476b822456a5287a6672'}
+[DEBUG 2019-11-05 18:21:20]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'b0038150c72f476b822456a5287a6672'}
+[DEBUG 2019-11-05 18:21:20]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:21:20]请求接口：创建项目
+[INFO 2019-11-05 18:21:20]请求地址：http://192.168.54.103:5000/v3/projects
+[INFO 2019-11-05 18:21:20]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': 'b0038150c72f476b822456a5287a6672'}
+[INFO 2019-11-05 18:21:20]请求参数: {'project': {'description': 'Automation_wuzs', 'domain_id': 'default', 'enabled': True, 'is_domain': False, 'name': 'ec5kSH0RAnZbyEKDmdOv'}}
+[INFO 2019-11-05 18:21:20]POST请求接口
+[INFO 2019-11-05 18:21:20]接口请求结果：
+ (201, {'project': {'is_domain': False, 'description': 'Automation_wuzs', 'links': {'self': 'http://192.168.54.103:5000/v3/projects/c3bfbd0c8c0d4ec1bd4ab44f13b4b69b'}, 'enabled': True, 'id': 'c3bfbd0c8c0d4ec1bd4ab44f13b4b69b', 'parent_id': None, 'domain_id': 'default', 'name': 'ec5kSH0RAnZbyEKDmdOv'}})
+[INFO 2019-11-05 18:21:20]保存project_id到全局配置文件
+[INFO 2019-11-05 18:21:20]保存项目名称为project_token_name到全局配置文件
+[INFO 2019-11-05 18:21:20]给新建项目赋权
+[INFO 2019-11-05 18:21:20]初始化关联文件
+[DEBUG 2019-11-05 18:21:20]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:21:20]初始关联内容数据处理后：   {'name': '5', 'type': 'Web', 'version': 'br6yxGlRdH', 'description': 'api_auto_qa175ABh6G', 'project_id': 'c3bfbd0c8c0d4ec1bd4ab44f13b4b69b', 'token_id': 'b0038150c72f476b822456a5287a6672', 'project_name': '7Rx0fQPn9evK3DIGpBAt', 'network_name': '523J7PgRIdxUASWB4EyT_netwrok', 'subnet_name': 'CJKIl4jZFrMYzuRDbQVE_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_xmGiCzTwIE94avOKk0XW', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'ec5kSH0RAnZbyEKDmdOv', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_lDxdt7uJ5psQgwajHFPN', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[DEBUG 2019-11-05 18:21:20]处理header
+[DEBUG 2019-11-05 18:21:20]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json', 'X-Auth-Token': 'b0038150c72f476b822456a5287a6672'}
+[DEBUG 2019-11-05 18:21:20]处理address
+[DEBUG 2019-11-05 18:21:20]address:{'address': '/v3/projects/c3bfbd0c8c0d4ec1bd4ab44f13b4b69b/users/f42a1487dd4e4a6baab6eb65f50f8db0/roles/f8d49cf5c0d74f7b85c462219b300f78'}
+[DEBUG 2019-11-05 18:21:20]login_url：http://192.168.54.103:5000/v3/projects/c3bfbd0c8c0d4ec1bd4ab44f13b4b69b/users/f42a1487dd4e4a6baab6eb65f50f8db0/roles/f8d49cf5c0d74f7b85c462219b300f78
+[INFO 2019-11-05 18:21:20]给项目添加admin权限
+[INFO 2019-11-05 18:21:20]项目成功添加admin权限
+[INFO 2019-11-05 18:27:09]初始化关联文件
+[DEBUG 2019-11-05 18:27:09]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:27:09]初始关联内容数据处理后：   {'name': '6', 'type': 'Web', 'version': 'N7FQPUE2pg', 'description': 'api_auto_ZJ0PchmOe4', 'project_id': 'c3bfbd0c8c0d4ec1bd4ab44f13b4b69b', 'token_id': 'b0038150c72f476b822456a5287a6672', 'project_name': 'X75hRJP0NwAdZitUsBfq', 'network_name': 'cqFr6lKamI4ojAZynkb8_netwrok', 'subnet_name': 'qC9M7aYDd3HA4wlWhFUz_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_A21XIGe4gqiMKtVC06xU', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'ec5kSH0RAnZbyEKDmdOv', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_yOsmH1wWuXC3pjrKU6nJ', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[DEBUG 2019-11-05 18:27:09]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 18:27:09]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 18:27:09]处理认证参数
+[DEBUG 2019-11-05 18:27:09]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "ec5kSH0RAnZbyEKDmdOv"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 18:27:09]获取token
+[DEBUG 2019-11-05 18:27:09]response：<Response [201]>
+[INFO 2019-11-05 18:27:09]成功获取token:05796f0bf1f54acd9050926e188f507a
+[INFO 2019-11-05 18:27:09]保存token_id：05796f0bf1f54acd9050926e188f507a到配置文件
+[INFO 2019-11-05 18:27:09]初始化关联文件
+[DEBUG 2019-11-05 18:27:09]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:27:09]初始关联内容数据处理后：   {'name': '9', 'type': 'Web', 'version': 'DytaZUMxwL', 'description': 'api_auto_KUqlSpY3Bu', 'project_id': 'c3bfbd0c8c0d4ec1bd4ab44f13b4b69b', 'token_id': '05796f0bf1f54acd9050926e188f507a', 'project_name': 'FS9J2tMlcZTowQaEjOB1', 'network_name': 'Al9a1NwIC08KXBbeyWZO_netwrok', 'subnet_name': '4DnmkTgpPOybLt3weGqU_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_l7VuOMzLIE89vn6PXUt0', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'ec5kSH0RAnZbyEKDmdOv', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_nUZLGkyRVgFMmPEQiNsl', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[INFO 2019-11-05 18:27:09]====================================================================================================
+[DEBUG 2019-11-05 18:27:09]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '05796f0bf1f54acd9050926e188f507a'}
+[DEBUG 2019-11-05 18:27:09]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '05796f0bf1f54acd9050926e188f507a'}
+[DEBUG 2019-11-05 18:27:09]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:27:09]请求接口：删除项目
+[INFO 2019-11-05 18:27:09]请求地址：http://192.168.54.103:5000/v3/projects/c3bfbd0c8c0d4ec1bd4ab44f13b4b69b
+[INFO 2019-11-05 18:27:09]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '05796f0bf1f54acd9050926e188f507a'}
+[INFO 2019-11-05 18:27:09]请求参数: {'project': {'description': 'Automation_wuzs'}}
+[INFO 2019-11-05 18:27:09]DELETE请求接口
+[INFO 2019-11-05 18:27:09]接口请求结果：
+ (204, '')
+[INFO 2019-11-05 18:27:09]初始化关联文件
+[DEBUG 2019-11-05 18:27:09]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:27:09]初始关联内容数据处理后：   {'name': '10', 'type': 'Web', 'version': 'qIVPWdZ5RQ', 'description': 'api_auto_K9Rj4Qo3f0', 'project_id': 'c3bfbd0c8c0d4ec1bd4ab44f13b4b69b', 'token_id': '05796f0bf1f54acd9050926e188f507a', 'project_name': 'BbLn1ZAFdIXaV2zjT9qw', 'network_name': 'QaqpXenDCk7JcS6Y39it_netwrok', 'subnet_name': 'VGP8o946ceOnKi3fT7hw_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_xgbAGfZKat0LnOIMcNsJ', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'ec5kSH0RAnZbyEKDmdOv', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_tHh0VPIcZy28YwslgR4e', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[INFO 2019-11-05 18:27:09]====================================================================================================
+[DEBUG 2019-11-05 18:27:09]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '05796f0bf1f54acd9050926e188f507a'}
+[DEBUG 2019-11-05 18:27:09]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '05796f0bf1f54acd9050926e188f507a'}
+[DEBUG 2019-11-05 18:27:09]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:27:09]请求接口：删除项目
+[INFO 2019-11-05 18:27:09]请求地址：http://192.168.54.103:5000/v3/projects/c3bfbd0c8c0d4ec1bd4ab44f13b4b69b
+[INFO 2019-11-05 18:27:09]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '05796f0bf1f54acd9050926e188f507a'}
+[INFO 2019-11-05 18:27:09]请求参数: {'project': {'description': 'Automation_wuzs'}}
+[INFO 2019-11-05 18:27:09]GET请求接口
+[INFO 2019-11-05 18:27:09]接口请求结果：
+ (401, {'error': {'message': 'The request you have made requires authentication.', 'code': 401, 'title': 'Unauthorized'}})
+[INFO 2019-11-05 18:35:52]设置project_token_name为amdin
+[INFO 2019-11-05 18:35:52]初始化关联文件
+[DEBUG 2019-11-05 18:35:52]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:35:52]初始关联内容数据处理后：   {'name': '3', 'type': 'Web', 'version': 'oOajPc5x0b', 'description': 'api_auto_tP5eMBLxlZ', 'project_id': 'c3bfbd0c8c0d4ec1bd4ab44f13b4b69b', 'token_id': '05796f0bf1f54acd9050926e188f507a', 'project_name': 'TgslYFZ0mJNtDHKSArwL', 'network_name': 'W853kSQ91Bqo6vKZ0AUw_netwrok', 'subnet_name': '18F7fhBkImt3UoNxSe6g_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_wrysYE4HX0aKS8qMngtd', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'admin', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_JZRA6q8CHIN7s9mKWlTh', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[DEBUG 2019-11-05 18:35:52]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 18:35:52]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 18:35:52]处理认证参数
+[DEBUG 2019-11-05 18:35:52]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "admin"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 18:35:52]获取token
+[DEBUG 2019-11-05 18:35:52]response：<Response [201]>
+[INFO 2019-11-05 18:35:52]成功获取token:37d9dc4dc55549b39c440e7cebf054bd
+[INFO 2019-11-05 18:35:52]保存token_id：37d9dc4dc55549b39c440e7cebf054bd到配置文件
+[INFO 2019-11-05 18:35:52]初始化关联文件
+[DEBUG 2019-11-05 18:35:52]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:35:52]初始关联内容数据处理后：   {'name': '2', 'type': 'Web', 'version': 'bgNnwMRhf9', 'description': 'api_auto_bUsguBV2pF', 'project_id': 'c3bfbd0c8c0d4ec1bd4ab44f13b4b69b', 'token_id': '37d9dc4dc55549b39c440e7cebf054bd', 'project_name': '8i3Kg95RvdqSDoesTbaF', 'network_name': '1si4QCM68cNS7WaheKYl_netwrok', 'subnet_name': 'Mig7zSOXq2ZxGp3d0yUa_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_UqEBRxabFLcS75wNZ8rQ', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': 'admin', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_Ki1hjVqxWlg0XGc8etf6', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[INFO 2019-11-05 18:35:52]====================================================================================================
+[DEBUG 2019-11-05 18:35:52]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '37d9dc4dc55549b39c440e7cebf054bd'}
+[DEBUG 2019-11-05 18:35:52]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '37d9dc4dc55549b39c440e7cebf054bd'}
+[DEBUG 2019-11-05 18:35:52]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:35:52]请求接口：创建项目
+[INFO 2019-11-05 18:35:52]请求地址：http://192.168.54.103:5000/v3/projects
+[INFO 2019-11-05 18:35:52]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '37d9dc4dc55549b39c440e7cebf054bd'}
+[INFO 2019-11-05 18:35:52]请求参数: {'project': {'description': 'Automation_wuzs', 'domain_id': 'default', 'enabled': True, 'is_domain': False, 'name': '8i3Kg95RvdqSDoesTbaF'}}
+[INFO 2019-11-05 18:35:52]POST请求接口
+[INFO 2019-11-05 18:35:52]接口请求结果：
+ (201, {'project': {'is_domain': False, 'description': 'Automation_wuzs', 'links': {'self': 'http://192.168.54.103:5000/v3/projects/ee792e64169344bf9ea2bf04199a3700'}, 'enabled': True, 'id': 'ee792e64169344bf9ea2bf04199a3700', 'parent_id': None, 'domain_id': 'default', 'name': '8i3Kg95RvdqSDoesTbaF'}})
+[INFO 2019-11-05 18:35:52]保存project_id到全局配置文件
+[INFO 2019-11-05 18:35:52]保存项目名称为project_token_name到全局配置文件
+[INFO 2019-11-05 18:35:52]给新建项目赋权
+[INFO 2019-11-05 18:35:52]初始化关联文件
+[DEBUG 2019-11-05 18:35:52]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:35:52]初始关联内容数据处理后：   {'name': '6', 'type': 'Web', 'version': '1s3BfWuDlF', 'description': 'api_auto_PNfhXqVipM', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '37d9dc4dc55549b39c440e7cebf054bd', 'project_name': 'olxQrnkAgO5w09MhFi46', 'network_name': 'zZgx4mEiROfdpMs6DkIv_netwrok', 'subnet_name': 'FV0QLDeXGrpOqP6YwMHI_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_wc72Hx6SBozgRiaCVXD4', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_wubKRGm4z0EFDv5Bcqf8', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[DEBUG 2019-11-05 18:35:52]处理header
+[DEBUG 2019-11-05 18:35:52]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json', 'X-Auth-Token': '37d9dc4dc55549b39c440e7cebf054bd'}
+[DEBUG 2019-11-05 18:35:52]处理address
+[DEBUG 2019-11-05 18:35:52]address:{'address': '/v3/projects/ee792e64169344bf9ea2bf04199a3700/users/f42a1487dd4e4a6baab6eb65f50f8db0/roles/f8d49cf5c0d74f7b85c462219b300f78'}
+[DEBUG 2019-11-05 18:35:52]login_url：http://192.168.54.103:5000/v3/projects/ee792e64169344bf9ea2bf04199a3700/users/f42a1487dd4e4a6baab6eb65f50f8db0/roles/f8d49cf5c0d74f7b85c462219b300f78
+[INFO 2019-11-05 18:35:52]给项目添加admin权限
+[INFO 2019-11-05 18:35:52]项目成功添加admin权限
+[INFO 2019-11-05 18:45:23]初始化关联文件
+[DEBUG 2019-11-05 18:45:23]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:45:23]初始关联内容数据处理后：   {'name': '8', 'type': 'Web', 'version': '6qaoGziERc', 'description': 'api_auto_NGoFp3tHbf', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '37d9dc4dc55549b39c440e7cebf054bd', 'project_name': 'ekp3rWODyAULRo71EXQv', 'network_name': 'UZG0M3qwVvDltpQu9YOn_netwrok', 'subnet_name': 'IYL0NTm7ptSPUO4xQzgC_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_zfGIidURTwHZohAWtkNQ', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_mKPx8NoYSWpbrdFG5gyH', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[DEBUG 2019-11-05 18:45:23]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 18:45:23]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 18:45:23]处理认证参数
+[DEBUG 2019-11-05 18:45:23]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "8i3Kg95RvdqSDoesTbaF"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 18:45:23]获取token
+[DEBUG 2019-11-05 18:45:24]response：<Response [201]>
+[INFO 2019-11-05 18:45:24]成功获取token:511acfd685ac40c6b62fe2d2df4680fd
+[INFO 2019-11-05 18:45:24]保存token_id：511acfd685ac40c6b62fe2d2df4680fd到配置文件
+[INFO 2019-11-05 18:45:24]初始化关联文件
+[DEBUG 2019-11-05 18:45:24]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:45:24]初始关联内容数据处理后：   {'name': '6', 'type': 'Web', 'version': 'Ug6cTfdbH5', 'description': 'api_auto_Zjd3WDUk2g', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '511acfd685ac40c6b62fe2d2df4680fd', 'project_name': 'KhixJBlWeAVDYTMUgwPd', 'network_name': '73EudXp9CBL84MJs2ZDK_netwrok', 'subnet_name': 'fo4IRLTdAt1WXCGEjqOK_subnet', 'network_id': '5ee5980c-bd4e-4864-96f0-efa887e9effa', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_7EtokRLT3abdqQnzYmyB', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_vtkmI8bCa415S7oRqj9w', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': 'fMQr7ph3ancyb4GPSdDu_netwrok'}
+[INFO 2019-11-05 18:45:24]====================================================================================================
+[DEBUG 2019-11-05 18:45:24]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '511acfd685ac40c6b62fe2d2df4680fd'}
+[DEBUG 2019-11-05 18:45:24]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '511acfd685ac40c6b62fe2d2df4680fd'}
+[DEBUG 2019-11-05 18:45:24]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:45:24]请求接口：创建网络
+[INFO 2019-11-05 18:45:24]请求地址：http://192.168.54.103:9696/v2.0/networks
+[INFO 2019-11-05 18:45:24]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '511acfd685ac40c6b62fe2d2df4680fd'}
+[INFO 2019-11-05 18:45:24]请求参数: {'network': {'admin_state_up': True, 'name': '73EudXp9CBL84MJs2ZDK_netwrok', 'provider:network_type': 'vlan', 'provider:physical_network': 'physnet2', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700'}}
+[INFO 2019-11-05 18:45:24]POST请求接口
+[INFO 2019-11-05 18:45:26]接口请求结果：
+ (201, {'network': {'status': 'ACTIVE', 'subnets': [], 'name': '73EudXp9CBL84MJs2ZDK_netwrok', 'provider:physical_network': 'physnet2', 'admin_state_up': True, 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700', 'mtu': 1550, 'router:external': False, 'qos_policy_id': None, 'shared': False, 'port_security_enabled': True, 'provider:network_type': 'vlan', 'id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'provider:segmentation_id': 574}})
+[DEBUG 2019-11-05 18:45:26]data:{'network': {'status': 'ACTIVE', 'subnets': [], 'name': '73EudXp9CBL84MJs2ZDK_netwrok', 'provider:physical_network': 'physnet2', 'admin_state_up': True, 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700', 'mtu': 1550, 'router:external': False, 'qos_policy_id': None, 'shared': False, 'port_security_enabled': True, 'provider:network_type': 'vlan', 'id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'provider:segmentation_id': 574}}
+[INFO 2019-11-05 18:45:26]保存network_id到全局配置文件
+[DEBUG 2019-11-05 18:45:26]保存network_name到全局配置文件,用于虚拟校验
+[INFO 2019-11-05 18:45:26]初始化关联文件
+[DEBUG 2019-11-05 18:45:26]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:45:26]初始关联内容数据处理后：   {'name': '4', 'type': 'Web', 'version': 'PeJL0EyZ98', 'description': 'api_auto_P9wIAOg42F', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '511acfd685ac40c6b62fe2d2df4680fd', 'project_name': 'Ri5MnjubPW7y68Eo3BvN', 'network_name': '35SNUoQVY4p9bAq0zxIX_netwrok', 'subnet_name': 'PH9fzRMThbLk6atJ8OYi_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_keJnRK0xjmgHpa2tWQU4', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_EVUq1vQaBGtWo54pYcSD', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 18:45:26]====================================================================================================
+[DEBUG 2019-11-05 18:45:26]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '511acfd685ac40c6b62fe2d2df4680fd'}
+[DEBUG 2019-11-05 18:45:26]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '511acfd685ac40c6b62fe2d2df4680fd'}
+[DEBUG 2019-11-05 18:45:26]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:45:26]请求接口：查看网络
+[INFO 2019-11-05 18:45:26]请求地址：http://192.168.54.103:9696/v2.0/networks/35f0e316-85ac-4346-bff6-f5663836aa9b
+[INFO 2019-11-05 18:45:26]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '511acfd685ac40c6b62fe2d2df4680fd'}
+[INFO 2019-11-05 18:45:26]请求参数: {'network': {'admin_state_up': True, 'name': '35SNUoQVY4p9bAq0zxIX_netwrok', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700'}}
+[INFO 2019-11-05 18:45:26]GET请求接口
+[INFO 2019-11-05 18:45:26]接口请求结果：
+ (200, {'network': {'status': 'ACTIVE', 'subnets': [], 'name': '73EudXp9CBL84MJs2ZDK_netwrok', 'provider:physical_network': 'physnet2', 'admin_state_up': True, 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700', 'mtu': 1550, 'router:external': False, 'qos_policy_id': None, 'shared': False, 'port_security_enabled': True, 'provider:network_type': 'vlan', 'id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'provider:segmentation_id': 574}})
+[DEBUG 2019-11-05 18:45:26]data:{'network': {'status': 'ACTIVE', 'subnets': [], 'name': '73EudXp9CBL84MJs2ZDK_netwrok', 'provider:physical_network': 'physnet2', 'admin_state_up': True, 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700', 'mtu': 1550, 'router:external': False, 'qos_policy_id': None, 'shared': False, 'port_security_enabled': True, 'provider:network_type': 'vlan', 'id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'provider:segmentation_id': 574}}
+[DEBUG 2019-11-05 18:45:26]保存network_name到全局配置文件,用于虚拟校验
+[INFO 2019-11-05 18:48:02]初始化关联文件
+[DEBUG 2019-11-05 18:48:02]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:48:02]初始关联内容数据处理后：   {'name': '3', 'type': 'Web', 'version': 'mBNPjRAx3V', 'description': 'api_auto_yIzYOHQfU1', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '511acfd685ac40c6b62fe2d2df4680fd', 'project_name': 'mYoes67ARl5UXuiWvCHz', 'network_name': 'OHzdniKBL8tC5PX2ubYU_netwrok', 'subnet_name': 'T3Q4iNPwJf1zIUM0nCDS_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_wlnt3UBOufmoNJKSH7xW', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_7xhy3S9zvYZukpJUqRai', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[DEBUG 2019-11-05 18:48:02]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 18:48:02]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 18:48:02]处理认证参数
+[DEBUG 2019-11-05 18:48:02]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "8i3Kg95RvdqSDoesTbaF"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 18:48:02]获取token
+[DEBUG 2019-11-05 18:48:02]response：<Response [201]>
+[INFO 2019-11-05 18:48:02]成功获取token:50e54f80538c4e56a1ab9bd8fd52a001
+[INFO 2019-11-05 18:48:02]保存token_id：50e54f80538c4e56a1ab9bd8fd52a001到配置文件
+[INFO 2019-11-05 18:48:02]初始化关联文件
+[DEBUG 2019-11-05 18:48:02]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:48:02]初始关联内容数据处理后：   {'name': '5', 'type': 'Web', 'version': 'zJiTKUBYEW', 'description': 'api_auto_02bhRr8sQ1', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '50e54f80538c4e56a1ab9bd8fd52a001', 'project_name': 'GChy6ExKg8w97iq5XpQP', 'network_name': 'k0hiIo4VJjMuA6XSZCqG_netwrok', 'subnet_name': 'xVOMzpLYDi8QgmfvadkK_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '73d89c4e-e09d-4142-8015-751fe8bcc97c', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_08m9x6PNKF3CgYdDtz27', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_v7gl5GZJ2fU6cQConSaW', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 18:48:02]====================================================================================================
+[DEBUG 2019-11-05 18:48:02]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '50e54f80538c4e56a1ab9bd8fd52a001'}
+[DEBUG 2019-11-05 18:48:02]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '50e54f80538c4e56a1ab9bd8fd52a001'}
+[DEBUG 2019-11-05 18:48:02]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:48:02]请求接口：创建子网
+[INFO 2019-11-05 18:48:02]请求地址：http://192.168.54.103:9696/v2.0/subnets
+[INFO 2019-11-05 18:48:02]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '50e54f80538c4e56a1ab9bd8fd52a001'}
+[INFO 2019-11-05 18:48:02]请求参数: {'subnet': {'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'ip_version': 4, 'name': 'xVOMzpLYDi8QgmfvadkK_subnet', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700', 'cidr': '192.168.224.0/24', 'gateway_ip': '192.168.224.1', 'enable_dhcp': True}}
+[INFO 2019-11-05 18:48:02]POST请求接口
+[INFO 2019-11-05 18:48:02]接口请求结果：
+ (201, {'subnet': {'name': 'xVOMzpLYDi8QgmfvadkK_subnet', 'enable_dhcp': True, 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700', 'dns_nameservers': [], 'gateway_ip': '192.168.224.1', 'ipv6_ra_mode': None, 'allocation_pools': [{'start': '192.168.224.2', 'end': '192.168.224.254'}], 'host_routes': [], 'ip_version': 4, 'ipv6_address_mode': None, 'cidr': '192.168.224.0/24', 'id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'subnetpool_id': None}})
+[INFO 2019-11-05 18:48:02]保存subnet_id到全局配置文件
+[INFO 2019-11-05 18:48:02]初始化关联文件
+[DEBUG 2019-11-05 18:48:02]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:48:02]初始关联内容数据处理后：   {'name': '1', 'type': 'Web', 'version': 'cjeCf0q3ZJ', 'description': 'api_auto_PkaL7T53sN', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '50e54f80538c4e56a1ab9bd8fd52a001', 'project_name': 'DIJivQRBqkWfYS8t9Nzh', 'network_name': 'vM8kwS4tqu0Orx5KmBQf_netwrok', 'subnet_name': 'btU56GKui4PMWRI1lycJ_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_2BUJvTOw7zhb5fiq0u6V', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_YhIyHfJKRWmw0Aa3e6Uv', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 18:48:02]====================================================================================================
+[DEBUG 2019-11-05 18:48:02]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '50e54f80538c4e56a1ab9bd8fd52a001'}
+[DEBUG 2019-11-05 18:48:02]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '50e54f80538c4e56a1ab9bd8fd52a001'}
+[DEBUG 2019-11-05 18:48:02]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:48:02]请求接口：查看子网
+[INFO 2019-11-05 18:48:02]请求地址：http://192.168.54.103:9696/v2.0/subnets/8d01fdfe-4b29-4f05-bf6b-8238d7f3b582
+[INFO 2019-11-05 18:48:02]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '50e54f80538c4e56a1ab9bd8fd52a001'}
+[INFO 2019-11-05 18:48:02]请求参数: {'subnet': {'admin_state_up': True, 'name': 'btU56GKui4PMWRI1lycJ_subnet', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700'}}
+[INFO 2019-11-05 18:48:02]GET请求接口
+[INFO 2019-11-05 18:48:02]接口请求结果：
+ (200, {'subnet': {'name': 'xVOMzpLYDi8QgmfvadkK_subnet', 'enable_dhcp': True, 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700', 'dns_nameservers': [], 'gateway_ip': '192.168.224.1', 'ipv6_ra_mode': None, 'allocation_pools': [{'start': '192.168.224.2', 'end': '192.168.224.254'}], 'host_routes': [], 'ip_version': 4, 'ipv6_address_mode': None, 'cidr': '192.168.224.0/24', 'id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'subnetpool_id': None}})
+[INFO 2019-11-05 18:48:02]保存subnet_id到全局配置文件
+[INFO 2019-11-05 18:53:15]初始化关联文件
+[DEBUG 2019-11-05 18:53:15]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:53:15]初始关联内容数据处理后：   {'name': '7', 'type': 'Web', 'version': 'DswzHRUcm1', 'description': 'api_auto_zeVZ6DNglf', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '50e54f80538c4e56a1ab9bd8fd52a001', 'project_name': 'Zyun1HB6LqbUhMFJXdkA', 'network_name': 'APiVEHh4jevklNKaTdu6_netwrok', 'subnet_name': 'fxSDitqgW3C9ynsl7Uda_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_BKe2j41NtL9gOCIEus3c', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_S5YAwVmx2NtO1Iqr6XiT', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[DEBUG 2019-11-05 18:53:15]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 18:53:15]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 18:53:15]处理认证参数
+[DEBUG 2019-11-05 18:53:15]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "8i3Kg95RvdqSDoesTbaF"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 18:53:15]获取token
+[DEBUG 2019-11-05 18:53:15]response：<Response [201]>
+[INFO 2019-11-05 18:53:15]成功获取token:d6e5108620b54da8a111a9935f2feef9
+[INFO 2019-11-05 18:53:15]保存token_id：d6e5108620b54da8a111a9935f2feef9到配置文件
+[INFO 2019-11-05 18:53:15]初始化关联文件
+[DEBUG 2019-11-05 18:53:15]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:53:15]初始关联内容数据处理后：   {'name': '9', 'type': 'Web', 'version': 'umswQCLJPe', 'description': 'api_auto_QilGzhgPY0', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': 'd6e5108620b54da8a111a9935f2feef9', 'project_name': 'qLkwIsQAPOlaG6jY4oJm', 'network_name': '1qAe8bMk0dTL7ncgzuZP_netwrok', 'subnet_name': 'RleFSfGdo4spTrUDH6Y9_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_RIyZj2K8TvW6OzgoA9CB', 'server_id': 'dbeef329-c3d8-40b5-a7ce-d3315acc102f', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_S4Xxvw03hm9I2uJj1yn5', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 18:53:15]====================================================================================================
+[DEBUG 2019-11-05 18:53:15]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'd6e5108620b54da8a111a9935f2feef9'}
+[DEBUG 2019-11-05 18:53:15]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'd6e5108620b54da8a111a9935f2feef9'}
+[DEBUG 2019-11-05 18:53:15]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:53:15]请求接口：创建虚拟机
+[INFO 2019-11-05 18:53:15]请求地址：http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers
+[INFO 2019-11-05 18:53:15]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': 'd6e5108620b54da8a111a9935f2feef9'}
+[INFO 2019-11-05 18:53:15]请求参数: {'server': {'imageRef': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavorRef': 'flavor-1-1-1', 'name': 'wuzs_RIyZj2K8TvW6OzgoA9CB', 'networks': [{'uuid': '35f0e316-85ac-4346-bff6-f5663836aa9b'}]}}
+[INFO 2019-11-05 18:53:15]POST请求接口
+[INFO 2019-11-05 18:53:17]接口请求结果：
+ (202, {'server': {'security_groups': [{'name': 'default'}], 'OS-DCF:diskConfig': 'MANUAL', 'id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'links': [{'href': 'http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'rel': 'self'}, {'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'rel': 'bookmark'}], 'adminPass': 'mJ2GN2rW4Lqc'}})
+[INFO 2019-11-05 18:53:17]保存server_id到全局配置文件
+[INFO 2019-11-05 18:53:17]虚拟机已创建，等待创建........
+[INFO 2019-11-05 18:53:18]初始化关联文件
+[DEBUG 2019-11-05 18:53:18]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:53:18]初始关联内容数据处理后：   {'name': '2', 'type': 'Web', 'version': 'zS7D6LsxfE', 'description': 'api_auto_LVBP5GXlDn', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': 'd6e5108620b54da8a111a9935f2feef9', 'project_name': 'keadZIxDzpT7JiSERYqb', 'network_name': 'zLYdJuhwGy6U0CFqrSQb_netwrok', 'subnet_name': 'dEuebgRQv0qaT8SMXFIZ_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_uH6QBj8ioG3NYrxTws2M', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_7NiY5LH0uVsZlqUoMFpB', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 18:53:18]====================================================================================================
+[DEBUG 2019-11-05 18:53:18]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'd6e5108620b54da8a111a9935f2feef9'}
+[DEBUG 2019-11-05 18:53:18]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'd6e5108620b54da8a111a9935f2feef9'}
+[DEBUG 2019-11-05 18:53:18]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:53:18]请求接口：查看虚拟机
+[INFO 2019-11-05 18:53:18]请求地址：http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42
+[INFO 2019-11-05 18:53:18]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': 'd6e5108620b54da8a111a9935f2feef9'}
+[INFO 2019-11-05 18:53:18]请求参数: {'server': {'admin_state_up': True, 'name': 'zLYdJuhwGy6U0CFqrSQb_netwrok', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700'}}
+[INFO 2019-11-05 18:53:18]GET请求接口
+[INFO 2019-11-05 18:53:18]接口请求结果：
+ (200, {'server': {'status': 'BUILD', 'updated': '2019-11-05T10:49:33Z', 'hostId': 'd857c4c3201b06a7f7c1f5a1382e258c9d3da738a665a49e0c4ee983', 'OS-EXT-SRV-ATTR:host': 'node-6.domain.tld', 'addresses': {}, 'links': [{'href': 'http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'rel': 'self'}, {'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'rel': 'bookmark'}], 'key_name': None, 'image': {'id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'links': [{'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/images/39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'rel': 'bookmark'}]}, 'OS-EXT-STS:task_state': 'spawning', 'OS-EXT-STS:vm_state': 'building', 'OS-EXT-SRV-ATTR:instance_name': 'instance-00001856', 'OS-SRV-USG:launched_at': None, 'OS-EXT-SRV-ATTR:hypervisor_hostname': 'domain-c84.a5047478-c4fb-4ce5-bf2c-67dbca6facd6', 'flavor': {'id': 'flavor-1-1-1', 'links': [{'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/flavors/flavor-1-1-1', 'rel': 'bookmark'}]}, 'id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'security_groups': [{'name': 'default'}], 'OS-SRV-USG:terminated_at': None, 'OS-EXT-AZ:availability_zone': 'node-6.domain.tld', 'user_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'name': 'wuzs_RIyZj2K8TvW6OzgoA9CB', 'created': '2019-11-05T10:49:32Z', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700', 'OS-DCF:diskConfig': 'MANUAL', 'os-extended-volumes:volumes_attached': [], 'accessIPv4': '', 'accessIPv6': '', 'progress': 0, 'OS-EXT-STS:power_state': 0, 'config_drive': '', 'metadata': {}}})
+[INFO 2019-11-05 18:53:18]虚拟机已创建，等待创建........
+[INFO 2019-11-05 18:53:58]初始化关联文件
+[DEBUG 2019-11-05 18:53:58]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:53:58]初始关联内容数据处理后：   {'name': '6', 'type': 'Web', 'version': 'TXMpd8Fy7U', 'description': 'api_auto_zcF6Jn3dGj', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': 'd6e5108620b54da8a111a9935f2feef9', 'project_name': '3QAqvJdy2EgcUZhRkG5j', 'network_name': 'M5DqXmrnoYyGu32T8xiz_netwrok', 'subnet_name': 'UkIpt6wJYSqiBmTlf7cj_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_ztErwGyFiN1Z35jY0oW2', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_DZ3g8RoLrdBAnkXNiEKq', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[DEBUG 2019-11-05 18:53:58]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 18:53:58]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 18:53:58]处理认证参数
+[DEBUG 2019-11-05 18:53:58]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "8i3Kg95RvdqSDoesTbaF"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 18:53:58]获取token
+[DEBUG 2019-11-05 18:53:58]response：<Response [201]>
+[INFO 2019-11-05 18:53:58]成功获取token:3b063027c390415bab605b5703c72c7f
+[INFO 2019-11-05 18:53:58]保存token_id：3b063027c390415bab605b5703c72c7f到配置文件
+[INFO 2019-11-05 18:53:58]初始化关联文件
+[DEBUG 2019-11-05 18:53:58]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:53:58]初始关联内容数据处理后：   {'name': '2', 'type': 'Web', 'version': '4UHyLdEGoQ', 'description': 'api_auto_EKqVuJasyf', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '3b063027c390415bab605b5703c72c7f', 'project_name': 'l8VfJSMKFZp9UYchs2n6', 'network_name': '2C7mkXAwBfUhbPuF3vly_netwrok', 'subnet_name': 'qM7JK4XPVHc1D9vgx2jS_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_FCZGNDUi6XQKqyAnPYm5', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_oXCHiZNBTzKFRVgcDQ4J', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 18:53:58]====================================================================================================
+[DEBUG 2019-11-05 18:53:58]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'd6e5108620b54da8a111a9935f2feef9'}
+[DEBUG 2019-11-05 18:53:58]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'd6e5108620b54da8a111a9935f2feef9'}
+[DEBUG 2019-11-05 18:53:58]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:53:58]请求接口：查看虚拟机
+[INFO 2019-11-05 18:53:58]请求地址：http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42
+[INFO 2019-11-05 18:53:58]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': 'd6e5108620b54da8a111a9935f2feef9'}
+[INFO 2019-11-05 18:53:58]请求参数: {'server': {'admin_state_up': True, 'name': 'zLYdJuhwGy6U0CFqrSQb_netwrok', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700'}}
+[INFO 2019-11-05 18:53:58]GET请求接口
+[INFO 2019-11-05 18:53:59]接口请求结果：
+ (200, {'server': {'status': 'BUILD', 'updated': '2019-11-05T10:49:33Z', 'hostId': 'd857c4c3201b06a7f7c1f5a1382e258c9d3da738a665a49e0c4ee983', 'OS-EXT-SRV-ATTR:host': 'node-6.domain.tld', 'addresses': {'73EudXp9CBL84MJs2ZDK_netwrok': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:8e:91:46', 'version': 4, 'addr': '192.168.224.3', 'OS-EXT-IPS:type': 'fixed'}]}, 'links': [{'href': 'http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'rel': 'self'}, {'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'rel': 'bookmark'}], 'key_name': None, 'image': {'id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'links': [{'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/images/39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'rel': 'bookmark'}]}, 'OS-EXT-STS:task_state': 'spawning', 'OS-EXT-STS:vm_state': 'building', 'OS-EXT-SRV-ATTR:instance_name': 'instance-00001856', 'OS-SRV-USG:launched_at': None, 'OS-EXT-SRV-ATTR:hypervisor_hostname': 'domain-c84.a5047478-c4fb-4ce5-bf2c-67dbca6facd6', 'flavor': {'id': 'flavor-1-1-1', 'links': [{'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/flavors/flavor-1-1-1', 'rel': 'bookmark'}]}, 'id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'security_groups': [{'name': 'default'}], 'OS-SRV-USG:terminated_at': None, 'OS-EXT-AZ:availability_zone': 'node-6.domain.tld', 'user_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'name': 'wuzs_RIyZj2K8TvW6OzgoA9CB', 'created': '2019-11-05T10:49:32Z', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700', 'OS-DCF:diskConfig': 'MANUAL', 'os-extended-volumes:volumes_attached': [], 'accessIPv4': '', 'accessIPv6': '', 'progress': 0, 'OS-EXT-STS:power_state': 0, 'config_drive': '', 'metadata': {}}})
+[INFO 2019-11-05 18:53:59]虚拟机已创建，等待创建........
+[INFO 2019-11-05 18:54:39]初始化关联文件
+[DEBUG 2019-11-05 18:54:39]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:54:39]初始关联内容数据处理后：   {'name': '5', 'type': 'Web', 'version': 'aI3zxiA4CH', 'description': 'api_auto_orlhB6mv45', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '3b063027c390415bab605b5703c72c7f', 'project_name': 'ilF34dahBjcRfspDJxoK', 'network_name': 'vmYLr49jpREFlg1Cqb0H_netwrok', 'subnet_name': 'XKTbCQRiS2wUdsgPAY94_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_4wTdma3iqAgoEhfGIpPW', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_nBwu25rQESF1beZMGtic', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[DEBUG 2019-11-05 18:54:39]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 18:54:39]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 18:54:39]处理认证参数
+[DEBUG 2019-11-05 18:54:39]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "8i3Kg95RvdqSDoesTbaF"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 18:54:39]获取token
+[DEBUG 2019-11-05 18:54:39]response：<Response [201]>
+[INFO 2019-11-05 18:54:39]成功获取token:fe42b04b21d847ce952ec619bdcbf296
+[INFO 2019-11-05 18:54:39]保存token_id：fe42b04b21d847ce952ec619bdcbf296到配置文件
+[INFO 2019-11-05 18:54:39]初始化关联文件
+[DEBUG 2019-11-05 18:54:39]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:54:39]初始关联内容数据处理后：   {'name': '0', 'type': 'Web', 'version': 'HXY39NuhTf', 'description': 'api_auto_fXvSpr3acJ', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': 'fe42b04b21d847ce952ec619bdcbf296', 'project_name': 'pWtv0lxJ1NVEni37Says', 'network_name': 'lbDzx8YEvS3BoXQHwU1i_netwrok', 'subnet_name': 'Ua1ZSWR7MubIdHF950jp_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_qAHNiGLfexrlBwbp3hjI', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_oODsbjiqUEtFc0nQdgxZ', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 18:54:39]====================================================================================================
+[DEBUG 2019-11-05 18:54:39]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'd6e5108620b54da8a111a9935f2feef9'}
+[DEBUG 2019-11-05 18:54:39]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'd6e5108620b54da8a111a9935f2feef9'}
+[DEBUG 2019-11-05 18:54:39]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:54:39]请求接口：查看虚拟机
+[INFO 2019-11-05 18:54:39]请求地址：http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42
+[INFO 2019-11-05 18:54:39]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': 'd6e5108620b54da8a111a9935f2feef9'}
+[INFO 2019-11-05 18:54:39]请求参数: {'server': {'admin_state_up': True, 'name': 'zLYdJuhwGy6U0CFqrSQb_netwrok', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700'}}
+[INFO 2019-11-05 18:54:39]GET请求接口
+[INFO 2019-11-05 18:54:39]接口请求结果：
+ (200, {'server': {'status': 'ACTIVE', 'updated': '2019-11-05T10:50:14Z', 'hostId': 'd857c4c3201b06a7f7c1f5a1382e258c9d3da738a665a49e0c4ee983', 'OS-EXT-SRV-ATTR:host': 'node-6.domain.tld', 'addresses': {'73EudXp9CBL84MJs2ZDK_netwrok': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:8e:91:46', 'version': 4, 'addr': '192.168.224.3', 'OS-EXT-IPS:type': 'fixed'}]}, 'links': [{'href': 'http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'rel': 'self'}, {'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'rel': 'bookmark'}], 'key_name': None, 'image': {'id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'links': [{'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/images/39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'rel': 'bookmark'}]}, 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-EXT-SRV-ATTR:instance_name': 'instance-00001856', 'OS-SRV-USG:launched_at': '2019-11-05T10:50:12.000000', 'OS-EXT-SRV-ATTR:hypervisor_hostname': 'domain-c84.a5047478-c4fb-4ce5-bf2c-67dbca6facd6', 'flavor': {'id': 'flavor-1-1-1', 'links': [{'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/flavors/flavor-1-1-1', 'rel': 'bookmark'}]}, 'id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'security_groups': [{'name': 'default'}], 'OS-SRV-USG:terminated_at': None, 'OS-EXT-AZ:availability_zone': 'node-6.domain.tld', 'user_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'name': 'wuzs_RIyZj2K8TvW6OzgoA9CB', 'created': '2019-11-05T10:49:32Z', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700', 'OS-DCF:diskConfig': 'MANUAL', 'os-extended-volumes:volumes_attached': [], 'accessIPv4': '', 'accessIPv6': '', 'progress': 0, 'OS-EXT-STS:power_state': 1, 'config_drive': '', 'metadata': {'esxihostname': 'host-86'}}})
+[INFO 2019-11-05 18:54:39]虚拟机已创建，等待创建........
+[INFO 2019-11-05 18:59:15]初始化关联文件
+[DEBUG 2019-11-05 18:59:15]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:59:15]初始关联内容数据处理后：   {'name': '4', 'type': 'Web', 'version': 'z2KSQgGPc0', 'description': 'api_auto_DRuaP6C4XS', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': 'fe42b04b21d847ce952ec619bdcbf296', 'project_name': 'rdAKZ0tpaHv5JVEYCk2z', 'network_name': '1awmbC2WZEhIPT8ueDcF_netwrok', 'subnet_name': 'ewBiMOI3z9826VCdALQx_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_ChuLW1UVykmdADRpcaje', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_Yt0s3vo2e7UDgzhjucwr', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[DEBUG 2019-11-05 18:59:15]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 18:59:15]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 18:59:15]处理认证参数
+[DEBUG 2019-11-05 18:59:15]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "8i3Kg95RvdqSDoesTbaF"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 18:59:15]获取token
+[DEBUG 2019-11-05 18:59:16]response：<Response [201]>
+[INFO 2019-11-05 18:59:16]成功获取token:c462ff4b0a264469a48324ce69382d15
+[INFO 2019-11-05 18:59:16]保存token_id：c462ff4b0a264469a48324ce69382d15到配置文件
+[INFO 2019-11-05 18:59:16]初始化关联文件
+[DEBUG 2019-11-05 18:59:16]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:59:16]初始关联内容数据处理后：   {'name': '8', 'type': 'Web', 'version': 'BmFMq936jT', 'description': 'api_auto_uxkXQhtRYe', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': 'c462ff4b0a264469a48324ce69382d15', 'project_name': 'u0psg4DmFxHjRECwBe8I', 'network_name': 'Xmzndwt096VQ3YrPalRp_netwrok', 'subnet_name': 'KLy9uwqE1joPC837fAvW_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_TyEn9oCmzVI63AuO4JeF', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_r2NMLZeGYS81E4FvTloa', 'volume_id': '857d1f3b-1d27-4873-803c-a6ebbeadfd1b', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 18:59:16]====================================================================================================
+[DEBUG 2019-11-05 18:59:16]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'c462ff4b0a264469a48324ce69382d15'}
+[DEBUG 2019-11-05 18:59:16]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'c462ff4b0a264469a48324ce69382d15'}
+[DEBUG 2019-11-05 18:59:16]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:59:16]请求接口：创建卷
+[INFO 2019-11-05 18:59:16]请求地址：http://192.168.54.103:8776/v2/ee792e64169344bf9ea2bf04199a3700/volumes
+[INFO 2019-11-05 18:59:16]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': 'c462ff4b0a264469a48324ce69382d15'}
+[INFO 2019-11-05 18:59:16]请求参数: {'volume': {'size': 1, 'name': 'volume_r2NMLZeGYS81E4FvTloa'}}
+[INFO 2019-11-05 18:59:16]POST请求接口
+[INFO 2019-11-05 18:59:16]接口请求结果：
+ (202, {'volume': {'status': 'creating', 'migration_status': None, 'user_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'attachments': [], 'links': [{'href': 'http://192.168.54.103:8776/v2/ee792e64169344bf9ea2bf04199a3700/volumes/9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91', 'rel': 'self'}, {'href': 'http://192.168.54.103:8776/ee792e64169344bf9ea2bf04199a3700/volumes/9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91', 'rel': 'bookmark'}], 'availability_zone': 'nova', 'bootable': 'false', 'encrypted': False, 'created_at': '2019-11-05T10:55:31.687923', 'description': None, 'volume_type': None, 'name': 'volume_r2NMLZeGYS81E4FvTloa', 'replication_status': 'disabled', 'consistencygroup_id': None, 'source_volid': None, 'snapshot_id': None, 'multiattach': False, 'metadata': {}, 'id': '9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91', 'size': 1}})
+[INFO 2019-11-05 18:59:16]保存Volume_id到全局配置文件
+[INFO 2019-11-05 18:59:16]初始化关联文件
+[DEBUG 2019-11-05 18:59:16]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 18:59:16]初始关联内容数据处理后：   {'name': '8', 'type': 'Web', 'version': 'IiyugQKfph', 'description': 'api_auto_CoSOePghNF', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': 'c462ff4b0a264469a48324ce69382d15', 'project_name': '2azqjRcOP6TV4d9HGpF3', 'network_name': 'k9EX1TQlGdWpnc5LPiYC_netwrok', 'subnet_name': 'cEvV45oQyG3zTu1LDWnZ_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_5vcr6FyZE8zjfm3o0BhT', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_HbkzJ0gvlW2ZxR3ETSfM', 'volume_id': '9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 18:59:36]====================================================================================================
+[DEBUG 2019-11-05 18:59:36]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'c462ff4b0a264469a48324ce69382d15'}
+[DEBUG 2019-11-05 18:59:36]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'c462ff4b0a264469a48324ce69382d15'}
+[DEBUG 2019-11-05 18:59:36]host处理结果：  192.168.54.103
+[INFO 2019-11-05 18:59:36]请求接口：查看卷
+[INFO 2019-11-05 18:59:36]请求地址：http://192.168.54.103:8776/v2/ee792e64169344bf9ea2bf04199a3700/volumes/9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91
+[INFO 2019-11-05 18:59:36]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': 'c462ff4b0a264469a48324ce69382d15'}
+[INFO 2019-11-05 18:59:36]请求参数: {'server': {'admin_state_up': True, 'name': 'k9EX1TQlGdWpnc5LPiYC_netwrok', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700'}}
+[INFO 2019-11-05 18:59:36]GET请求接口
+[INFO 2019-11-05 18:59:37]接口请求结果：
+ (200, {'volume': {'migration_status': None, 'attachments': [], 'links': [{'href': 'http://192.168.54.103:8776/v2/ee792e64169344bf9ea2bf04199a3700/volumes/9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91', 'rel': 'self'}, {'href': 'http://192.168.54.103:8776/ee792e64169344bf9ea2bf04199a3700/volumes/9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91', 'rel': 'bookmark'}], 'availability_zone': 'nova', 'os-vol-host-attr:host': 'cinder@cluster6#cluster6', 'encrypted': False, 'os-volume-replication:extended_status': None, 'replication_status': 'disabled', 'snapshot_id': None, 'id': '9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91', 'size': 1, 'user_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'os-vol-tenant-attr:tenant_id': 'ee792e64169344bf9ea2bf04199a3700', 'os-vol-mig-status-attr:migstat': None, 'metadata': {}, 'status': 'available', 'description': None, 'multiattach': False, 'os-volume-replication:driver_data': None, 'source_volid': None, 'consistencygroup_id': None, 'os-vol-mig-status-attr:name_id': None, 'name': 'volume_r2NMLZeGYS81E4FvTloa', 'bootable': 'false', 'created_at': '2019-11-05T10:55:31.000000', 'volume_type': None}})
+[INFO 2019-11-05 19:14:18]初始化关联文件
+[DEBUG 2019-11-05 19:14:18]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:14:18]初始关联内容数据处理后：   {'name': '2', 'type': 'Web', 'version': 'jPeHvh0FYi', 'description': 'api_auto_MOY1lSsHdU', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': 'c462ff4b0a264469a48324ce69382d15', 'project_name': 'DL9u3t7Kxlf2IAvCOy8S', 'network_name': '7onWrk4qghYS2EViURzb_netwrok', 'subnet_name': '3D759B6pn8cbQmKksTxM_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_anX1SbH0vm7fPMUu4glo', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_xKQn86sSumwC90EZYAog', 'volume_id': '9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[DEBUG 2019-11-05 19:14:18]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 19:14:18]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 19:14:18]处理认证参数
+[DEBUG 2019-11-05 19:14:18]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "8i3Kg95RvdqSDoesTbaF"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 19:14:18]获取token
+[DEBUG 2019-11-05 19:14:18]response：<Response [201]>
+[INFO 2019-11-05 19:14:18]成功获取token:86f51ae1ac0542d198e7d30496903179
+[INFO 2019-11-05 19:14:18]保存token_id：86f51ae1ac0542d198e7d30496903179到配置文件
+[INFO 2019-11-05 19:14:18]初始化关联文件
+[DEBUG 2019-11-05 19:14:18]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:14:18]初始关联内容数据处理后：   {'name': '5', 'type': 'Web', 'version': 'sklpVebhDv', 'description': 'api_auto_HzEOFXwInR', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '86f51ae1ac0542d198e7d30496903179', 'project_name': 'qU0SeucGwkIWn8B1yKms', 'network_name': 'Fyv3LlmHjx2NBqwtZYVC_netwrok', 'subnet_name': '3ygYGXBCQl9K5e68VocF_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_Jeyz3k6DVcEqUHsNSRZY', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_F6AtwSnIGK9Lrf5VixHl', 'volume_id': '9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 19:14:18]====================================================================================================
+[DEBUG 2019-11-05 19:14:18]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '86f51ae1ac0542d198e7d30496903179'}
+[DEBUG 2019-11-05 19:14:18]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '86f51ae1ac0542d198e7d30496903179'}
+[DEBUG 2019-11-05 19:14:18]host处理结果：  192.168.54.103
+[INFO 2019-11-05 19:14:18]请求接口：云主机与磁盘挂载
+[INFO 2019-11-05 19:14:18]请求地址：http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42/os-volume_attachments
+[INFO 2019-11-05 19:14:18]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '86f51ae1ac0542d198e7d30496903179'}
+[INFO 2019-11-05 19:14:18]请求参数: {'volumeAttachment': {'volumeId': '9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91'}}
+[INFO 2019-11-05 19:14:18]POST请求接口
+[INFO 2019-11-05 19:14:19]接口请求结果：
+ (404, {'itemNotFound': {'message': 'Volume 9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91 could not be found.', 'code': 404}})
+[ERROR 2019-11-05 19:14:19]statusCode error, expected_code is 200, statusCode is 404 
+[INFO 2019-11-05 19:14:19]初始化关联文件
+[DEBUG 2019-11-05 19:14:19]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:14:19]初始关联内容数据处理后：   {'name': '10', 'type': 'Web', 'version': 'qAUgMGhPdI', 'description': 'api_auto_qK2L0buCpn', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '86f51ae1ac0542d198e7d30496903179', 'project_name': 'AQ4fme3iu7FsE0PIJ96T', 'network_name': 'yeIvpVWbf9juwkh4CJLm_netwrok', 'subnet_name': 'Ytz68Vvra4G0qky5OxIZ_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_1gtAJnxuhpjIOaHwzkXT', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_C4cfWVBJr2e0lU6o1XFP', 'volume_id': '9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 19:14:19]====================================================================================================
+[DEBUG 2019-11-05 19:14:19]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '86f51ae1ac0542d198e7d30496903179'}
+[DEBUG 2019-11-05 19:14:19]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '86f51ae1ac0542d198e7d30496903179'}
+[DEBUG 2019-11-05 19:14:19]host处理结果：  192.168.54.103
+[INFO 2019-11-05 19:14:19]请求接口：挂载后查看虚拟机
+[INFO 2019-11-05 19:14:19]请求地址：http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/${server_id}
+[INFO 2019-11-05 19:14:19]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '86f51ae1ac0542d198e7d30496903179'}
+[INFO 2019-11-05 19:14:19]请求参数: {'volumeAttachment': {'volumeId': '9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91'}}
+[INFO 2019-11-05 19:14:19]GET请求接口
+[INFO 2019-11-05 19:14:19]接口请求结果：
+ (404, {'itemNotFound': {'message': 'Instance ${server_id} could not be found.', 'code': 404}})
+[ERROR 2019-11-05 19:14:19]statusCode error, expected_code is 200, statusCode is 404 
+[INFO 2019-11-05 19:14:19]初始化关联文件
+[DEBUG 2019-11-05 19:14:19]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:14:19]初始关联内容数据处理后：   {'name': '5', 'type': 'Web', 'version': 'gzajh35Po8', 'description': 'api_auto_JBK6AQcroR', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '86f51ae1ac0542d198e7d30496903179', 'project_name': '2oWRjSNZ5vVqbQcx93IF', 'network_name': 'e5x8v4qaZF2CWuoEwUml_netwrok', 'subnet_name': 'ygfB1Mt3nOxuR6ZXC2od_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_FBe3I2NU8xPQVfA6atsG', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_q6f9XVjs7LuPmbOyJF04', 'volume_id': '9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 19:14:19]====================================================================================================
+[DEBUG 2019-11-05 19:14:19]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '86f51ae1ac0542d198e7d30496903179'}
+[DEBUG 2019-11-05 19:14:19]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '86f51ae1ac0542d198e7d30496903179'}
+[DEBUG 2019-11-05 19:14:19]host处理结果：  192.168.54.103
+[INFO 2019-11-05 19:14:19]请求接口：云主机与磁盘卸载
+[INFO 2019-11-05 19:14:19]请求地址：http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42/os-volume_attachments/9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91
+[INFO 2019-11-05 19:14:19]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '86f51ae1ac0542d198e7d30496903179'}
+[INFO 2019-11-05 19:14:19]请求参数: {'volumeAttachment': {'volumeId': '9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91'}}
+[INFO 2019-11-05 19:14:19]DELETE请求接口
+[INFO 2019-11-05 19:14:19]接口请求结果：
+ (404, {'itemNotFound': {'message': 'Volume 9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91 could not be found.', 'code': 404}})
+[ERROR 2019-11-05 19:14:19]statusCode error, expected_code is 202, statusCode is 404 
+[INFO 2019-11-05 19:16:05]初始化关联文件
+[DEBUG 2019-11-05 19:16:05]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:16:05]初始关联内容数据处理后：   {'name': '7', 'type': 'Web', 'version': 'yBipLg8bGq', 'description': 'api_auto_RiSsJkuLCm', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '86f51ae1ac0542d198e7d30496903179', 'project_name': 'EwshQ3MWOkcenD4SupU0', 'network_name': 'RPbOwdqBCvi7Aeoj4XFz_netwrok', 'subnet_name': 'H4qhNSjR0a8ysoimvgdV_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_H0g15XA3C2JDp8LjKwSE', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_JoTgOXfPVM2W4ES01HQd', 'volume_id': '9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[DEBUG 2019-11-05 19:16:05]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 19:16:05]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 19:16:05]处理认证参数
+[DEBUG 2019-11-05 19:16:05]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "8i3Kg95RvdqSDoesTbaF"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 19:16:05]获取token
+[DEBUG 2019-11-05 19:16:06]response：<Response [201]>
+[INFO 2019-11-05 19:16:06]成功获取token:5743938e3f284334876a8f6181bd6906
+[INFO 2019-11-05 19:16:06]保存token_id：5743938e3f284334876a8f6181bd6906到配置文件
+[INFO 2019-11-05 19:16:06]初始化关联文件
+[DEBUG 2019-11-05 19:16:06]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:16:06]初始关联内容数据处理后：   {'name': '3', 'type': 'Web', 'version': '5UitqAZ68N', 'description': 'api_auto_lZmy9vpYoh', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '5743938e3f284334876a8f6181bd6906', 'project_name': 'PDRVgl8jW7wbnieqrud3', 'network_name': 'W5oIKNw27neutFjAJByT_netwrok', 'subnet_name': 'Hzivyrboh4ZgD9CPwWqU_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_TUEdmhBwJ9P6Ig5C1j2c', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_IUlf5uWb2wYSET7Ges9N', 'volume_id': '9fa5d5fa-38d0-4c1f-8cd8-12edbee13e91', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 19:16:06]====================================================================================================
+[DEBUG 2019-11-05 19:16:06]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '5743938e3f284334876a8f6181bd6906'}
+[DEBUG 2019-11-05 19:16:06]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '5743938e3f284334876a8f6181bd6906'}
+[DEBUG 2019-11-05 19:16:06]host处理结果：  192.168.54.103
+[INFO 2019-11-05 19:16:06]请求接口：创建卷
+[INFO 2019-11-05 19:16:06]请求地址：http://192.168.54.103:8776/v2/ee792e64169344bf9ea2bf04199a3700/volumes
+[INFO 2019-11-05 19:16:06]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '5743938e3f284334876a8f6181bd6906'}
+[INFO 2019-11-05 19:16:06]请求参数: {'volume': {'size': 1, 'name': 'volume_IUlf5uWb2wYSET7Ges9N'}}
+[INFO 2019-11-05 19:16:06]POST请求接口
+[INFO 2019-11-05 19:16:06]接口请求结果：
+ (202, {'volume': {'status': 'creating', 'migration_status': None, 'user_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'attachments': [], 'links': [{'href': 'http://192.168.54.103:8776/v2/ee792e64169344bf9ea2bf04199a3700/volumes/df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'rel': 'self'}, {'href': 'http://192.168.54.103:8776/ee792e64169344bf9ea2bf04199a3700/volumes/df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'rel': 'bookmark'}], 'availability_zone': 'nova', 'bootable': 'false', 'encrypted': False, 'created_at': '2019-11-05T11:12:21.612492', 'description': None, 'volume_type': None, 'name': 'volume_IUlf5uWb2wYSET7Ges9N', 'replication_status': 'disabled', 'consistencygroup_id': None, 'source_volid': None, 'snapshot_id': None, 'multiattach': False, 'metadata': {}, 'id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'size': 1}})
+[INFO 2019-11-05 19:16:06]保存Volume_id到全局配置文件
+[INFO 2019-11-05 19:16:06]初始化关联文件
+[DEBUG 2019-11-05 19:16:06]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:16:06]初始关联内容数据处理后：   {'name': '7', 'type': 'Web', 'version': 'dzruiFMgoK', 'description': 'api_auto_M9jV87QY0O', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '5743938e3f284334876a8f6181bd6906', 'project_name': 'CeYhMsb32qOUnjNwDkAi', 'network_name': 'yZJU0ijHS9qCPgKDwLxO_netwrok', 'subnet_name': 'BYz9opnmcDy5N1Ow3bSK_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_ZyPiYw567zvSD2Ckldcu', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_g7kLj6BaXO0CDUGMl9be', 'volume_id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 19:16:26]====================================================================================================
+[DEBUG 2019-11-05 19:16:26]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '5743938e3f284334876a8f6181bd6906'}
+[DEBUG 2019-11-05 19:16:26]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '5743938e3f284334876a8f6181bd6906'}
+[DEBUG 2019-11-05 19:16:26]host处理结果：  192.168.54.103
+[INFO 2019-11-05 19:16:26]请求接口：查看卷
+[INFO 2019-11-05 19:16:26]请求地址：http://192.168.54.103:8776/v2/ee792e64169344bf9ea2bf04199a3700/volumes/df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4
+[INFO 2019-11-05 19:16:26]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '5743938e3f284334876a8f6181bd6906'}
+[INFO 2019-11-05 19:16:26]请求参数: {'server': {'admin_state_up': True, 'name': 'yZJU0ijHS9qCPgKDwLxO_netwrok', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700'}}
+[INFO 2019-11-05 19:16:26]GET请求接口
+[INFO 2019-11-05 19:16:26]接口请求结果：
+ (200, {'volume': {'migration_status': None, 'attachments': [], 'links': [{'href': 'http://192.168.54.103:8776/v2/ee792e64169344bf9ea2bf04199a3700/volumes/df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'rel': 'self'}, {'href': 'http://192.168.54.103:8776/ee792e64169344bf9ea2bf04199a3700/volumes/df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'rel': 'bookmark'}], 'availability_zone': 'nova', 'os-vol-host-attr:host': 'cinder@cluster6#cluster6', 'encrypted': False, 'os-volume-replication:extended_status': None, 'replication_status': 'disabled', 'snapshot_id': None, 'id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'size': 1, 'user_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'os-vol-tenant-attr:tenant_id': 'ee792e64169344bf9ea2bf04199a3700', 'os-vol-mig-status-attr:migstat': None, 'metadata': {}, 'status': 'available', 'description': None, 'multiattach': False, 'os-volume-replication:driver_data': None, 'source_volid': None, 'consistencygroup_id': None, 'os-vol-mig-status-attr:name_id': None, 'name': 'volume_IUlf5uWb2wYSET7Ges9N', 'bootable': 'false', 'created_at': '2019-11-05T11:12:21.000000', 'volume_type': None}})
+[INFO 2019-11-05 19:17:12]初始化关联文件
+[DEBUG 2019-11-05 19:17:12]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:17:12]初始关联内容数据处理后：   {'name': '1', 'type': 'Web', 'version': 'bWLpxeiVf2', 'description': 'api_auto_0j8gk1afsS', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '5743938e3f284334876a8f6181bd6906', 'project_name': 'wumDVKT1epABIPtQzY7n', 'network_name': 'RUmkVndyrs6Y8QLhPSCu_netwrok', 'subnet_name': 'jsH8hJ1gMidLTuO0XRCK_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_K4hygdEHUlQvbYuLnjTa', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_iHCI5YsL8Xbu6wxqUepg', 'volume_id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[DEBUG 2019-11-05 19:17:12]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 19:17:12]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 19:17:12]处理认证参数
+[DEBUG 2019-11-05 19:17:12]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "8i3Kg95RvdqSDoesTbaF"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 19:17:12]获取token
+[DEBUG 2019-11-05 19:17:12]response：<Response [201]>
+[INFO 2019-11-05 19:17:12]成功获取token:cb459b04043b47a4a7325855268a7482
+[INFO 2019-11-05 19:17:12]保存token_id：cb459b04043b47a4a7325855268a7482到配置文件
+[INFO 2019-11-05 19:17:12]初始化关联文件
+[DEBUG 2019-11-05 19:17:12]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:17:12]初始关联内容数据处理后：   {'name': '1', 'type': 'Web', 'version': '9XjKONos4J', 'description': 'api_auto_ahgwsmPuqi', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': 'cb459b04043b47a4a7325855268a7482', 'project_name': 'Oa8rXcovP1hgkVxEYZKi', 'network_name': 'opCTYm4SB3lyzjFg0vdf_netwrok', 'subnet_name': 'QWndgxXej7NiALCP2vms_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_d4SfsZb5Oo82wktJMTXz', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_iKsMcI4gruFQvVmA7dbU', 'volume_id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 19:17:12]====================================================================================================
+[DEBUG 2019-11-05 19:17:12]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'cb459b04043b47a4a7325855268a7482'}
+[DEBUG 2019-11-05 19:17:12]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'cb459b04043b47a4a7325855268a7482'}
+[DEBUG 2019-11-05 19:17:12]host处理结果：  192.168.54.103
+[INFO 2019-11-05 19:17:12]请求接口：云主机与磁盘挂载
+[INFO 2019-11-05 19:17:12]请求地址：http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42/os-volume_attachments
+[INFO 2019-11-05 19:17:12]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': 'cb459b04043b47a4a7325855268a7482'}
+[INFO 2019-11-05 19:17:12]请求参数: {'volumeAttachment': {'volumeId': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4'}}
+[INFO 2019-11-05 19:17:12]POST请求接口
+[INFO 2019-11-05 19:17:13]接口请求结果：
+ (200, {'volumeAttachment': {'device': '/dev/sdb', 'serverId': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'volumeId': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4'}})
+[INFO 2019-11-05 19:17:43]初始化关联文件
+[DEBUG 2019-11-05 19:17:43]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:17:43]初始关联内容数据处理后：   {'name': '1', 'type': 'Web', 'version': 'rxNaySIUYV', 'description': 'api_auto_h8AJtpFbYD', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': 'cb459b04043b47a4a7325855268a7482', 'project_name': '4Ni68C5xenhzGEYoSKsy', 'network_name': 'U3M7JEpQBGXx90Thltuo_netwrok', 'subnet_name': 'hEqN6ZsLwW7JfQS5g1Py_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_zKRWFc3vl2VuLYdtrIEk', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_m80fMpiA9xl27ySwruDF', 'volume_id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 19:17:43]====================================================================================================
+[DEBUG 2019-11-05 19:17:43]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'cb459b04043b47a4a7325855268a7482'}
+[DEBUG 2019-11-05 19:17:43]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'cb459b04043b47a4a7325855268a7482'}
+[DEBUG 2019-11-05 19:17:43]host处理结果：  192.168.54.103
+[INFO 2019-11-05 19:17:43]请求接口：挂载后查看虚拟机
+[INFO 2019-11-05 19:17:43]请求地址：http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/${server_id}
+[INFO 2019-11-05 19:17:43]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': 'cb459b04043b47a4a7325855268a7482'}
+[INFO 2019-11-05 19:17:43]请求参数: {'volumeAttachment': {'volumeId': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4'}}
+[INFO 2019-11-05 19:17:43]GET请求接口
+[INFO 2019-11-05 19:17:43]接口请求结果：
+ (404, {'itemNotFound': {'message': 'Instance ${server_id} could not be found.', 'code': 404}})
+[ERROR 2019-11-05 19:17:43]statusCode error, expected_code is 200, statusCode is 404 
+[INFO 2019-11-05 19:17:43]初始化关联文件
+[DEBUG 2019-11-05 19:17:43]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:17:43]初始关联内容数据处理后：   {'name': '9', 'type': 'Web', 'version': '2mOD71alQv', 'description': 'api_auto_m8T1hqb3MA', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': 'cb459b04043b47a4a7325855268a7482', 'project_name': 'eRSd0KYkr9yvjqJI1EXW', 'network_name': 'ZKdFmSBgOoPJ6bRNpwik_netwrok', 'subnet_name': 'uh7Zqtx4AGi1gybWo35p_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_hj07mrUnMpyqE9ocXZax', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_UQIrqARLYCN51SbHxtyB', 'volume_id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 19:17:43]====================================================================================================
+[DEBUG 2019-11-05 19:17:43]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'cb459b04043b47a4a7325855268a7482'}
+[DEBUG 2019-11-05 19:17:43]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': 'cb459b04043b47a4a7325855268a7482'}
+[DEBUG 2019-11-05 19:17:43]host处理结果：  192.168.54.103
+[INFO 2019-11-05 19:17:43]请求接口：云主机与磁盘卸载
+[INFO 2019-11-05 19:17:43]请求地址：http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42/os-volume_attachments/df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4
+[INFO 2019-11-05 19:17:43]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': 'cb459b04043b47a4a7325855268a7482'}
+[INFO 2019-11-05 19:17:43]请求参数: {'volumeAttachment': {'volumeId': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4'}}
+[INFO 2019-11-05 19:17:43]DELETE请求接口
+[INFO 2019-11-05 19:17:44]接口请求结果：
+ (202, '')
+[INFO 2019-11-05 19:19:33]初始化关联文件
+[DEBUG 2019-11-05 19:19:33]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:19:33]初始关联内容数据处理后：   {'name': '0', 'type': 'Web', 'version': 'S9XxQsApDk', 'description': 'api_auto_DIHW0X5iRU', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': 'cb459b04043b47a4a7325855268a7482', 'project_name': 'xkvO6L2AdwIi5uSKQcF7', 'network_name': 'BE4v5ZeymSsqtTUWg7ou_netwrok', 'subnet_name': '2OEAmZ0IgQCRpoqLNH1f_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_0EDiC67fW9QdoPNxbY1t', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_CbkL9pMSJx2wAd0ZXaRF', 'volume_id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[DEBUG 2019-11-05 19:19:33]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 19:19:33]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 19:19:33]处理认证参数
+[DEBUG 2019-11-05 19:19:33]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "8i3Kg95RvdqSDoesTbaF"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 19:19:33]获取token
+[DEBUG 2019-11-05 19:19:33]response：<Response [201]>
+[INFO 2019-11-05 19:19:33]成功获取token:22aecbc0c4d941c5b4f9eae61b278fb7
+[INFO 2019-11-05 19:19:33]保存token_id：22aecbc0c4d941c5b4f9eae61b278fb7到配置文件
+[INFO 2019-11-05 19:19:33]初始化关联文件
+[DEBUG 2019-11-05 19:19:33]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:19:33]初始关联内容数据处理后：   {'name': '0', 'type': 'Web', 'version': 'DCIaS3RiJV', 'description': 'api_auto_HMpOyb9cL1', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '22aecbc0c4d941c5b4f9eae61b278fb7', 'project_name': '6NQnEvyUMajZi0GXw73S', 'network_name': 'qmTG9DhlvOJHUoEg02ac_netwrok', 'subnet_name': 'owc6L5h8efbKXWqHg7FD_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_5cb2lde8IAEkPiqxnQ7m', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_aTyk24YOipEtVHRrhuGz', 'volume_id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 19:19:33]====================================================================================================
+[DEBUG 2019-11-05 19:19:33]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '22aecbc0c4d941c5b4f9eae61b278fb7'}
+[DEBUG 2019-11-05 19:19:33]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '22aecbc0c4d941c5b4f9eae61b278fb7'}
+[DEBUG 2019-11-05 19:19:33]host处理结果：  192.168.54.103
+[INFO 2019-11-05 19:19:33]请求接口：云主机与磁盘挂载
+[INFO 2019-11-05 19:19:33]请求地址：http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42/os-volume_attachments
+[INFO 2019-11-05 19:19:33]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '22aecbc0c4d941c5b4f9eae61b278fb7'}
+[INFO 2019-11-05 19:19:33]请求参数: {'volumeAttachment': {'volumeId': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4'}}
+[INFO 2019-11-05 19:19:33]POST请求接口
+[INFO 2019-11-05 19:19:34]接口请求结果：
+ (200, {'volumeAttachment': {'device': '/dev/sdb', 'serverId': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'volumeId': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4'}})
+[INFO 2019-11-05 19:20:04]初始化关联文件
+[DEBUG 2019-11-05 19:20:04]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:20:04]初始关联内容数据处理后：   {'name': '9', 'type': 'Web', 'version': 'F0EIQnmj3z', 'description': 'api_auto_gd6tJsfb0U', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '22aecbc0c4d941c5b4f9eae61b278fb7', 'project_name': '9bIimD7YHCklf1B0uGAc', 'network_name': 'ndHN9LXmh8OMJgGb4pt5_netwrok', 'subnet_name': 'K4VAC5sv02WmGyePDq3J_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_4OHIRWaT2t9xMwQrkPjz', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_S0FsWlK8uwpRoP5geqxZ', 'volume_id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 19:20:04]====================================================================================================
+[DEBUG 2019-11-05 19:20:04]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '22aecbc0c4d941c5b4f9eae61b278fb7'}
+[DEBUG 2019-11-05 19:20:04]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '22aecbc0c4d941c5b4f9eae61b278fb7'}
+[DEBUG 2019-11-05 19:20:04]host处理结果：  192.168.54.103
+[INFO 2019-11-05 19:20:04]请求接口：挂载后查看虚拟机
+[INFO 2019-11-05 19:20:04]请求地址：http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42
+[INFO 2019-11-05 19:20:04]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '22aecbc0c4d941c5b4f9eae61b278fb7'}
+[INFO 2019-11-05 19:20:04]请求参数: {'volumeAttachment': {'volumeId': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4'}}
+[INFO 2019-11-05 19:20:04]GET请求接口
+[INFO 2019-11-05 19:20:04]接口请求结果：
+ (200, {'server': {'status': 'ACTIVE', 'updated': '2019-11-05T10:50:14Z', 'hostId': 'd857c4c3201b06a7f7c1f5a1382e258c9d3da738a665a49e0c4ee983', 'OS-EXT-SRV-ATTR:host': 'node-6.domain.tld', 'addresses': {'73EudXp9CBL84MJs2ZDK_netwrok': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:8e:91:46', 'version': 4, 'addr': '192.168.224.3', 'OS-EXT-IPS:type': 'fixed'}]}, 'links': [{'href': 'http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'rel': 'self'}, {'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'rel': 'bookmark'}], 'key_name': None, 'image': {'id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'links': [{'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/images/39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'rel': 'bookmark'}]}, 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-EXT-SRV-ATTR:instance_name': 'instance-00001856', 'OS-SRV-USG:launched_at': '2019-11-05T10:50:12.000000', 'OS-EXT-SRV-ATTR:hypervisor_hostname': 'domain-c84.a5047478-c4fb-4ce5-bf2c-67dbca6facd6', 'flavor': {'id': 'flavor-1-1-1', 'links': [{'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/flavors/flavor-1-1-1', 'rel': 'bookmark'}]}, 'id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'security_groups': [{'name': 'default'}], 'OS-SRV-USG:terminated_at': None, 'OS-EXT-AZ:availability_zone': 'node-6.domain.tld', 'user_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'name': 'wuzs_RIyZj2K8TvW6OzgoA9CB', 'created': '2019-11-05T10:49:32Z', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700', 'OS-DCF:diskConfig': 'MANUAL', 'os-extended-volumes:volumes_attached': [{'id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4'}], 'accessIPv4': '', 'accessIPv6': '', 'progress': 0, 'OS-EXT-STS:power_state': 1, 'config_drive': '', 'metadata': {'esxihostname': 'host-86'}}})
+[INFO 2019-11-05 19:20:05]初始化关联文件
+[DEBUG 2019-11-05 19:20:05]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:20:05]初始关联内容数据处理后：   {'name': '2', 'type': 'Web', 'version': 'zTn2X9h5UQ', 'description': 'api_auto_ltqE0ndAfK', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '22aecbc0c4d941c5b4f9eae61b278fb7', 'project_name': 'bAvTGtRHKZgSCO7Wxoj1', 'network_name': '4LdViOIq5RwjQWAlStFZ_netwrok', 'subnet_name': '8pBvaSutymFkAgJI72Ve_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_nqeMiBz2bGwApHQKfc41', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_9wiFc68zPx2dRYLkCSHU', 'volume_id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 19:25:19]初始化关联文件
+[DEBUG 2019-11-05 19:25:19]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:25:19]初始关联内容数据处理后：   {'name': '9', 'type': 'Web', 'version': 'p75GEYVJ6C', 'description': 'api_auto_zR3AEdZrLG', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '22aecbc0c4d941c5b4f9eae61b278fb7', 'project_name': 'P5Q3EqN7xOmcs6bW0Vvw', 'network_name': 'O6bMrRVhfSpHUKuqFBC3_netwrok', 'subnet_name': '9e6zyLWxF1Ilb83HZQfj_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_mgyPtfXcD3MZn0eIdHQ7', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_7J64qstLPTbndZ0Omwpl', 'volume_id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[DEBUG 2019-11-05 19:25:19]Headers：{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36', 'Content-Type': 'application/json'}
+[DEBUG 2019-11-05 19:25:19]login_url：http://192.168.54.103:5000/v3/auth/tokens
+[DEBUG 2019-11-05 19:25:19]处理认证参数
+[DEBUG 2019-11-05 19:25:19]param:{"auth": {"scope": {"project": {"domain":{"id": "default"},"name": "8i3Kg95RvdqSDoesTbaF"}}, "identity":{"password": {"user": {"domain":{"id": "default"},"password":"admin","name":"admin"}},"methods":["password"]}}}
+[INFO 2019-11-05 19:25:19]获取token
+[DEBUG 2019-11-05 19:25:19]response：<Response [201]>
+[INFO 2019-11-05 19:25:19]成功获取token:0ffd02bfd8c44565ae7595b2a9e42a40
+[INFO 2019-11-05 19:25:19]保存token_id：0ffd02bfd8c44565ae7595b2a9e42a40到配置文件
+[INFO 2019-11-05 19:25:19]初始化关联文件
+[DEBUG 2019-11-05 19:25:19]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:25:19]初始关联内容数据处理后：   {'name': '6', 'type': 'Web', 'version': 'hA8HSN3yj1', 'description': 'api_auto_OHLqQmUf5z', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '0ffd02bfd8c44565ae7595b2a9e42a40', 'project_name': 'xsWzOgu2PyGLAlYRrm0t', 'network_name': 'm8vCIEusTU3oJairdewO_netwrok', 'subnet_name': 'wA2M0Nsc4ZEbTdLgSIjH_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_rHwlUGVxyauzbBJP9oRq', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_McoQ5t1RUk8elBn4GJ0v', 'volume_id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 19:25:19]====================================================================================================
+[DEBUG 2019-11-05 19:25:19]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '0ffd02bfd8c44565ae7595b2a9e42a40'}
+[DEBUG 2019-11-05 19:25:19]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '0ffd02bfd8c44565ae7595b2a9e42a40'}
+[DEBUG 2019-11-05 19:25:19]host处理结果：  192.168.54.103
+[INFO 2019-11-05 19:25:19]请求接口：云主机与磁盘挂载
+[INFO 2019-11-05 19:25:19]请求地址：http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42/os-volume_attachments
+[INFO 2019-11-05 19:25:19]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '0ffd02bfd8c44565ae7595b2a9e42a40'}
+[INFO 2019-11-05 19:25:19]请求参数: {'volumeAttachment': {'volumeId': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4'}}
+[INFO 2019-11-05 19:25:19]POST请求接口
+[INFO 2019-11-05 19:25:20]接口请求结果：
+ (200, {'volumeAttachment': {'device': '/dev/sdb', 'serverId': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'volumeId': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4'}})
+[INFO 2019-11-05 19:25:50]初始化关联文件
+[DEBUG 2019-11-05 19:25:50]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:25:50]初始关联内容数据处理后：   {'name': '2', 'type': 'Web', 'version': 'HTjAqMUx9m', 'description': 'api_auto_xJyRKP3DbX', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '0ffd02bfd8c44565ae7595b2a9e42a40', 'project_name': 'z8GBJciErCtDyWwZgXhp', 'network_name': 'LkiaSWwPTugEyOXmKdCo_netwrok', 'subnet_name': 'Eg2hYRT1KAidDVtzm8a4_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_YZWVoO2xgw4R6EFmNj39', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_EVa4dLzQh3mCeMOlKnSi', 'volume_id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 19:25:50]====================================================================================================
+[DEBUG 2019-11-05 19:25:50]请求头处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '0ffd02bfd8c44565ae7595b2a9e42a40'}
+[DEBUG 2019-11-05 19:25:50]请求参数处理结果：  {'Content-Type': 'application/json', 'X-Auth-Token': '0ffd02bfd8c44565ae7595b2a9e42a40'}
+[DEBUG 2019-11-05 19:25:50]host处理结果：  192.168.54.103
+[INFO 2019-11-05 19:25:50]请求接口：挂载后查看虚拟机
+[INFO 2019-11-05 19:25:50]请求地址：http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42
+[INFO 2019-11-05 19:25:50]请求头: {'Content-Type': 'application/json', 'X-Auth-Token': '0ffd02bfd8c44565ae7595b2a9e42a40'}
+[INFO 2019-11-05 19:25:50]请求参数: {'volumeAttachment': {'volumeId': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4'}}
+[INFO 2019-11-05 19:25:50]GET请求接口
+[INFO 2019-11-05 19:25:50]接口请求结果：
+ (200, {'server': {'status': 'ACTIVE', 'updated': '2019-11-05T10:50:14Z', 'hostId': 'd857c4c3201b06a7f7c1f5a1382e258c9d3da738a665a49e0c4ee983', 'OS-EXT-SRV-ATTR:host': 'node-6.domain.tld', 'addresses': {'73EudXp9CBL84MJs2ZDK_netwrok': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:8e:91:46', 'version': 4, 'addr': '192.168.224.3', 'OS-EXT-IPS:type': 'fixed'}]}, 'links': [{'href': 'http://192.168.54.103:8774/v2/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'rel': 'self'}, {'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/servers/5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'rel': 'bookmark'}], 'key_name': None, 'image': {'id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'links': [{'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/images/39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'rel': 'bookmark'}]}, 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-EXT-SRV-ATTR:instance_name': 'instance-00001856', 'OS-SRV-USG:launched_at': '2019-11-05T10:50:12.000000', 'OS-EXT-SRV-ATTR:hypervisor_hostname': 'domain-c84.a5047478-c4fb-4ce5-bf2c-67dbca6facd6', 'flavor': {'id': 'flavor-1-1-1', 'links': [{'href': 'http://192.168.54.103:8774/ee792e64169344bf9ea2bf04199a3700/flavors/flavor-1-1-1', 'rel': 'bookmark'}]}, 'id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'security_groups': [{'name': 'default'}], 'OS-SRV-USG:terminated_at': None, 'OS-EXT-AZ:availability_zone': 'node-6.domain.tld', 'user_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'name': 'wuzs_RIyZj2K8TvW6OzgoA9CB', 'created': '2019-11-05T10:49:32Z', 'tenant_id': 'ee792e64169344bf9ea2bf04199a3700', 'OS-DCF:diskConfig': 'MANUAL', 'os-extended-volumes:volumes_attached': [{'id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4'}], 'accessIPv4': '', 'accessIPv6': '', 'progress': 0, 'OS-EXT-STS:power_state': 1, 'config_drive': '', 'metadata': {'esxihostname': 'host-86'}}})
+[INFO 2019-11-05 19:25:50]初始化关联文件
+[DEBUG 2019-11-05 19:25:50]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:25:50]初始关联内容数据处理后：   {'name': '0', 'type': 'Web', 'version': '25xMYqkDNj', 'description': 'api_auto_Stuh7fKFvQ', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '0ffd02bfd8c44565ae7595b2a9e42a40', 'project_name': 'o7RBta9KOUrmT6xYMZlc', 'network_name': 'CfVyxiGmFZ06PMndWIuL_netwrok', 'subnet_name': 'dOauTqoRzM5hGH6BjnIZ_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_bs5drxY6LRiBz841jZpM', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_8RHQiwNL3a5cWbruTfnP', 'volume_id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}
+[INFO 2019-11-05 19:25:50]初始化关联文件
+[DEBUG 2019-11-05 19:25:50]读取初始关联文件内容：   ItemsView(<Section: test_data>)
+[DEBUG 2019-11-05 19:25:50]初始关联内容数据处理后：   {'name': '0', 'type': 'Web', 'version': '6rfS072Yie', 'description': 'api_auto_giKzSIHvUr', 'project_id': 'ee792e64169344bf9ea2bf04199a3700', 'token_id': '0ffd02bfd8c44565ae7595b2a9e42a40', 'project_name': '8WC9s2tRIVYh7znep1uo', 'network_name': 'zAYoFJca1q5uTPZgStn8_netwrok', 'subnet_name': 'dSkyJgfIcKuFC7QsP5Y9_subnet', 'network_id': '35f0e316-85ac-4346-bff6-f5663836aa9b', 'subnet_id': '8d01fdfe-4b29-4f05-bf6b-8238d7f3b582', 'image_id': '39c5aa0b-66b1-4871-a7d4-62ab6ceee946', 'flavor_id': 'flavor-1-1-1', 'server_name': 'wuzs_L5CgmIWizfSaV1bl8jOv', 'server_id': '5b117a85-98d5-40a5-a0b0-cf0c92f0eb42', 'project_token_name': '8i3Kg95RvdqSDoesTbaF', 'admin_id': 'f42a1487dd4e4a6baab6eb65f50f8db0', 'admin_role_id': 'f8d49cf5c0d74f7b85c462219b300f78', 'volume_name': 'volume_ywE0AVItkQpJ26zXv5iH', 'volume_id': 'df8fc8bc-4084-4b0d-b6c6-94fc6be77fd4', 'server_snap_name': 'snap_8JkrX4yjSduLBPHcmTxC', 'server_snap_id': '', 'volume_snapshot_id': '38b5852e-c20d-41c8-a623-fac063c92dc2', 'network_name_for_check': '73EudXp9CBL84MJs2ZDK_netwrok'}

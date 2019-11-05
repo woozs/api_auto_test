@@ -23,9 +23,8 @@ from Common import CheckResult
 
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CASE_PATH = BASE_PATH + "\\Params\\Param"
+CASE_PATH = BASE_PATH + "\\Params\\Param\\subnet"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
-
 case_dict = load_yaml.load_case(CASE_PATH+"\\delete_subnet.yaml")
 
 
@@ -43,7 +42,6 @@ class Test_Delete_Subnet:
         cls.token.save_token()
         cls.log = Log.MyLog()
         cls.Assert =  Assert.Assertions()
-        #
 
     def setup(self):
         self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
@@ -80,9 +78,6 @@ class Test_Delete_Subnet:
 
         CheckResult.check(case_data["test_name"], case_data["check"][0], code, data, self.relevance, CASE_PATH,
                           self.result)
-
-
-
 
 
 if __name__ == "__main__":

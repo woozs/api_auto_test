@@ -1,19 +1,8 @@
 {
-  "total" : 16,
+  "total" : 13,
   "items" : [ {
-    "uid" : "e82208ab6da8af253a1c71c814ae4c68",
-    "name" : "删除卷快照",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "e2805faeee4b8b330a36eb85c661d23f",
-    "name" : "删除虚拟机快照",
+    "uid" : "74d374e96c0823170e72f0c5206be3e0",
+    "name" : "创建卷快照",
     "statistic" : {
       "failed" : 1,
       "broken" : 0,
@@ -34,26 +23,37 @@
       "total" : 1
     }
   }, {
-    "uid" : "a00ef6751516f3881f5c242bc6a1655a",
-    "name" : "创建项目",
+    "uid" : "1f2c708793b72adb13c26a9c573856ef",
+    "name" : "项目",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     }
   }, {
-    "uid" : "f449fbd33f6afca97245a2d5586de2e4",
-    "name" : "创建网络",
+    "uid" : "f918be4b4e7656d150782af28bec1e83",
+    "name" : "网络",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
+    }
+  }, {
+    "uid" : "cd8cd2df752f222f750667b858cabc75",
+    "name" : "虚拟机快照",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
     }
   }, {
     "uid" : "b9943c397e34131fa61cc7d4133d0091",
@@ -100,8 +100,8 @@
       "total" : 1
     }
   }, {
-    "uid" : "74d374e96c0823170e72f0c5206be3e0",
-    "name" : "创建卷快照",
+    "uid" : "1e25bba0351fe1e8d5c8e4b85d717f98",
+    "name" : "创建云主机快照",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

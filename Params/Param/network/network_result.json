@@ -1,0 +1,35 @@
+[{
+	"json": [{
+		"network": {
+			"status": "ACTIVE",
+			"subnets": [],
+			"provider:physical_network": "physnet2",
+			"admin_state_up": true,
+			"router:external": false,
+			"qos_policy_id": null,
+			"shared": false,
+			"provider:network_type": "vlan"
+		}
+	}
+    ],
+
+	"test_name": "创建网络"
+},
+	{
+	"json": [{
+		"network": {
+			"status": "ACTIVE",
+			"subnets": [],
+			"provider:physical_network": "physnet2",
+			"admin_state_up": true,
+			"router:external": false,
+			"qos_policy_id": null,
+			"shared": false,
+			"provider:network_type": "vlan"
+		}
+	}
+    ],
+
+	"test_name": "查看网络"
+}
+]

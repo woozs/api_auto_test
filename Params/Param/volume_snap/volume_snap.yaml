@@ -1,0 +1,58 @@
+testinfo:
+      id: test_08_volume_snap_get       # 用例ID， 用于识别     string
+      title: 创建卷快照                # 用例标题，在报告中作为一级目录显示  必填 string
+      port: 8776        # 请求的域名，可写死，也可写成模板关联host配置文件  选填（此处不填，每条用例必填） string
+      address: /v2/${project_id}$/snapshots # 请求地址 选填（此处不填，每条用例必填） string
+
+# 前置条件，case之前需关联的接口
+premise:
+
+# 测试用例
+test_case:
+      # 第一条case，info可不填
+    - test_name: 创建卷快照          # 必填，parameter为文件路径时
+      info: 创建卷快照
+      http_type: http          # 请求协议
+      request_type: post      # 请求类型
+      parameter_type: raw     # 参数类型
+      address:  /v2/${project_id}$/snapshots
+      headers:                # 请求头
+            Content-Type: application/json
+            X-Auth-Token: ${token_id}$
+      timeout: 20
+      sleep_time: 0
+      parameter:
+        snapshot:
+          name: Volume_$RandomString(20)$
+          description: Daily backup
+          volume_id: ${volume_id}$
+          force: true
+      file: false
+      check:             # 校验列表  list or dict
+          - check_type: json # 校验类型 string   不校验时 datebase， expected_code, expected_request 均可不填
+            datebase:
+            expected_code: 202
+            expected_request: volume_snap_result.json
+      relevance:  # 关联键
+
+    - test_name: 查询卷快照          # 必填，parameter为文件路径时
+      info: 创建后查询卷快照
+      http_type: http          # 请求协议
+      request_type: get      # 请求类型
+      parameter_type: raw     # 参数类型
+      address:  /v2/${project_id}$/snapshots/${volume_snapshot_id}$
+      headers:                # 请求头
+        Content-Type: application/json
+        X-Auth-Token: ${token_id}$
+      timeout: 20
+      sleep_time: 60
+      parameter:
+        snapshot:
+          name: Volume_$RandomString(20)$
+      file: false
+      check:             # 校验列表  list or dict
+        - check_type: json # 校验类型 string   不校验时 datebase， expected_code, expected_request 均可不填
+          datebase:
+          expected_code: 200
+          expected_request: volume_snap_result.json
+      relevance:  # 关联键

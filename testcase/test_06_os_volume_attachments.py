@@ -20,16 +20,12 @@ from Common import CheckResult
 
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CASE_PATH = BASE_PATH + "\\Params\\Param"
+CASE_PATH = BASE_PATH + "\\Params\\Param\\os_volume_attach_detach"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
-
-case_dict = load_yaml.load_case(CASE_PATH+"\\Os_Volume_Attachments.yaml")
-
+case_dict = load_yaml.load_case(CASE_PATH+"\\os_volume_attac_and_detach.yaml")
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
 class Test_Os_Volume_Attachments:
-
-
     @classmethod
     def setup_class(cls):
         #初始化用例参数，将全局变量替换成配置文件中得变量
@@ -40,19 +36,14 @@ class Test_Os_Volume_Attachments:
         cls.token.save_token()
         cls.log = Log.MyLog()
         cls.Assert =  Assert.Assertions()
-        #
 
     def setup(self):
         self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
 
-
-        # self.relevance = init.ini_request(case_dict, self.relevance, PATH, self.result)
-
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
     @allure.story("虚拟机挂载和卸载")
-    # @pytest.mark.scenarios_8(1)
+    @pytest.mark.flaky(reruns=3)
     def test_os_volume_attachments(self,case_data):
-
         # 参数化修改test_os_volume_attachments注释
         for k, v in enumerate(case_dict["test_case"]):  # 遍历用例文件中所有用例的索引和值
             try:
@@ -66,6 +57,8 @@ class Test_Os_Volume_Attachments:
             # 查看类变量result的值，如果未False，则前一接口校验错误，此接口标记未失败，节约测试时间
             pytest.xfail("前置接口测试失败，此接口标记为失败")
 
+        if case_data["request_type"] == "get":
+            time.sleep(case_data["sleep_time"])
         #send_request(_data, _host, _address,_port, _relevance, path, _success)
         code, data = requestSend.send_request(case_data, case_dict["testinfo"].get("host"),
                                               case_dict["testinfo"].get("address"),str(case_dict["testinfo"].get("port")), self.relevance, CASE_PATH, self.result)
@@ -75,10 +68,6 @@ class Test_Os_Volume_Attachments:
         # 完整校验
         CheckResult.check(case_data["test_name"], case_data["check"][0], code, data, self.relevance, CASE_PATH,
                           self.result)
-        if case_data["request_type"] == "post":
-            time.sleep(case_data["sleep_time"])
-
-
 
 
 

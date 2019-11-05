@@ -1,0 +1,63 @@
+
+
+testinfo:
+      id: test_04_create_server        # 用例ID， 用于识别     string
+      title: 虚拟机                # 用例标题，在报告中作为一级目录显示  必填 string
+      port: 8774          # 请求的域名，可写死，也可写成模板关联host配置文件  选填（此处不填，每条用例必填） string
+      address: /v2/${project_id}$/servers # 请求地址 选填（此处不填，每条用例必填） string
+
+premise:
+
+# 测试用例
+test_case:
+    - test_name: 创建虚拟机
+      info: 创建虚拟机
+      sleep_time: 1
+      http_type: http
+      request_type: post
+      parameter_type: raw
+      address:  /v2/${project_id}$/servers
+      headers:
+            Content-Type: application/json
+            X-Auth-Token: ${token_id}$
+      timeout: 20
+      parameter:
+        server:
+          imageRef: ${image_id}$
+          flavorRef: ${flavor_id}$
+          name: ${server_name}$
+          networks:
+            - uuid: ${network_id}$
+      file: false
+      check:
+          - check_type: only_check_status
+            datebase:
+            expected_code: 202
+            expected_request: server_result.json
+      relevance:
+
+    - test_name: 查看虚拟机
+      sleep_time: 40
+      info: 创建后查询虚拟机
+      http_type: http
+      request_type: get
+      parameter_type: raw
+      address:  /v2/${project_id}$/servers/${server_id}$
+      headers:
+        Content-Type: application/json
+        X-Auth-Token: ${token_id}$
+      timeout: 20
+      parameter:
+        server:
+          admin_state_up: true
+          name: ${network_name}$
+          tenant_id:  ${project_id}$
+      file: false
+      check:
+          - check_type: json
+            datebase:
+            expected_code: 200
+            expected_request: server_result.json
+      relevance:
+
+

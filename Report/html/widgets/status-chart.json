@@ -1,291 +1,311 @@
 [ {
-  "uid" : "511b5e3e0d184d2",
-  "name" : "test_os_volume_attachments[case_data0]",
+  "uid" : "b0e7c99f424b86a0",
+  "name" : "test_server_snap[case_data0]",
   "time" : {
-    "start" : 1572790302250,
-    "stop" : 1572790323019,
-    "duration" : 20769
+    "start" : 1572958255431,
+    "stop" : 1572958260829,
+    "duration" : 5398
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b5918122059989f4",
-  "name" : "test_project_crate[case_data0]",
+  "uid" : "af35e86724054fe7",
+  "name" : "test_delete_network[case_data1]",
   "time" : {
-    "start" : 1572790154003,
-    "stop" : 1572790154087,
-    "duration" : 84
+    "start" : 1572958298639,
+    "stop" : 1572958300695,
+    "duration" : 2056
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7b22634158a1ed52",
-  "name" : "test_server[case_data0]",
-  "time" : {
-    "start" : 1572790157674,
-    "stop" : 1572790159553,
-    "duration" : 1879
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "38c826b63caf2c66",
-  "name" : "test_get_server_snap[case_data0]",
-  "time" : {
-    "start" : 1572790325753,
-    "stop" : 1572790325948,
-    "duration" : 195
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d26c100bc5cc7f92",
-  "name" : "test_delete_volume[case_data0]",
-  "time" : {
-    "start" : 1572790408742,
-    "stop" : 1572790408960,
-    "duration" : 218
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "2a267f98a2b2a3ab",
-  "name" : "test_volume[case_data1]",
-  "time" : {
-    "start" : 1572790281703,
-    "stop" : 1572790302024,
-    "duration" : 20321
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "444feaf6a5a144cc",
-  "name" : "test_server[case_data0]",
-  "time" : {
-    "start" : 1572790388833,
-    "stop" : 1572790390226,
-    "duration" : 1393
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d361a8292d8f9ca5",
-  "name" : "test_subnet[case_data0]",
-  "time" : {
-    "start" : 1572790157063,
-    "stop" : 1572790157350,
-    "duration" : 287
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7cfa4d15f65eeb81",
-  "name" : "test_delete_project[case_data0]",
-  "time" : {
-    "start" : 1572790409310,
-    "stop" : 1572790410039,
-    "duration" : 729
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b6333a69517a9a19",
-  "name" : "test_delete_project[case_data1]",
-  "time" : {
-    "start" : 1572790410057,
-    "stop" : 1572790410094,
-    "duration" : 37
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8dad47ba6b88bbab",
-  "name" : "test_delete_subnet[case_data1]",
-  "time" : {
-    "start" : 1572790401755,
-    "stop" : 1572790403892,
-    "duration" : 2137
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "818b9e54a7f3b7e0",
-  "name" : "test_delete_subnet[case_data0]",
-  "time" : {
-    "start" : 1572790400602,
-    "stop" : 1572790401728,
-    "duration" : 1126
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a26763e429039b22",
-  "name" : "test_server[case_data1]",
-  "time" : {
-    "start" : 1572790390241,
-    "stop" : 1572790400362,
-    "duration" : 10121
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "caa0b1a1021d8ce1",
-  "name" : "test_network[case_data0]",
-  "time" : {
-    "start" : 1572790154408,
-    "stop" : 1572790156729,
-    "duration" : 2321
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a765dcd998bc64a9",
-  "name" : "test_volume[case_data0]",
-  "time" : {
-    "start" : 1572790281303,
-    "stop" : 1572790281687,
-    "duration" : 384
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a9e958df263b440",
+  "uid" : "777a9ce946a44500",
   "name" : "test_volume_snap[case_data0]",
   "time" : {
-    "start" : 1572790323986,
-    "stop" : 1572790324248,
-    "duration" : 262
+    "start" : 1572957981685,
+    "stop" : 1572957982131,
+    "duration" : 446
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d32021ef45159376",
-  "name" : "test_volume_snap[case_data1]",
-  "time" : {
-    "start" : 1572790324268,
-    "stop" : 1572790324523,
-    "duration" : 255
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6fd80e216381e8bb",
-  "name" : "test_server[case_data1]",
-  "time" : {
-    "start" : 1572790240727,
-    "stop" : 1572790281036,
-    "duration" : 40309
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "51c94e6edaf1ee23",
+  "uid" : "bcf44a48c1cfe3c0",
   "name" : "test_volume_snap_delete[case_data1]",
   "time" : {
-    "start" : 1572790357644,
-    "stop" : 1572790367716,
-    "duration" : 10072
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "f8448a329991f3f8",
-  "name" : "test_delete_volume[case_data1]",
-  "time" : {
-    "start" : 1572790408985,
-    "stop" : 1572790408985,
+    "start" : 1572958255221,
+    "stop" : 1572958255221,
     "duration" : 0
   },
   "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "b756ece3113e7ce4",
-  "name" : "test_volume_snap_delete[case_data0]",
+  "uid" : "b466a7d8d7abe6f4",
+  "name" : "test_delete_subnet[case_data1]",
   "time" : {
-    "start" : 1572790326203,
-    "stop" : 1572790326459,
-    "duration" : 256
+    "start" : 1572958294005,
+    "stop" : 1572958296146,
+    "duration" : 2141
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d48cdf30ba9772e2",
-  "name" : "test_delete_network[case_data1]",
-  "time" : {
-    "start" : 1572790406438,
-    "stop" : 1572790408499,
-    "duration" : 2061
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c80100fe76ad0d5d",
-  "name" : "test_subnet[case_data1]",
-  "time" : {
-    "start" : 1572790157356,
-    "stop" : 1572790157427,
-    "duration" : 71
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "fd8fad8ddd2134e0",
-  "name" : "test_server_snap[case_data1]",
-  "time" : {
-    "start" : 1572790368554,
-    "stop" : 1572790388600,
-    "duration" : 20046
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e6ce7a88e175af88",
-  "name" : "test_server_snap[case_data0]",
-  "time" : {
-    "start" : 1572790324740,
-    "stop" : 1572790325511,
-    "duration" : 771
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "97c0794f1ff4a800",
-  "name" : "test_network[case_data1]",
-  "time" : {
-    "start" : 1572790156747,
-    "stop" : 1572790156820,
-    "duration" : 73
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "33f37520799d1062",
-  "name" : "test_os_volume_attachments[case_data1]",
-  "time" : {
-    "start" : 1572790323039,
-    "stop" : 1572790323771,
-    "duration" : 732
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7b42b297464f8068",
+  "uid" : "e99445ba5e26eeb9",
   "name" : "test_delete_network[case_data0]",
   "time" : {
-    "start" : 1572790404136,
-    "stop" : 1572790406421,
-    "duration" : 2285
+    "start" : 1572958296396,
+    "stop" : 1572958298634,
+    "duration" : 2238
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "636b4b0de15f1ff8",
-  "name" : "test_server_snap[case_data0]",
+  "uid" : "858cde8d4d2321b1",
+  "name" : "test_server[case_data1]",
   "time" : {
-    "start" : 1572790368465,
-    "stop" : 1572790368522,
-    "duration" : 57
+    "start" : 1572957905676,
+    "stop" : 1572957946260,
+    "duration" : 40584
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3ed3f0d97c8cfa22",
+  "name" : "test_project_crate[case_data0]",
+  "time" : {
+    "start" : 1572957818862,
+    "stop" : 1572957818945,
+    "duration" : 83
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "32e352b63d4e8979",
+  "name" : "test_volume_snap_delete[case_data2]",
+  "time" : {
+    "start" : 1572958255231,
+    "stop" : 1572958255231,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "fbad12f868f3e11f",
+  "name" : "test_subnet[case_data0]",
+  "time" : {
+    "start" : 1572957821971,
+    "stop" : 1572957822199,
+    "duration" : 228
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33641d8c8d9ad8fd",
+  "name" : "test_network[case_data1]",
+  "time" : {
+    "start" : 1572957821534,
+    "stop" : 1572957821776,
+    "duration" : 242
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ea6835ae664a2be",
+  "name" : "test_delete_volume[case_data0]",
+  "time" : {
+    "start" : 1572958300920,
+    "stop" : 1572958301266,
+    "duration" : 346
   },
   "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b03e7cf34e44164",
+  "name" : "test_server_snap[case_data1]",
+  "time" : {
+    "start" : 1572958260841,
+    "stop" : 1572958280975,
+    "duration" : 20134
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d15d618aa89a9b4",
+  "name" : "test_server[case_data0]",
+  "time" : {
+    "start" : 1572958281241,
+    "stop" : 1572958282632,
+    "duration" : 1391
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e3eae02ca0ac7692",
+  "name" : "test_get_server_snap[case_data0]",
+  "time" : {
+    "start" : 1572958224567,
+    "stop" : 1572958234768,
+    "duration" : 10201
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd1ff44ccefecba0",
+  "name" : "test_server[case_data1]",
+  "time" : {
+    "start" : 1572958282646,
+    "stop" : 1572958292769,
+    "duration" : 10123
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "361d2bde0524b41b",
+  "name" : "test_server_snap[case_data0]",
+  "time" : {
+    "start" : 1572958223760,
+    "stop" : 1572958224353,
+    "duration" : 593
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63a61c4863e72bad",
+  "name" : "test_delete_subnet[case_data0]",
+  "time" : {
+    "start" : 1572958292982,
+    "stop" : 1572958293986,
+    "duration" : 1004
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "531da4a658371815",
+  "name" : "test_delete_project[case_data0]",
+  "time" : {
+    "start" : 1572958301531,
+    "stop" : 1572958305523,
+    "duration" : 3992
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "addf5e76bbefc01f",
+  "name" : "test_network[case_data0]",
+  "time" : {
+    "start" : 1572957819262,
+    "stop" : 1572957821522,
+    "duration" : 2260
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a457ef956c731ab",
+  "name" : "test_delete_volume[case_data1]",
+  "time" : {
+    "start" : 1572958301309,
+    "stop" : 1572958301309,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "389d431825538468",
+  "name" : "test_os_volume_attachments[case_data0]",
+  "time" : {
+    "start" : 1572957967386,
+    "stop" : 1572957968163,
+    "duration" : 777
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d3d9af1155b3540e",
+  "name" : "test_os_volume_attachments[case_data1]",
+  "time" : {
+    "start" : 1572957968179,
+    "stop" : 1572957978481,
+    "duration" : 10302
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90bb5a4d1cf61ebb",
+  "name" : "test_volume[case_data1]",
+  "time" : {
+    "start" : 1572957946801,
+    "stop" : 1572957967134,
+    "duration" : 20333
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bf8f1def545b128",
+  "name" : "test_volume_snap[case_data1]",
+  "time" : {
+    "start" : 1572958163455,
+    "stop" : 1572958223529,
+    "duration" : 60074
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "8b733e24ff8c513",
+  "name" : "test_delete_project[case_data1]",
+  "time" : {
+    "start" : 1572958305550,
+    "stop" : 1572958305579,
+    "duration" : 29
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "746a8c6fae01fa91",
+  "name" : "test_server[case_data0]",
+  "time" : {
+    "start" : 1572957822452,
+    "stop" : 1572957824465,
+    "duration" : 2013
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70e078be0aece591",
+  "name" : "test_os_volume_attachments[case_data2]",
+  "time" : {
+    "start" : 1572957980828,
+    "stop" : 1572957981454,
+    "duration" : 626
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e2bcef68399fde01",
+  "name" : "test_volume[case_data0]",
+  "time" : {
+    "start" : 1572957946466,
+    "stop" : 1572957946796,
+    "duration" : 330
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40fc4c12f7944807",
+  "name" : "test_subnet[case_data1]",
+  "time" : {
+    "start" : 1572957822205,
+    "stop" : 1572957822255,
+    "duration" : 50
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "20027c3400a21f85",
+  "name" : "test_volume_snap_delete[case_data0]",
+  "time" : {
+    "start" : 1572958255209,
+    "stop" : 1572958255209,
+    "duration" : 0
+  },
+  "status" : "skipped",
   "severity" : "normal"
 } ]

@@ -1,4 +1,24 @@
 {
+  "01dedf1e084d08bf210b8c479776ec7c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "32e352b63d4e8979",
+      "status" : "skipped",
+      "statusDetails" : "_pytest.outcomes.XFailed: 前置接口测试失败，此接口标记为失败",
+      "time" : {
+        "start" : 1572958255231,
+        "stop" : 1572958255231,
+        "duration" : 0
+      }
+    } ]
+  },
   "9f595785de957de96af8e6951248e995" : {
     "statistic" : {
       "failed" : 0,
@@ -9,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7b42b297464f8068",
+      "uid" : "e99445ba5e26eeb9",
       "status" : "passed",
       "time" : {
-        "start" : 1572790404136,
-        "stop" : 1572790406421,
-        "duration" : 2285
+        "start" : 1572958296396,
+        "stop" : 1572958298634,
+        "duration" : 2238
       }
     } ]
   },
@@ -28,12 +48,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e6ce7a88e175af88",
+      "uid" : "361d2bde0524b41b",
       "status" : "passed",
       "time" : {
-        "start" : 1572790324740,
-        "stop" : 1572790325511,
-        "duration" : 771
+        "start" : 1572958223760,
+        "stop" : 1572958224353,
+        "duration" : 593
       }
     } ]
   },
@@ -47,12 +67,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a9e958df263b440",
+      "uid" : "777a9ce946a44500",
       "status" : "passed",
       "time" : {
-        "start" : 1572790323986,
-        "stop" : 1572790324248,
-        "duration" : 262
+        "start" : 1572957981685,
+        "stop" : 1572957982131,
+        "duration" : 446
       }
     } ]
   },
@@ -66,12 +86,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7cfa4d15f65eeb81",
+      "uid" : "531da4a658371815",
       "status" : "passed",
       "time" : {
-        "start" : 1572790409310,
-        "stop" : 1572790410039,
-        "duration" : 729
+        "start" : 1572958301531,
+        "stop" : 1572958305523,
+        "duration" : 3992
       }
     } ]
   },
@@ -85,31 +105,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "fd8fad8ddd2134e0",
+      "uid" : "3b03e7cf34e44164",
       "status" : "passed",
       "time" : {
-        "start" : 1572790368554,
-        "stop" : 1572790388600,
-        "duration" : 20046
+        "start" : 1572958260841,
+        "stop" : 1572958280975,
+        "duration" : 20134
       }
     } ]
   },
   "54a00ab16a9c473babfa9237f451cc5c" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d32021ef45159376",
-      "status" : "passed",
+      "uid" : "bf8f1def545b128",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: JSON格式校验，关键字 available 不在返回结果 {'status': 'error', 'metadata': {}, 'os-extended-snapshot-attributes:progress': '0%', 'name': 'Volume_hYk5Hs6x9dr8D2mOlatf', 'volume_id': '0af5c051-f29c-4194-850a-6d7544d3ab93', 'os-extended-snapshot-attributes:project_id': '395b6fc25b1d485880eaf54b171e461f', 'created_at': '2019-11-05T12:42:37.000000', 'size': 1, 'id': '6f61315a-c3f5-434f-875f-1976ce9308e7', 'description': 'Daily backup'}",
       "time" : {
-        "start" : 1572790324268,
-        "stop" : 1572790324523,
-        "duration" : 255
+        "start" : 1572958163455,
+        "stop" : 1572958223529,
+        "duration" : 60074
       }
     } ]
   },
@@ -123,12 +144,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "97c0794f1ff4a800",
+      "uid" : "33641d8c8d9ad8fd",
       "status" : "passed",
       "time" : {
-        "start" : 1572790156747,
-        "stop" : 1572790156820,
-        "duration" : 73
+        "start" : 1572957821534,
+        "stop" : 1572957821776,
+        "duration" : 242
       }
     } ]
   },
@@ -142,12 +163,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "33f37520799d1062",
+      "uid" : "d3d9af1155b3540e",
       "status" : "passed",
       "time" : {
-        "start" : 1572790323039,
-        "stop" : 1572790323771,
-        "duration" : 732
+        "start" : 1572957968179,
+        "stop" : 1572957978481,
+        "duration" : 10302
       }
     } ]
   },
@@ -161,12 +182,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7b22634158a1ed52",
+      "uid" : "746a8c6fae01fa91",
       "status" : "passed",
       "time" : {
-        "start" : 1572790157674,
-        "stop" : 1572790159553,
-        "duration" : 1879
+        "start" : 1572957822452,
+        "stop" : 1572957824465,
+        "duration" : 2013
       }
     } ]
   },
@@ -180,12 +201,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8dad47ba6b88bbab",
+      "uid" : "b466a7d8d7abe6f4",
       "status" : "passed",
       "time" : {
-        "start" : 1572790401755,
-        "stop" : 1572790403892,
-        "duration" : 2137
+        "start" : 1572958294005,
+        "stop" : 1572958296146,
+        "duration" : 2141
       }
     } ]
   },
@@ -199,12 +220,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a26763e429039b22",
+      "uid" : "cd1ff44ccefecba0",
       "status" : "passed",
       "time" : {
-        "start" : 1572790390241,
-        "stop" : 1572790400362,
-        "duration" : 10121
+        "start" : 1572958282646,
+        "stop" : 1572958292769,
+        "duration" : 10123
       }
     } ]
   },
@@ -218,12 +239,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "818b9e54a7f3b7e0",
+      "uid" : "63a61c4863e72bad",
       "status" : "passed",
       "time" : {
-        "start" : 1572790400602,
-        "stop" : 1572790401728,
-        "duration" : 1126
+        "start" : 1572958292982,
+        "stop" : 1572958293986,
+        "duration" : 1004
       }
     } ]
   },
@@ -237,12 +258,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "511b5e3e0d184d2",
+      "uid" : "389d431825538468",
       "status" : "passed",
       "time" : {
-        "start" : 1572790302250,
-        "stop" : 1572790323019,
-        "duration" : 20769
+        "start" : 1572957967386,
+        "stop" : 1572957968163,
+        "duration" : 777
       }
     } ]
   },
@@ -256,12 +277,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b5918122059989f4",
+      "uid" : "3ed3f0d97c8cfa22",
       "status" : "passed",
       "time" : {
-        "start" : 1572790154003,
-        "stop" : 1572790154087,
-        "duration" : 84
+        "start" : 1572957818862,
+        "stop" : 1572957818945,
+        "duration" : 83
       }
     } ]
   },
@@ -275,12 +296,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "38c826b63caf2c66",
+      "uid" : "e3eae02ca0ac7692",
       "status" : "passed",
       "time" : {
-        "start" : 1572790325753,
-        "stop" : 1572790325948,
-        "duration" : 195
+        "start" : 1572958224567,
+        "stop" : 1572958234768,
+        "duration" : 10201
+      }
+    } ]
+  },
+  "d296b6c1962d030fd46bb3e7f361476e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bcf44a48c1cfe3c0",
+      "status" : "skipped",
+      "statusDetails" : "_pytest.outcomes.XFailed: 前置接口测试失败，此接口标记为失败",
+      "time" : {
+        "start" : 1572958255221,
+        "stop" : 1572958255221,
+        "duration" : 0
       }
     } ]
   },
@@ -294,33 +335,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d26c100bc5cc7f92",
+      "uid" : "2ea6835ae664a2be",
       "status" : "failed",
       "statusDetails" : "AssertionError: http状态码错误！\n 400 != 202",
       "time" : {
-        "start" : 1572790408742,
-        "stop" : 1572790408960,
-        "duration" : 218
-      }
-    } ]
-  },
-  "d296b6c1962d030fd46bb3e7f361476e" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "51c94e6edaf1ee23",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: http状态码错误！\n 200 != 404",
-      "time" : {
-        "start" : 1572790357644,
-        "stop" : 1572790367716,
-        "duration" : 10072
+        "start" : 1572958300920,
+        "stop" : 1572958301266,
+        "duration" : 346
       }
     } ]
   },
@@ -334,32 +355,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d361a8292d8f9ca5",
+      "uid" : "fbad12f868f3e11f",
       "status" : "passed",
       "time" : {
-        "start" : 1572790157063,
-        "stop" : 1572790157350,
-        "duration" : 287
+        "start" : 1572957821971,
+        "stop" : 1572957822199,
+        "duration" : 228
       }
     } ]
   },
   "f04319492a13d975aa68bd929faf8bc0" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "636b4b0de15f1ff8",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: http状态码错误！\n 404 != 202",
+      "uid" : "b0e7c99f424b86a0",
+      "status" : "passed",
       "time" : {
-        "start" : 1572790368465,
-        "stop" : 1572790368522,
-        "duration" : 57
+        "start" : 1572958255431,
+        "stop" : 1572958260829,
+        "duration" : 5398
       }
     } ]
   },
@@ -373,12 +393,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "444feaf6a5a144cc",
+      "uid" : "d15d618aa89a9b4",
       "status" : "passed",
       "time" : {
-        "start" : 1572790388833,
-        "stop" : 1572790390226,
-        "duration" : 1393
+        "start" : 1572958281241,
+        "stop" : 1572958282632,
+        "duration" : 1391
       }
     } ]
   },
@@ -392,12 +412,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d48cdf30ba9772e2",
+      "uid" : "af35e86724054fe7",
       "status" : "passed",
       "time" : {
-        "start" : 1572790406438,
-        "stop" : 1572790408499,
-        "duration" : 2061
+        "start" : 1572958298639,
+        "stop" : 1572958300695,
+        "duration" : 2056
       }
     } ]
   },
@@ -411,12 +431,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f8448a329991f3f8",
+      "uid" : "a457ef956c731ab",
       "status" : "skipped",
       "statusDetails" : "_pytest.outcomes.XFailed: 前置接口测试失败，此接口标记为失败",
       "time" : {
-        "start" : 1572790408985,
-        "stop" : 1572790408985,
+        "start" : 1572958301309,
+        "stop" : 1572958301309,
         "duration" : 0
       }
     } ]
@@ -431,12 +451,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "caa0b1a1021d8ce1",
+      "uid" : "addf5e76bbefc01f",
       "status" : "passed",
       "time" : {
-        "start" : 1572790154408,
-        "stop" : 1572790156729,
-        "duration" : 2321
+        "start" : 1572957819262,
+        "stop" : 1572957821522,
+        "duration" : 2260
       }
     } ]
   },
@@ -450,12 +470,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b6333a69517a9a19",
+      "uid" : "8b733e24ff8c513",
       "status" : "passed",
       "time" : {
-        "start" : 1572790410057,
-        "stop" : 1572790410094,
-        "duration" : 37
+        "start" : 1572958305550,
+        "stop" : 1572958305579,
+        "duration" : 29
       }
     } ]
   },
@@ -469,12 +489,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a765dcd998bc64a9",
+      "uid" : "e2bcef68399fde01",
       "status" : "passed",
       "time" : {
-        "start" : 1572790281303,
-        "stop" : 1572790281687,
-        "duration" : 384
+        "start" : 1572957946466,
+        "stop" : 1572957946796,
+        "duration" : 330
       }
     } ]
   },
@@ -482,18 +502,19 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
+      "skipped" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b756ece3113e7ce4",
-      "status" : "passed",
+      "uid" : "20027c3400a21f85",
+      "status" : "skipped",
+      "statusDetails" : "_pytest.outcomes.XFailed: 前置接口测试失败，此接口标记为失败",
       "time" : {
-        "start" : 1572790326203,
-        "stop" : 1572790326459,
-        "duration" : 256
+        "start" : 1572958255209,
+        "stop" : 1572958255209,
+        "duration" : 0
       }
     } ]
   },
@@ -507,12 +528,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6fd80e216381e8bb",
+      "uid" : "858cde8d4d2321b1",
       "status" : "passed",
       "time" : {
-        "start" : 1572790240727,
-        "stop" : 1572790281036,
-        "duration" : 40309
+        "start" : 1572957905676,
+        "stop" : 1572957946260,
+        "duration" : 40584
       }
     } ]
   },
@@ -526,12 +547,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2a267f98a2b2a3ab",
+      "uid" : "90bb5a4d1cf61ebb",
       "status" : "passed",
       "time" : {
-        "start" : 1572790281703,
-        "stop" : 1572790302024,
-        "duration" : 20321
+        "start" : 1572957946801,
+        "stop" : 1572957967134,
+        "duration" : 20333
       }
     } ]
   },
@@ -545,12 +566,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c80100fe76ad0d5d",
+      "uid" : "40fc4c12f7944807",
       "status" : "passed",
       "time" : {
-        "start" : 1572790157356,
-        "stop" : 1572790157427,
-        "duration" : 71
+        "start" : 1572957822205,
+        "stop" : 1572957822255,
+        "duration" : 50
+      }
+    } ]
+  },
+  "92d098aa519aac7a2fb45918b0c680c9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "70e078be0aece591",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572957980828,
+        "stop" : 1572957981454,
+        "duration" : 626
       }
     } ]
   }

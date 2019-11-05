@@ -19,7 +19,7 @@ from Common import Log
 from Common import CheckResult
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CASE_PATH = BASE_PATH + "\\Params\\Param"
+CASE_PATH = BASE_PATH + "\\Params\\Param\\server"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
 
 case_dict = load_yaml.load_case(CASE_PATH+"\\delete_server.yaml")
@@ -43,9 +43,6 @@ class Test_Server:
     def setup(self):
         self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
 
-
-        # self.relevance = init.ini_request(case_dict, self.relevance, PATH, self.result)
-
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
     @allure.story("虚拟机")
     @pytest.mark.flaky(reruns=3)
@@ -66,11 +63,12 @@ class Test_Server:
         time.sleep(case_data["sleep_time"])
         #send_request(_data, _host, _address,_port, _relevance, path, _success)
         code, data = requestSend.send_request(case_data, case_dict["testinfo"].get("host"),
-                                              case_dict["testinfo"].get("address"),str(case_dict["testinfo"].get("port")), self.relevance, CASE_PATH, self.result)
-
-        CheckResult.check(case_data["test_name"], case_data["check"][0], code, data, self.relevance, CASE_PATH,
+                                              case_dict["testinfo"].get("address"),
+                                              str(case_dict["testinfo"].get("port")),
+                                              self.relevance, CASE_PATH, self.result)
+        CheckResult.check(case_data["test_name"], case_data["check"][0], code, data,
+                          self.relevance, CASE_PATH,
                           self.result)
-
 
 if __name__ == "__main__":
     pytest.main(["-s", "test_12_delete_server.py"])

@@ -6,22 +6,20 @@
 # @File    : test_09_get_server_snap.py
 # @Software: PyCharm
 
-import allure
-import pytest
-import os
-
+import os,time
+import allure,pytest
 from Common import Assert
 from unit import load_yaml, Token
 from Common import requestSend
+from Conf.Config import Config
 from Conf import ConfRelevance
 from Common import Log
 from Common import CheckResult
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CASE_PATH = BASE_PATH + "\\Params\\Param"
+CASE_PATH = BASE_PATH + "\\Params\\Param\\server_snapshot"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
-
-case_dict = load_yaml.load_case(CASE_PATH + "\\Get_server_snap.yaml")
+case_dict = load_yaml.load_case(CASE_PATH + "\\get_server_snap.yaml")
 
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
@@ -37,7 +35,6 @@ class Test_Get_Server_Snap:
         cls.token.save_token()
         cls.log = Log.MyLog()
         cls.Assert = Assert.Assertions()
-        #
 
     def setup(self):
         self.relevance = ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
@@ -46,9 +43,8 @@ class Test_Get_Server_Snap:
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
     @allure.story("查看虚拟机快照")
-
+    @pytest.mark.flaky(reruns=3)
     def test_get_server_snap(self, case_data):
-
         # 参数化修改test_add_project 注释
         for k, v in enumerate(case_dict["test_case"]):  # 遍历用例文件中所有用例的索引和值
             try:
@@ -62,6 +58,9 @@ class Test_Get_Server_Snap:
             # 查看类变量result的值，如果未False，则前一接口校验错误，此接口标记未失败，节约测试时间
             pytest.xfail("前置接口测试失败，此接口标记为失败")
 
+        if case_data["request_type"] == "get":
+            time.sleep(case_data["sleep_time"])
+
         # send_request(_data, _host, _address,_port, _relevance, path, _success)
         code, data = requestSend.send_request(case_data, case_dict["testinfo"].get("host"),
                                               case_dict["testinfo"].get("address"),
@@ -72,9 +71,10 @@ class Test_Get_Server_Snap:
         # 完整校验
         CheckResult.check(case_data["test_name"], case_data["check"][0], code, data, self.relevance, CASE_PATH,
                           self.result)
-
-
-
+        server_snap_id = data["images"][0]["id"]
+        self.log.info("保存Volume_id到全局配置文件")
+        conf = Config()
+        conf.set_conf("test_data", "server_snap_id", server_snap_id)
 
 if __name__ == "__main__":
     pytest.main(["-s", "test_09_get_server_snap.py"])

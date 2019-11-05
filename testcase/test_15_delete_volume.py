@@ -6,15 +6,6 @@
 # @File    : test_15_delete_volume.py
 # @Software: PyCharm
 
-
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Time    : 2019/10/29 9:57
-# @Author  : mrwuzs
-# @Site    : 
-# @File    : test_14_delete_volume.py
-# @Software: PyCharm
-
 import allure
 import pytest
 import os
@@ -30,7 +21,7 @@ from Common import CheckResult
 
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CASE_PATH = BASE_PATH + "\\Params\\Param"
+CASE_PATH = BASE_PATH + "\\Params\\Param\\volume"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
 
 case_dict = load_yaml.load_case(CASE_PATH+"\\delete_volume.yaml")
@@ -55,8 +46,6 @@ class Test_Delete_volume:
     def setup(self):
         self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
 
-
-        # self.relevance = init.ini_request(case_dict, self.relevance, PATH, self.result)
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
     @allure.story("卷")
@@ -84,10 +73,6 @@ class Test_Delete_volume:
 
         CheckResult.check(case_data["test_name"], case_data["check"][0], code, data, self.relevance, CASE_PATH,
                           self.result)
-
-
-
-
 
 if __name__ == "__main__":
     pytest.main(["-s", "test_15_delete_volume.py"])

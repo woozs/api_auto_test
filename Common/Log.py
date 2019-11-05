@@ -43,12 +43,14 @@ def set_handler(levels):
     if levels == 'error':
         logger.addHandler(MyLog.err_handler)
     logger.addHandler(MyLog.handler)
+    logger.addHandler(MyLog.ch_handler)
 
 
 def remove_handler(levels):
     if levels == 'error':
         logger.removeHandler(MyLog.err_handler)
     logger.removeHandler(MyLog.handler)
+    logger.removeHandler(MyLog.ch_handler)
 
 
 def get_current_time():
@@ -57,7 +59,7 @@ def get_current_time():
 
 class MyLog:
     path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    log_file = path+'/Log/log.log'
+    log_file = path+'/Log/'+'%s'%(time.strftime('%Y-%m-%d'))+'.log'
     err_file = path+'/Log/err.log'
     logger.setLevel(LEVELS.get(level, logging.NOTSET))
     create_file(log_file)
@@ -66,6 +68,9 @@ class MyLog:
 
     handler = logging.FileHandler(log_file, encoding='utf-8')
     err_handler = logging.FileHandler(err_file, encoding='utf-8')
+
+    ch_handler = logging.StreamHandler()
+    ch_handler.setLevel(logging.DEBUG)
 
     @staticmethod
     def debug(log_meg):
