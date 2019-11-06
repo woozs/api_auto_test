@@ -1,6 +1,6 @@
 testinfo:
       id: test_10_delete_volume_snap
-      title: 删除卷快照
+      title: 卷快照
       port: 8776
       address: /v2/${project_id}$/snapshots/${volume_snapshot_id}$
 
@@ -18,7 +18,7 @@ test_case:
             Content-Type: application/json
             X-Auth-Token: ${token_id}$
           timeout: 20
-          sleep_time: 20
+          sleep_time: 60
           parameter:
             volume:
               size: 1

@@ -37,7 +37,7 @@ class Test_Subnet:
 
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
-    @allure.story("子网")
+    @allure.story("创建和查询子网")
     # @pytest.mark.scenarios_3(1)
     def test_subnet(self,case_data):
 

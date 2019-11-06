@@ -42,7 +42,7 @@ class Test_Delete_network:
         self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
-    @allure.story("网络")
+    @allure.story("删除网络")
     # @pytest.mark.scenarios_3(1)
     def test_delete_network(self,case_data):
 

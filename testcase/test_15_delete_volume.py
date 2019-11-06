@@ -48,8 +48,8 @@ class Test_Delete_volume:
 
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
-    @allure.story("卷")
-    # @pytest.mark.scenarios_3(1)
+    @allure.story("删除卷")
+    @pytest.mark.flaky(reruns=3)
     def test_delete_volume(self,case_data):
 
         # 参数化修改test_add_project 注释
@@ -65,14 +65,17 @@ class Test_Delete_volume:
             # 查看类变量result的值，如果未False，则前一接口校验错误，此接口标记未失败，节约测试时间
             pytest.xfail("前置接口测试失败，此接口标记为失败")
 
-        time.sleep(case_data["sleep_time"])
+        if case_data["request_type"] == "get":
+            time.sleep(case_data["sleep_time"])
 
         #send_request(_data, _host, _address,_port, _relevance, path, _success)
         code, data = requestSend.send_request(case_data, case_dict["testinfo"].get("host"),
-                                              case_dict["testinfo"].get("address"),str(case_dict["testinfo"].get("port")), self.relevance, CASE_PATH, self.result)
-
+                                              case_dict["testinfo"].get("address"),
+                                              str(case_dict["testinfo"].get("port")),
+                                              self.relevance, CASE_PATH, self.result)
         CheckResult.check(case_data["test_name"], case_data["check"][0], code, data, self.relevance, CASE_PATH,
                           self.result)
+
 
 if __name__ == "__main__":
     pytest.main(["-s", "test_15_delete_volume.py"])

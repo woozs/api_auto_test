@@ -39,7 +39,7 @@ class Test_Server_Snap:
         self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
-    @allure.story("虚拟机快照")
+    @allure.story("删除虚拟机快照")
     @pytest.mark.flaky(reruns=3)
     def test_server_snap(self,case_data):
         for k, v in enumerate(case_dict["test_case"]):  # 遍历用例文件中所有用例的索引和值

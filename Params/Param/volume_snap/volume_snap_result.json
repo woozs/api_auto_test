@@ -1,4 +1,13 @@
-[{
+[
+	{
+	"json": [{
+	"volume": {
+        "status": "available"
+    }
+	}],
+	"test_name": "创建卷快照前查询"
+},
+	{
 	"json": [{
 	"snapshot": {
 		"volume_id": "${volume_id}$"

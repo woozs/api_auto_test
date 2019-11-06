@@ -55,8 +55,6 @@ class Test_Server_Snap:
                                               case_dict["testinfo"].get("address"),str(case_dict["testinfo"].get("port")), self.relevance, CASE_PATH, self.result)
         expected_code = case_data["check"][0]["expected_code"]
         self.Assert.assert_code(code,expected_code)
-        print(data)
-
 
 
 if __name__ == "__main__":

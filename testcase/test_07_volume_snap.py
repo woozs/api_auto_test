@@ -36,10 +36,9 @@ class Test_Volume_Snap:
         self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
-    @allure.story("卷快照")
+    @allure.story("创建卷快照")
     @pytest.mark.flaky(reruns=3)
     def test_volume_snap(self,case_data):
-
         # 参数化修改test_add_project 注释
         for k, v in enumerate(case_dict["test_case"]):  # 遍历用例文件中所有用例的索引和值
             try:
@@ -52,7 +51,6 @@ class Test_Volume_Snap:
         if not self.result["result"]:
             # 查看类变量result的值，如果未False，则前一接口校验错误，此接口标记未失败，节约测试时间
             pytest.xfail("前置接口测试失败，此接口标记为失败")
-
         if case_data["request_type"] == "get":
             time.sleep(case_data["sleep_time"])
 
@@ -61,9 +59,8 @@ class Test_Volume_Snap:
                                               str(case_dict["testinfo"].get("port")),
                                               self.relevance, CASE_PATH, self.result)
         expected_code = case_data["check"][0]["expected_code"]
-        snapshot_id = data["snapshot"]["id"]
-
         if case_data["request_type"] == "post":
+            snapshot_id = data["snapshot"]["id"]
             self.log.info("保存volume_snapshot_id到全局配置文件")
             conf = Config()
             conf.set_conf("test_data", "volume_snapshot_id", snapshot_id)

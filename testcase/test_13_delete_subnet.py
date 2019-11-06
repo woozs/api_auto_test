@@ -50,7 +50,7 @@ class Test_Delete_Subnet:
         # self.relevance = init.ini_request(case_dict, self.relevance, PATH, self.result)
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
-    @allure.story("子网")
+    @allure.story("删除子网")
     # @pytest.mark.scenarios_3(1)
     def test_delete_subnet(self,case_data):
 

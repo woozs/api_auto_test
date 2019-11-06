@@ -44,7 +44,7 @@ class Test_Server:
         self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
-    @allure.story("虚拟机")
+    @allure.story("删除虚拟机")
     @pytest.mark.flaky(reruns=3)
     def test_server(self,case_data):
 

@@ -6,7 +6,6 @@ testinfo:
 premise:
 
 test_case:
-
     - test_name: 创建网络
       info: 创建网络
       http_type: http
