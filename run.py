@@ -33,9 +33,6 @@ if __name__ == '__main__':
     conf = Config.Config()
     log = Log.MyLog()
     log.info('初始化配置文件, path=' + conf.conf_path)
-
-    # 将token存入到配置文件
-
     shell = Shell.Shell()
     xml_report_path = conf.xml_report_path
     html_report_path = conf.html_report_path
@@ -49,9 +46,7 @@ if __name__ == '__main__':
     pytest.main(args)
     cmd = 'allure generate %s -o %s  --clean' % (
         xml_report_path, html_report_path)
-    print(cmd)
     log.info("执行allure，生成测试报告")
-
     try:
         shell.invoke(cmd)
     except Exception:
@@ -66,6 +61,6 @@ if __name__ == '__main__':
             log.error('发送邮件失败，请检查邮件配置')
             raise
     elif conf.send == "no":
-        log.info("配置为不发送邮件")
+        log.info("配置为发送邮件")
     else:
         raise RuntimeError('配置文件错误:send只能为"yes" or "no"')

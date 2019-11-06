@@ -41,9 +41,7 @@ class SendMail:
         toclause = receivers.split(',')
         msg['To'] = ",".join(toclause)
         # msg.attach(mail_body)
-
         msg.attach(mail_body2)
-
         try:
             smtp = smtplib.SMTP()
             smtp.connect(self.config.smtpserver)
