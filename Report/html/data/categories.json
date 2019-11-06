@@ -1,43 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "AssertionError: JSON格式校验，关键字 available 不在返回结果 {'status': 'error', 'metadata': {}, 'os-extended-snapshot-attributes:progress': '0%', 'name': 'Volume_hYk5Hs6x9dr8D2mOlatf', 'volume_id': '0af5c051-f29c-4194-850a-6d7544d3ab93', 'os-extended-snapshot-attributes:project_id': '395b6fc25b1d485880eaf54b171e461f', 'created_at': '2019-11-05T12:42:37.000000', 'size': 1, 'id': '6f61315a-c3f5-434f-875f-1976ce9308e7', 'description': 'Daily backup'}",
-      "children" : [ {
-        "name" : "test_volume_snap[case_data1]",
-        "uid" : "bf8f1def545b128",
-        "parentUid" : "f51d0b480ad629c63291efb4fd7aafb5",
-        "status" : "failed",
-        "time" : {
-          "start" : 1572958163455,
-          "stop" : 1572958223529,
-          "duration" : 60074
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'test_name': '查询卷快照', 'info': '创建后查询卷快照', 'http_type': 'http', 'request_type': 'get', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/snapshots/${volume_snapshot_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': 'e84279c9335148f29b1e0f16d2b67bb6'}, 'timeout': 20, 'sleep_time': 60, 'parameter': {'snapshot': {'name': 'Volume_alNutrM7Vsed43fihvbF'}}, 'file': False, 'check': [{'check_type': 'json', 'datebase': None, 'expected_code': 200, 'expected_request': 'volume_snap_result.json'}], 'relevance': None}" ]
-      } ],
-      "uid" : "f51d0b480ad629c63291efb4fd7aafb5"
-    }, {
-      "name" : "AssertionError: http状态码错误！\n 400 != 202",
-      "children" : [ {
-        "name" : "test_delete_volume[case_data0]",
-        "uid" : "2ea6835ae664a2be",
-        "parentUid" : "3c4957db627513c2a4181318f1e0e571",
-        "status" : "failed",
-        "time" : {
-          "start" : 1572958300920,
-          "stop" : 1572958301266,
-          "duration" : 346
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'test_name': '删除卷', 'info': '删除卷', 'http_type': 'http', 'request_type': 'delete', 'parameter_type': 'raw', 'address': '/v2/${project_id}$/volumes/${volume_id}$', 'headers': {'Content-Type': 'application/json', 'X-Auth-Token': '${token_id}$'}, 'timeout': 20, 'sleep_time': 0, 'parameter': {'volume': {'size': 1, 'name': '${volume_name}$'}}, 'file': False, 'check': [{'check_type': 'only_check_status', 'datebase': None, 'expected_code': 202, 'expected_request': {}}], 'relevance': None}" ]
-      } ],
-      "uid" : "3c4957db627513c2a4181318f1e0e571"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ]
+  "children" : [ ]
 }
