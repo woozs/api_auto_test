@@ -10,7 +10,7 @@ import re
 
 import allure
 
-from Common import CheckJson, expectedManage, CustomFail
+from Common import CheckJson, ExpectedManage, CustomFail
 from run import failureException
 
 
@@ -36,7 +36,7 @@ def check(test_name, case_data, code, data, relevance, _path, success):
         expected_request = case_data["expected_request"]
         # 判断预期结果格式，如果是字符串，则打开文件路径，提取保存在文件中的期望结果
         if isinstance(case_data["expected_request"], str):
-                expected_request = expectedManage.read_json(test_name, expected_request, relevance, _path, success)
+                expected_request = ExpectedManage.read_json(test_name, expected_request, relevance, _path, success)
         with allure.step("JSON格式校验"):
             allure.attach("期望code", str(case_data["expected_code"]))
             allure.attach('期望data', str(expected_request))
@@ -75,7 +75,7 @@ def check(test_name, case_data, code, data, relevance, _path, success):
         expected_request = case_data["expected_request"]
         # 判断预期结果格式，如果是字符串，则打开文件路径，提取保存在文件中的期望结果
         if isinstance(case_data["expected_request"], str):
-            expected_request = expectedManage.read_json(test_name, expected_request, relevance, _path, success)
+            expected_request = ExpectedManage.read_json(test_name, expected_request, relevance, _path, success)
         with allure.step("完全校验"):
             allure.attach("期望code", str(case_data["expected_code"]))
             allure.attach('期望data', str(expected_request))

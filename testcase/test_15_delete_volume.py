@@ -6,26 +6,17 @@
 # @File    : test_15_delete_volume.py
 # @Software: PyCharm
 
-import allure
-import pytest
-import os
-import time
+import os, time
+import allure, pytest
 
-
-from Common import Assert
-from unit import load_yaml, Token
-from Common import requestSend
+from unit import LoadYaml, Token
 from Conf import  ConfRelevance
-from Common import Log
-from Common import CheckResult
-
+from Common import Assert, RequestSend, CheckResult, Log
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 CASE_PATH = BASE_PATH + "\\Params\\Param\\volume"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
-
-case_dict = load_yaml.load_case(CASE_PATH+"\\delete_volume.yaml")
-
+case_dict = LoadYaml.load_case(CASE_PATH + "\\delete_volume.yaml")
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
 class Test_Delete_volume:
@@ -64,16 +55,18 @@ class Test_Delete_volume:
         if not self.result["result"]:
             # 查看类变量result的值，如果未False，则前一接口校验错误，此接口标记未失败，节约测试时间
             pytest.xfail("前置接口测试失败，此接口标记为失败")
-
         if case_data["request_type"] == "get":
             time.sleep(case_data["sleep_time"])
-
         #send_request(_data, _host, _address,_port, _relevance, path, _success)
-        code, data = requestSend.send_request(case_data, case_dict["testinfo"].get("host"),
+        code, data = RequestSend.send_request(case_data,
+                                              case_dict["testinfo"].get("host"),
                                               case_dict["testinfo"].get("address"),
                                               str(case_dict["testinfo"].get("port")),
                                               self.relevance, CASE_PATH, self.result)
-        CheckResult.check(case_data["test_name"], case_data["check"][0], code, data, self.relevance, CASE_PATH,
+        CheckResult.check(case_data["test_name"],
+                          case_data["check"][0],
+                          code, data,
+                          self.relevance, CASE_PATH,
                           self.result)
 
 

@@ -3,7 +3,7 @@
 # @Time    : 2019/10/9 14:16
 # @Author  : mrwuzs
 # @Site    : 
-# @File    : confighttp.py
+# @File    : ConfigHttp.py
 # @Software: PyCharm
 
 import json

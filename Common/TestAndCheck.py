@@ -8,7 +8,7 @@
 
 import allure
 
-from Common import requestSend, init, CheckResult
+from Common import RequestSend, Init, CheckResult
 
 
 def api_send_check(case_data, project_dict, relevance, rel, _path, result):
@@ -23,7 +23,7 @@ def api_send_check(case_data, project_dict, relevance, rel, _path, result):
     :return:
     """
     # 发送请求并获取code， data
-    code, data = requestSend.send_request(case_data, project_dict["testinfo"].get("host"),
+    code, data = RequestSend.send_request(case_data, project_dict["testinfo"].get("host"),
                                           project_dict["testinfo"].get("address"), relevance, _path, result)
     # 校验测试结果
     with allure.step("校验测试结果"):
@@ -34,7 +34,7 @@ def api_send_check(case_data, project_dict, relevance, rel, _path, result):
     else:
         CheckResult.check(case_data["test_name"], case_data["check"], code, data, relevance, _path, result)
     # 记录关联值
-    init.get_relevance(data, case_data["relevance"], rel)
+    Init.get_relevance(data, case_data["relevance"], rel)
 
 
 if __name__ == "__main__":

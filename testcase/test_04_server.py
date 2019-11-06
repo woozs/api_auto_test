@@ -10,13 +10,13 @@ import os,time
 import allure,pytest
 from Conf.Config import Config
 from Conf import  ConfRelevance
-from unit import load_yaml, Token
-from Common import requestSend,Log,CheckResult,Assert
+from unit import LoadYaml, Token
+from Common import RequestSend,Log,CheckResult,Assert
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 CASE_PATH = BASE_PATH + "\\Params\\Param\\server"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
-case_dict = load_yaml.load_case(CASE_PATH+"\\create_server.yaml")
+case_dict = LoadYaml.load_case(CASE_PATH + "\\create_server.yaml")
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
 class Test_Server:
@@ -51,8 +51,8 @@ class Test_Server:
             # 查看类变量result的值，如果未False，则前一接口校验错误，此接口标记未失败，节约测试时间
             pytest.xfail("前置接口测试失败，此接口标记为失败")
 
-        code, data = requestSend.send_request(case_data, case_dict["testinfo"].get("host"),
-                                              case_dict["testinfo"].get("address"),str(case_dict["testinfo"].get("port")), self.relevance, CASE_PATH, self.result)
+        code, data = RequestSend.send_request(case_data, case_dict["testinfo"].get("host"),
+                                              case_dict["testinfo"].get("address"), str(case_dict["testinfo"].get("port")), self.relevance, CASE_PATH, self.result)
         expected_code = case_data["check"][0]["expected_code"]
         server_id = data["server"]["id"]
         self.Assert.assert_code(code,expected_code)

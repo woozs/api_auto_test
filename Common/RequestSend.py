@@ -3,13 +3,13 @@
 # @Time    : 2019/10/9 14:14
 # @Author  : mrwuzs
 # @Site    : 
-# @File    : requestSend.py
+# @File    : RequestSend.py
 # @Software: PyCharm
 
 
 import allure
 from Common.Log import  MyLog as  logging
-from Common import confighttp, HostManage, ReadParam, ParamManage
+from Common import ConfigHttp, HostManage, ReadParam, ParamManage
 from Conf import  Config
 
 failureException = AssertionError
@@ -60,7 +60,7 @@ def send_request(data, host, address,port ,relevance, _path, success):
                 allure.attach("请求地址", data["http_type"] + "://" + host + ":"+ port+address)
                 allure.attach("请求头", str(header))
                 allure.attach("请求参数", str(parameter))
-            result = confighttp.post(header=header,
+            result = ConfigHttp.post(header=header,
                                      address=data["http_type"] + "://" + host + ":"+ port+address,
                                      request_parameter_type=data["parameter_type"], files=parameter,
                                      timeout=data["timeout"])
@@ -71,7 +71,7 @@ def send_request(data, host, address,port ,relevance, _path, success):
                 allure.attach("请求头", str(header))
                 allure.attach("请求参数", str(parameter))
             logging.info("POST请求接口")
-            result = confighttp.post(header=header, address=data["http_type"] + "://" + host + ":"+ port+address,
+            result = ConfigHttp.post(header=header, address=data["http_type"] + "://" + host + ":" + port + address,
                                      request_parameter_type=data["parameter_type"], data=parameter,
                                      timeout=data["timeout"])
     elif data["request_type"].lower() == 'get':
@@ -81,7 +81,7 @@ def send_request(data, host, address,port ,relevance, _path, success):
             allure.attach("请求头", str(header))
             allure.attach("请求参数", str(parameter))
         logging.info("GET请求接口")
-        result = confighttp.get(header=header, address=data["http_type"] + "://" + host + ":"+ port+address,
+        result = ConfigHttp.get(header=header, address=data["http_type"] + "://" + host + ":" + port + address,
                                 data=parameter, timeout=data["timeout"])
     elif data["request_type"].lower() == "put":
         if data["file"]:
@@ -91,7 +91,7 @@ def send_request(data, host, address,port ,relevance, _path, success):
                 allure.attach("请求头", str(header))
                 allure.attach("请求参数", str(parameter))
             logging.info("PUT上传文件")
-            result = confighttp.put(header=header,
+            result = ConfigHttp.put(header=header,
                                     address=data["http_type"] + "://" + host + ":"+ port+address,
                                     request_parameter_type=data["parameter_type"], files=parameter,
                                     timeout=data["timeout"])
@@ -102,7 +102,7 @@ def send_request(data, host, address,port ,relevance, _path, success):
                 allure.attach("请求头", str(header))
                 allure.attach("请求参数", str(parameter))
             logging.info("PUT请求接口")
-            result = confighttp.put(header=header, address=data["http_type"] + "://" + host + ":"+ port+address,
+            result = ConfigHttp.put(header=header, address=data["http_type"] + "://" + host + ":" + port + address,
                                     request_parameter_type=data["parameter_type"], data=parameter,
                                     timeout=data["timeout"])
     elif data["request_type"].lower() == "delete":
@@ -112,7 +112,7 @@ def send_request(data, host, address,port ,relevance, _path, success):
             allure.attach("请求头", str(header))
             allure.attach("请求参数", str(parameter))
         logging.info("DELETE请求接口")
-        result = confighttp.delete(header=header, address=data["http_type"] + "://" + host + ":"+ port+address,
+        result = ConfigHttp.delete(header=header, address=data["http_type"] + "://" + host + ":" + port + address,
                                    data=parameter, timeout=data["timeout"])
     else:
         result = {"code": False, "data": False}

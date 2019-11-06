@@ -3,7 +3,7 @@
 # @Time    : 2019/10/20 19:36
 # @Author  : mrwuzs
 # @Site    : 
-# @File    : initialize_Env.py
+# @File    : InitializeEnv.py
 # @Software: PyCharm
 
 import os

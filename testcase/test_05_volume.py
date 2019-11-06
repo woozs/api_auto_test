@@ -13,8 +13,8 @@ import time
 
 from Conf.Config import Config
 from Common import Assert
-from unit import load_yaml, Token
-from Common import requestSend
+from unit import LoadYaml, Token
+from Common import RequestSend
 from Conf import  ConfRelevance
 from Common import Log
 from Common import CheckResult
@@ -23,7 +23,7 @@ from Common import CheckResult
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 CASE_PATH = BASE_PATH + "\\Params\\Param\\volume"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
-case_dict = load_yaml.load_case(CASE_PATH+"\\volume.yaml")
+case_dict = LoadYaml.load_case(CASE_PATH + "\\volume.yaml")
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
 class Test_Volume:
@@ -62,7 +62,7 @@ class Test_Volume:
             pytest.xfail("前置接口测试失败，此接口标记为失败")
         time.sleep(case_data["sleep_time"])
         #send_request(_data, _host, _address,_port, _relevance, path, _success)
-        code, data = requestSend.send_request(case_data, case_dict["testinfo"].get("host"),
+        code, data = RequestSend.send_request(case_data, case_dict["testinfo"].get("host"),
                                               case_dict["testinfo"].get("address"),
                                               str(case_dict["testinfo"].get("port")),
                                               self.relevance, CASE_PATH, self.result)

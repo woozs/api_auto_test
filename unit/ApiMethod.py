@@ -3,7 +3,7 @@
 # @Time    : 2019/10/9 16:25
 # @Author  : mrwuzs
 # @Site    : 
-# @File    : apiMethod.py
+# @File    : ApiMethod.py
 # @Software: PyCharm
 
 import json

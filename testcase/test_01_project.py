@@ -12,8 +12,8 @@ import os
 
 from Conf.Config import Config
 from Common import Assert
-from unit import load_yaml, Token,add_Role_admin
-from Common import requestSend
+from unit import LoadYaml, Token,Add_Role_Admin
+from Common import RequestSend
 from Conf import  ConfRelevance
 from Common import Log
 
@@ -22,7 +22,7 @@ BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 CASE_PATH = BASE_PATH + "\\Params\\Param\\project"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
 
-case_dict = load_yaml.load_case(CASE_PATH+"\\create_project.yaml")
+case_dict = LoadYaml.load_case(CASE_PATH + "\\create_project.yaml")
 
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
@@ -50,7 +50,7 @@ class TestAddProject:
     def teardown_class(cls):
         with allure.step("新建项目赋权"):
             cls.log.info("给新建项目赋权")
-            role =  add_Role_admin.Project_Add_Rule()
+            role =  Add_Role_Admin.Project_Add_Rule()
             role.project_add_role()
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
@@ -70,7 +70,7 @@ class TestAddProject:
             pytest.xfail("前置接口测试失败，此接口标记为失败")
 
         #send_request(_data, _host, _address,_port, _relevance, path, _success)
-        code, data = requestSend.send_request(case_data, case_dict["testinfo"].get("host"),
+        code, data = RequestSend.send_request(case_data, case_dict["testinfo"].get("host"),
                                               case_dict["testinfo"].get("address"),
                                               str(case_dict["testinfo"].get("port")),
                                               self.relevance, CASE_PATH, self.result)

@@ -3,7 +3,7 @@
 # @Time    : 2019/10/9 14:05
 # @Author  : mrwuzs
 # @Site    : 
-# @File    : init.py
+# @File    : Init.py
 # @Software: PyCharm
 
 import time
@@ -11,7 +11,7 @@ import time
 import allure
 
 from Common.GetRelevance import get_relevance
-from Common.requestSend import send_request
+from Common.RequestSend import send_request
 from run import failureException
 from Common.Log import  MyLog as  logging
 

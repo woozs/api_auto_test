@@ -9,7 +9,7 @@
 import os
 
 from Common import Log
-from Common import confighttp
+from Common import ConfigHttp
 from Conf import Config
 from Conf import ConfRelevance
 
@@ -39,7 +39,7 @@ class Ports:
 
         self.log.debug("Headers：%s" % self.headers)
         url = "http://" + self.config.host + ":9696/v2.0/ports?network_id=%s"%self.data["network_id"]
-        results = confighttp.get(self.headers,url,data=None)
+        results = ConfigHttp.get(self.headers, url, data=None)
         return results
 
 
@@ -53,7 +53,7 @@ class Ports:
         for i in data["ports"]:
             url = "http://" + self.config.host + ":9696/v2.0/ports/%s"%i["id"]
             self.log.debug("删除port：%s," % i["id"])
-            code,responce = confighttp.delete(self.headers,url,data=None)
+            code,responce = ConfigHttp.delete(self.headers, url, data=None)
             self.log.debug("请求返回为：%s,%s"%(code,responce))
 
 if __name__ == '__main__':

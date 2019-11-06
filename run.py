@@ -23,7 +23,7 @@ from Common import Log
 from Common import Shell
 from Conf import Config
 from Common import Email
-from unit import initialize_Env
+from unit import InitializeEnv
 
 
 failureException = AssertionError
@@ -38,7 +38,7 @@ if __name__ == '__main__':
     html_report_path = conf.html_report_path
 
     # 初始化allure环境配置文件environment.xml
-    initialize_Env.Init_Env().init()
+    InitializeEnv.Init_Env().init()
 
     # 定义测试集
     args = ['-s', '-q', '--alluredir', xml_report_path]

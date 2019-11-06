@@ -3,13 +3,13 @@
 # @Time    : 2019/10/9 16:24
 # @Author  : mrwuzs
 # @Site    :
-# @File    : api_Send.py
+# @File    : Api_Send.py
 # @Software: PyCharm
 
 from Common.Log import MyLog as logging
 import allure
 
-from unit import apiMethod, replaceRelevance
+from unit import ApiMethod, replaceRelevance
 from unit import initializeCookie
 from config import confManage
 from unit import readParameter
@@ -57,7 +57,7 @@ def send_request(data, host, address, _path, relevance=None):
             allure.attach("请求地址", data["http_type"] + "://" + host + address)
             allure.attach("请求头", str(header))
             allure.attach("请求参数", str(parameter))
-            apiMethod.save_cookie(
+            ApiMethod.save_cookie(
                 header=header,
                 address=data["http_type"] +
                 "://" +
@@ -79,7 +79,7 @@ def send_request(data, host, address, _path, relevance=None):
                 allure.attach("请求头", str(header))
                 allure.attach("请求参数", str(parameter))
 
-            result = apiMethod.post(
+            result = ApiMethod.post(
                 header=header,
                 address=data["http_type"] + "://" + host + address,
                 request_parameter_type=data["parameter_type"],
@@ -96,7 +96,7 @@ def send_request(data, host, address, _path, relevance=None):
                     address)
                 allure.attach("请求头", str(header))
                 allure.attach("请求参数", str(parameter))
-            result = apiMethod.post(
+            result = ApiMethod.post(
                 header=header,
                 address=data["http_type"] + "://" + host + address,
                 request_parameter_type=data["parameter_type"],
@@ -109,7 +109,7 @@ def send_request(data, host, address, _path, relevance=None):
             allure.attach("请求头", str(header))
             allure.attach("请求参数", str(parameter))
             logging.info("请求方法: GET")
-        result = apiMethod.get(
+        result = ApiMethod.get(
             header=header,
             address=data["http_type"] +
             "://" +
@@ -130,7 +130,7 @@ def send_request(data, host, address, _path, relevance=None):
                     address)
                 allure.attach("请求头", str(header))
                 allure.attach("请求参数", str(parameter))
-            result = apiMethod.post(
+            result = ApiMethod.post(
                 header=header,
                 address=data["http_type"] + "://" + host + address,
                 request_parameter_type=data["parameter_type"],
@@ -147,7 +147,7 @@ def send_request(data, host, address, _path, relevance=None):
                     address)
                 allure.attach("请求头", str(header))
                 allure.attach("请求参数", str(parameter))
-            result = apiMethod.post(
+            result = ApiMethod.post(
                 header=header,
                 address=data["http_type"] + "://" + host + address,
                 request_parameter_type=data["parameter_type"],
@@ -160,7 +160,7 @@ def send_request(data, host, address, _path, relevance=None):
             allure.attach("请求头", str(header))
             allure.attach("请求参数", str(parameter))
         logging.info("请求方法: DELETE")
-        result = apiMethod.get(
+        result = ApiMethod.get(
             header=header,
             address=data["http_type"] +
             "://" +

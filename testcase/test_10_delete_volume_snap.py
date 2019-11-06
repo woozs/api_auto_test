@@ -13,8 +13,8 @@ import os
 from time import sleep
 from Common import CheckResult
 from Common import Assert
-from unit import load_yaml, Token
-from Common import requestSend
+from unit import LoadYaml, Token
+from Common import RequestSend
 from Conf import  ConfRelevance
 from Common import Log
 
@@ -23,7 +23,7 @@ BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 CASE_PATH = BASE_PATH + "\\Params\\Param\\volume_snap"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
 
-case_dict = load_yaml.load_case(CASE_PATH+"\\delete_volume_snap.yaml")
+case_dict = LoadYaml.load_case(CASE_PATH + "\\delete_volume_snap.yaml")
 
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
@@ -67,8 +67,8 @@ class Test_Volume_Snap_Delete:
         if case_data["request_type"] == "get":
             sleep(case_data["sleep_time"])
 
-        code, data = requestSend.send_request(case_data, case_dict["testinfo"].get("host"),
-                                              case_dict["testinfo"].get("address"),str(case_dict["testinfo"].get("port")), self.relevance, CASE_PATH, self.result)
+        code, data = RequestSend.send_request(case_data, case_dict["testinfo"].get("host"),
+                                              case_dict["testinfo"].get("address"), str(case_dict["testinfo"].get("port")), self.relevance, CASE_PATH, self.result)
 
         #结果校验
         CheckResult.check(case_data["test_name"], case_data["check"][0], code, data, self.relevance, CASE_PATH,

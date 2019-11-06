@@ -10,13 +10,13 @@ import os,time
 import allure,pytest
 from Conf.Config import Config
 from Conf import  ConfRelevance
-from unit import load_yaml, Token
-from Common import requestSend,Assert,Log,CheckResult
+from unit import LoadYaml, Token
+from Common import RequestSend,Assert,Log,CheckResult
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 CASE_PATH = BASE_PATH + "\\Params\\Param\\volume_snap"
 CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
-case_dict = load_yaml.load_case(CASE_PATH+"\\volume_snap.yaml")
+case_dict = LoadYaml.load_case(CASE_PATH + "\\volume_snap.yaml")
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
 class Test_Volume_Snap:
@@ -54,7 +54,7 @@ class Test_Volume_Snap:
         if case_data["request_type"] == "get":
             time.sleep(case_data["sleep_time"])
 
-        code, data = requestSend.send_request(case_data, case_dict["testinfo"].get("host"),
+        code, data = RequestSend.send_request(case_data, case_dict["testinfo"].get("host"),
                                               case_dict["testinfo"].get("address"),
                                               str(case_dict["testinfo"].get("port")),
                                               self.relevance, CASE_PATH, self.result)
