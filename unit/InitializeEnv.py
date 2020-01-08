@@ -7,15 +7,15 @@
 # @Software: PyCharm
 
 import os
-from Common.Log import MyLog as logging
-from Conf.ConfRelevance import ConfRelevance
+from common.log import MyLog as logging
+from conf.conf_relevance import ConfRelevance
 
 
 
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
-ENV_PATH  = BASE_PATH + "\\Report\\xml\\environment.xml"
+CONF_PATH = BASE_PATH + "\\conf\\cfg.ini"
+ENV_PATH  = BASE_PATH + "\\report\\xml\\environment.xml"
 
 
 class Init_Env:

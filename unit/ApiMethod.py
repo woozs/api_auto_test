@@ -13,7 +13,7 @@ import random
 import simplejson
 import setupMain
 from requests_toolbelt import MultipartEncoder
-from Common.Log import  MyLog as  logging
+from common.log import  MyLog as  logging
 
 def post(header, address, request_parameter_type, timeout=8, data=None, files=None):
     """

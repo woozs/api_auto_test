@@ -8,21 +8,21 @@
 
 import os
 
-from Common import Log
-from Common import ConfigHttp
-from Conf import Config
-from Conf import ConfRelevance
+from common import log
+from common import config_http
+from conf import conf
+from conf import conf_relevance
 
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
+CONF_PATH = BASE_PATH + "\\conf\\cfg.ini"
 
 
 class Ports:
     def __init__(self):
-        self.config = Config.Config()
-        self.log = Log.MyLog()
-        self.data = ConfRelevance.ConfRelevance(
+        self.config = conf.Config()
+        self.log = log.MyLog()
+        self.data = conf_relevance.ConfRelevance(
             CONF_PATH, "test_data").get_relevance_conf()
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
@@ -39,7 +39,7 @@ class Ports:
 
         self.log.debug("Headers：%s" % self.headers)
         url = "http://" + self.config.host + ":9696/v2.0/ports?network_id=%s"%self.data["network_id"]
-        results = ConfigHttp.get(self.headers, url, data=None)
+        results = config_http.get(self.headers, url, data=None)
         return results
 
 
@@ -53,7 +53,7 @@ class Ports:
         for i in data["ports"]:
             url = "http://" + self.config.host + ":9696/v2.0/ports/%s"%i["id"]
             self.log.debug("删除port：%s," % i["id"])
-            code,responce = ConfigHttp.delete(self.headers, url, data=None)
+            code,responce = config_http.delete(self.headers, url, data=None)
             self.log.debug("请求返回为：%s,%s"%(code,responce))
 
 if __name__ == '__main__':

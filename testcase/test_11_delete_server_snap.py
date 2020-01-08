@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2019/10/29 9:56
 # @Author  : mrwuzs
-# @Site    : 
+# @Site    :
 # @File    : test_11_delete_server_snap.py
 # @Software: PyCharm
 import allure
@@ -10,38 +10,40 @@ import pytest
 import os
 import time
 
-from Conf.Config import Config
-from Common import Assert
+from conf.conf import Config
+from common import assert_pro
 from unit import LoadYaml, Token
-from Common import RequestSend
-from Conf import  ConfRelevance
-from Common import Log
-from Common import CheckResult
+from common import request_send
+from conf import conf_relevance
+from common import log
+from common import check_result
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CASE_PATH = BASE_PATH + "\\Params\\Param\\server_snapshot"
-CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
+CASE_PATH = BASE_PATH + "\\params\\param\\server_snapshot"
+CONF_PATH = BASE_PATH + "\\conf\\cfg.ini"
 case_dict = LoadYaml.load_case(CASE_PATH + "\\delete_server_snap.yaml")
+
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
 class Test_Server_Snap:
     @classmethod
     def setup_class(cls):
-        #初始化用例参数，将全局变量替换成配置文件中得变量
+        # 初始化用例参数，将全局变量替换成配置文件中得变量
         cls.result = {"result": True}
-        #更新配置文件中的token
+        # 更新配置文件中的token
         cls.token = Token.Token()
         cls.token.save_token()
-        cls.log = Log.MyLog()
-        cls.Assert =  Assert.Assertions()
+        cls.log = log.MyLog()
+        cls.Assert = assert_pro.Assertions()
 
     def setup(self):
-        self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
+        self.relevance = conf_relevance.ConfRelevance(
+            CONF_PATH, "test_data").get_relevance_conf()
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
     @allure.story("删除虚拟机快照")
     @pytest.mark.flaky(reruns=3)
-    def test_server_snap(self,case_data):
+    def test_server_snap(self, case_data):
         for k, v in enumerate(case_dict["test_case"]):  # 遍历用例文件中所有用例的索引和值
             try:
                 if case_data == v:
@@ -55,12 +57,19 @@ class Test_Server_Snap:
         if case_data["request_type"] == "get":
             time.sleep(case_data["sleep_time"])
 
-        code, data = RequestSend.send_request(case_data, case_dict["testinfo"].get("host"),
-                                              case_dict["testinfo"].get("address"),
-                                              str(case_dict["testinfo"].get("port")),
-                                              self.relevance, CASE_PATH, self.result)
-        CheckResult.check(case_data["test_name"], case_data["check"][0], code, data, self.relevance, CASE_PATH,
-                          self.result)
+        code, data = request_send.send_request(case_data, case_dict["testinfo"].get("host"),
+                                               case_dict["testinfo"].get("address"),
+                                               str(case_dict["testinfo"].get("port")),
+                                               self.relevance, CASE_PATH, self.result)
+        check_result.check(
+            case_data["test_name"],
+            case_data["check"][0],
+            code,
+            data,
+            self.relevance,
+            CASE_PATH,
+            self.result)
+
 
 if __name__ == "__main__":
     pytest.main(["-s", "test_11_delete_server_snap.py"])

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2019/9/10 22:17
 # @Author  : wuzushun
-# @Site    : 
+# @Site    :
 # @File    : test_01_project.py
 # @Software: PyCharm
 
@@ -10,17 +10,17 @@ import allure
 import pytest
 import os
 
-from Conf.Config import Config
-from Common import Assert
-from unit import LoadYaml, Token,Add_Role_Admin
-from Common import RequestSend
-from Conf import  ConfRelevance
-from Common import Log
+from conf.conf import Config
+from common import assert_pro
+from unit import LoadYaml, Token, Add_Role_Admin
+from common import request_send
+from conf import conf_relevance
+from common import log
 
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CASE_PATH = BASE_PATH + "\\Params\\Param\\project"
-CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
+CASE_PATH = BASE_PATH + "\\params\\param\\project"
+CONF_PATH = BASE_PATH + "\\conf\\cfg.ini"
 
 case_dict = LoadYaml.load_case(CASE_PATH + "\\create_project.yaml")
 
@@ -30,32 +30,33 @@ class TestAddProject:
 
     @classmethod
     def setup_class(cls):
-        #初始化用例参数，将全局变量替换成配置文件中得变量
+        # 初始化用例参数，将全局变量替换成配置文件中得变量
         # cls.rel = ini_rel
         with allure.step("初始化环境变量"):
-            cls.log = Log.MyLog()
-            cls.Assert = Assert.Assertions()
+            cls.log = log.MyLog()
+            cls.Assert = assert_pro.Assertions()
             cls.log.info("设置project_token_name为amdin")
             conf = Config()
             conf.set_conf("test_data", "project_token_name", "admin")
             cls.result = {"result": True}
-            #更新配置文件中的token
+            # 更新配置文件中的token
             cls.token = Token.Token()
             cls.token.save_token()
 
     def setup(self):
-        self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
+        self.relevance = conf_relevance.ConfRelevance(
+            CONF_PATH, "test_data").get_relevance_conf()
 
     @classmethod
     def teardown_class(cls):
         with allure.step("新建项目赋权"):
             cls.log.info("给新建项目赋权")
-            role =  Add_Role_Admin.Project_Add_Rule()
+            role = Add_Role_Admin.Project_Add_Rule()
             role.project_add_role()
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
     @allure.story("创建项目")
-    def test_project_crate(self,case_data):
+    def test_project_crate(self, case_data):
         # 参数化修改test_project_crate注释
         for k, v in enumerate(case_dict["test_case"]):  # 遍历用例文件中所有用例的索引和值
             try:
@@ -70,21 +71,21 @@ class TestAddProject:
             pytest.xfail("前置接口测试失败，此接口标记为失败")
 
         #send_request(_data, _host, _address,_port, _relevance, path, _success)
-        code, data = RequestSend.send_request(case_data, case_dict["testinfo"].get("host"),
-                                              case_dict["testinfo"].get("address"),
-                                              str(case_dict["testinfo"].get("port")),
-                                              self.relevance, CASE_PATH, self.result)
+        code, data = request_send.send_request(case_data, case_dict["testinfo"].get("host"),
+                                               case_dict["testinfo"].get("address"),
+                                               str(case_dict["testinfo"].get("port")),
+                                               self.relevance, CASE_PATH, self.result)
         project_id = data["project"]["id"]
-        project_name= data["project"]["name"]
-        self.Assert.assert_code(code,201)
+        project_name = data["project"]["name"]
+        self.Assert.assert_code(code, 201)
         with allure.step("保存项目信息到全局配置文件"):
-            allure.attach("项目id:%s"%project_id)
+            allure.attach("项目id:%s" % project_id)
             allure.attach("项目名称:%s" % project_name)
         self.log.info("保存project_id到全局配置文件")
-        conf =Config()
-        conf.set_conf("test_data","project_id",project_id)
+        conf = Config()
+        conf.set_conf("test_data", "project_id", project_id)
         self.log.info("保存项目名称为project_token_name到全局配置文件")
-        conf.set_conf("test_data","project_token_name",project_name)
+        conf.set_conf("test_data", "project_token_name", project_name)
 
 
 if __name__ == "__main__":

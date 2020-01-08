@@ -10,12 +10,12 @@ import os, time
 import allure, pytest
 
 from unit import LoadYaml, Token
-from Conf import  ConfRelevance
-from Common import Assert, RequestSend, CheckResult, Log
+from conf import  conf_relevance
+from common import assert_pro, request_send, check_result, log
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CASE_PATH = BASE_PATH + "\\Params\\Param\\volume"
-CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
+CASE_PATH = BASE_PATH + "\\params\\param\\volume"
+CONF_PATH = BASE_PATH + "\\conf\\cfg.ini"
 case_dict = LoadYaml.load_case(CASE_PATH + "\\delete_volume.yaml")
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
@@ -30,12 +30,12 @@ class Test_Delete_volume:
         #更新配置文件中的token
         cls.token = Token.Token()
         cls.token.save_token()
-        cls.log = Log.MyLog()
-        cls.Assert =  Assert.Assertions()
+        cls.log = log.MyLog()
+        cls.Assert =  assert_pro.Assertions()
         #
 
     def setup(self):
-        self.relevance =  ConfRelevance.ConfRelevance(CONF_PATH,"test_data").get_relevance_conf()
+        self.relevance =  conf_relevance.ConfRelevance(CONF_PATH, "test_data").get_relevance_conf()
 
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
@@ -58,16 +58,16 @@ class Test_Delete_volume:
         if case_data["request_type"] == "get":
             time.sleep(case_data["sleep_time"])
         #send_request(_data, _host, _address,_port, _relevance, path, _success)
-        code, data = RequestSend.send_request(case_data,
-                                              case_dict["testinfo"].get("host"),
-                                              case_dict["testinfo"].get("address"),
-                                              str(case_dict["testinfo"].get("port")),
-                                              self.relevance, CASE_PATH, self.result)
-        CheckResult.check(case_data["test_name"],
-                          case_data["check"][0],
-                          code, data,
-                          self.relevance, CASE_PATH,
-                          self.result)
+        code, data = request_send.send_request(case_data,
+                                               case_dict["testinfo"].get("host"),
+                                               case_dict["testinfo"].get("address"),
+                                               str(case_dict["testinfo"].get("port")),
+                                               self.relevance, CASE_PATH, self.result)
+        check_result.check(case_data["test_name"],
+                           case_data["check"][0],
+                           code, data,
+                           self.relevance, CASE_PATH,
+                           self.result)
 
 
 if __name__ == "__main__":

@@ -9,21 +9,21 @@
 import requests
 import os
 
-from Common import Log
-from Common import ParamManage
-from Conf import Config
-from Conf import ConfRelevance
+from common import log
+from common import param_manage
+from conf import conf
+from conf import conf_relevance
 
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
+CONF_PATH = BASE_PATH + "\\conf\\cfg.ini"
 
 
 class Token:
     def __init__(self):
-        self.config = Config.Config()
-        self.log = Log.MyLog()
-        self.relevance = ConfRelevance.ConfRelevance(
+        self.config = conf.Config()
+        self.log = log.MyLog()
+        self.relevance = conf_relevance.ConfRelevance(
             CONF_PATH, "test_data").get_relevance_conf()
         # self.log
 
@@ -39,7 +39,7 @@ class Token:
         login_url = "http://" + self.config.host + ":5000/v3/auth/tokens"
         self.log.debug("login_url：%s" % login_url)
         self.log.debug("处理认证参数")
-        param = ParamManage.manage(self.config.loginInfo, self.relevance)
+        param = param_manage.manage(self.config.loginInfo, self.relevance)
         self.log.debug("param:%s" % param)
         self.log.info("获取token")
         response = requests.post(login_url, param, headers=headers)

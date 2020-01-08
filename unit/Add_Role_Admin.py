@@ -9,23 +9,23 @@ import requests
 import os
 import allure
 
-from Common import Log
-from Common import ParamManage
-from Conf import Config
-from Conf import ConfRelevance
+from common import log
+from common import param_manage
+from conf import conf
+from conf import conf_relevance
 
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-CONF_PATH = BASE_PATH + "\\Conf\\cfg.ini"
+CONF_PATH = BASE_PATH + "\\conf\\cfg.ini"
 
 
 class Project_Add_Rule:
     """给项目添加admin权限"""
 
     def __init__(self):
-        self.config = Config.Config()
-        self.log = Log.MyLog()
-        self.relevance = ConfRelevance.ConfRelevance(
+        self.config = conf.Config()
+        self.log = log.MyLog()
+        self.relevance = conf_relevance.ConfRelevance(
             CONF_PATH, "test_data").get_relevance_conf()
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
@@ -41,10 +41,10 @@ class Project_Add_Rule:
         :return:
         """
         self.log.debug("处理header")
-        headers = ParamManage.manage(self.headers, self.relevance)
+        headers = param_manage.manage(self.headers, self.relevance)
         self.log.debug("Headers：%s" % headers)
         self.log.debug("处理address")
-        address = ParamManage.manage(self.address, self.relevance)
+        address = param_manage.manage(self.address, self.relevance)
         self.log.debug("address:%s" % address)
         login_url = "http://" + self.config.host + ":5000" + address["address"]
         self.log.debug("login_url：%s" % login_url)

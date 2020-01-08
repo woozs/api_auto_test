@@ -6,7 +6,7 @@
 # @File    : Api_Send.py
 # @Software: PyCharm
 
-from Common.Log import MyLog as logging
+from common.log import MyLog as logging
 import allure
 
 from unit import ApiMethod, replaceRelevance

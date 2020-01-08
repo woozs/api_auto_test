@@ -19,10 +19,10 @@
 
 import pytest
 
-from Common import Log
-from Common import Shell
-from Conf import Config
-from Common import Email
+from common import log
+from common import Shell
+from conf import conf
+from common import send_email
 from unit import InitializeEnv
 
 
@@ -30,8 +30,8 @@ failureException = AssertionError
 
 if __name__ == '__main__':
 
-    conf = Config.Config()
-    log = Log.MyLog()
+    conf = conf.Config()
+    log = log.MyLog()
     log.info('初始化配置文件, path=' + conf.conf_path)
     shell = Shell.Shell()
     xml_report_path = conf.xml_report_path
@@ -42,20 +42,20 @@ if __name__ == '__main__':
 
     # 定义测试集
     args = ['-s', '-q', '--alluredir', xml_report_path]
-    # args = ['-s', '-q', '--alluredir', "H:\\api_auto_test\\Report\xml"]
+    # args = ['-s', '-q', '--alluredir', "H:\\api_auto_test\\report\xml"]
     pytest.main(args)
     cmd = 'allure generate %s -o %s  --clean' % (
         xml_report_path, html_report_path)
     log.info("执行allure，生成测试报告")
+    log.debug(cmd)
     try:
         shell.invoke(cmd)
     except Exception:
         log.error('执行用例失败，请检查环境配置')
         raise
-
     if conf.send == "yes":
         try:
-            mail = Email.SendMail()
+            mail = send_email.SendMail()
             mail.sendMail()
         except Exception as e:
             log.error('发送邮件失败，请检查邮件配置')
