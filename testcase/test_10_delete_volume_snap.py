@@ -13,7 +13,7 @@ import os
 from time import sleep
 from common import check_result
 from common import assert_pro
-from unit import LoadYaml, Token
+from unit import load_yaml, token
 from common import request_send
 from conf import conf_relevance
 from common import log
@@ -23,7 +23,7 @@ BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 CASE_PATH = BASE_PATH + "\\params\\param\\volume_snap"
 CONF_PATH = BASE_PATH + "\\conf\\cfg.ini"
 
-case_dict = LoadYaml.load_case(CASE_PATH + "\\delete_volume_snap.yaml")
+case_dict = load_yaml.load_case(CASE_PATH + "\\delete_volume_snap.yaml")
 
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
@@ -35,7 +35,7 @@ class Test_Volume_Snap_Delete:
         # cls.rel = ini_rel
         cls.result = {"result": True}
         # 更新配置文件中的token
-        cls.token = Token.Token()
+        cls.token = token.Token()
         cls.token.save_token()
         cls.log = log.MyLog()
         cls.Assert = assert_pro.Assertions()

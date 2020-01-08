@@ -3,7 +3,7 @@
 # @Time    : 2019/9/26 8:54
 # @Author  : mrwuzs
 # @Site    : 
-# @File    : RandString.py
+# @File    : rand_string.py
 # @Software: PyCharm
 import random
 import string

@@ -3,7 +3,7 @@
 # @Time    : 2019/9/26 8:52
 # @Author  : mrwuzs
 # @Site    : 
-# @File    : Md5Data.py
+# @File    : md5_data.py
 # @Software: PyCharm
 import hashlib
 import re

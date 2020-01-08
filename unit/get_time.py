@@ -3,7 +3,7 @@
 # @Time    : 2019/9/26 8:50
 # @Author  : mrwuzs
 # @Site    : 
-# @File    : GetTime.py
+# @File    : get_time.py
 # @Software: PyCharm
 import datetime
 import time

@@ -3,7 +3,7 @@
 # @Time    : 2019/9/10 20:50
 # @Author  : mrwuzs
 # @Site    :
-# @File    : Token.py
+# @File    : token.py
 # @Software: PyCharm
 
 import requests

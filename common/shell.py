@@ -3,7 +3,7 @@
 # @Time    : 2019/9/11 15:34
 # @Author  : mrwuzs
 # @Site    :
-# @File    : Shell.py
+# @File    : shell.py
 # @Software: PyCharm
 
 """

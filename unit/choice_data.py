@@ -3,7 +3,7 @@
 # @Time    : 2019/9/26 8:50
 # @Author  : mrwuzs
 # @Site    : 
-# @File    : ChoiceData.py
+# @File    : choice_data.py
 # @Software: PyCharm
 
 import random

@@ -8,7 +8,7 @@
 
 import re
 
-from unit import  RandString, RandomInt, GetTime, ChoiceData, RandomFloat, Md5Data
+from unit import  rand_string, random_int, get_time, choice_data, random_float, md5_data
 
 
 def function_replace(value):
@@ -26,14 +26,14 @@ def function_replace(value):
         # 获取整型数据替换
         for i in int_list:
             pattern = re.compile('\$RandomInt\(' + i + '\)\$')  # 初始化正则匹配
-            k = str(RandomInt.random_int(i))
+            k = str(random_int.random_int(i))
             value = re.sub(pattern, k, value, count=1)
         value = function_replace(value)
     elif len(string_list):
         # 获取字符串替换
         for j in string_list:
             pattern = re.compile('\$RandomString\(' + j + '\)\$')  # 初始化正则匹配
-            k = RandString.random_string(j)
+            k = rand_string.random_string(j)
             value = re.sub(pattern, k, value, count=1)
         value = function_replace(value)
     elif len(float_list):
@@ -41,7 +41,7 @@ def function_replace(value):
         for n in float_list:
             if len(n.split(",")) == 3:
                 pattern = re.compile('\$RandomFloat\(' + n + '\)\$')  # 初始化正则匹配
-                k = str(RandomFloat.random_float(n))
+                k = str(random_float.random_float(n))
                 value = re.sub(pattern, k, value, count=1)
         value = function_replace(value)
     elif len(time_list):
@@ -49,19 +49,19 @@ def function_replace(value):
         for n in time_list:
             if len(n[0]) and len(n[1]):
                 pattern = re.compile('\$GetTime\(time_type='+n[0]+',layout='+n[1]+',unit='+n[2]+'\)\$')  # 初始化正则匹配
-                k = str(GetTime.get_time(n[0], n[1], n[2]))
+                k = str(get_time.get_time(n[0], n[1], n[2]))
                 value = re.sub(pattern, k, value, count=1)
         value = function_replace(value)
     elif len(choice_list):
         # 调用choice方法
         for n in choice_list:
             pattern = re.compile('\$Choice\(' + n + '\)list\$')  # 初始化正则匹配
-            k = str(ChoiceData.choice_data(n))
+            k = str(choice_data.choice_data(n))
             value = re.sub(pattern, k, value, count=1)
         value = function_replace(value)
     else:
         # md5加密
-        value = Md5Data.re_md5(value)
+        value = md5_data.re_md5(value)
     return value
 
 

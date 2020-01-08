@@ -20,10 +20,10 @@
 import pytest
 
 from common import log
-from common import Shell
+from common import shell
 from conf import conf
 from common import send_email
-from unit import InitializeEnv
+from unit import initialize_env
 
 
 failureException = AssertionError
@@ -33,12 +33,12 @@ if __name__ == '__main__':
     conf = conf.Config()
     log = log.MyLog()
     log.info('初始化配置文件, path=' + conf.conf_path)
-    shell = Shell.Shell()
+    shell = shell.Shell()
     xml_report_path = conf.xml_report_path
     html_report_path = conf.html_report_path
 
     # 初始化allure环境配置文件environment.xml
-    InitializeEnv.Init_Env().init()
+    initialize_env.Init_Env().init()
 
     # 定义测试集
     args = ['-s', '-q', '--alluredir', xml_report_path]

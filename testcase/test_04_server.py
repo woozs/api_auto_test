@@ -12,13 +12,13 @@ import allure
 import pytest
 from conf.conf import Config
 from conf import conf_relevance
-from unit import LoadYaml, Token
+from unit import load_yaml, token
 from common import request_send, log, check_result, assert_pro
 
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 CASE_PATH = BASE_PATH + "\\params\\param\\server"
 CONF_PATH = BASE_PATH + "\\conf\\cfg.ini"
-case_dict = LoadYaml.load_case(CASE_PATH + "\\create_server.yaml")
+case_dict = load_yaml.load_case(CASE_PATH + "\\create_server.yaml")
 
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
@@ -28,7 +28,7 @@ class Test_Server:
         # 初始化用例参数，将全局变量替换成配置文件中得变量
         cls.result = {"result": True}
         # 更新配置文件中的token
-        cls.token = Token.Token()
+        cls.token = token.Token()
         cls.token.save_token()
         cls.log = log.MyLog()
         cls.Assert = assert_pro.Assertions()

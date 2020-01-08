@@ -3,7 +3,7 @@
 # @Time    : 2019/9/25 11:20
 # @Author  : mrwuzs
 # @Site    : 
-# @File    : LoadYaml.py
+# @File    : load_yaml.py
 # @Software: PyCharm
 
 import os

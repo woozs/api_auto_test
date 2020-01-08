@@ -3,7 +3,7 @@
 # @Time    : 2019/9/26 8:53
 # @Author  : mrwuzs
 # @Site    : 
-# @File    : RandomInt.py
+# @File    : random_int.py
 # @Software: PyCharm
 import random
 

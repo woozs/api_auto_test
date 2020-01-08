@@ -12,7 +12,7 @@ import os
 
 from conf.conf import Config
 from common import assert_pro
-from unit import LoadYaml, Token, Add_Role_Admin
+from unit import load_yaml, token, add_role_admin
 from common import request_send
 from conf import conf_relevance
 from common import log
@@ -22,7 +22,7 @@ BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 CASE_PATH = BASE_PATH + "\\params\\param\\project"
 CONF_PATH = BASE_PATH + "\\conf\\cfg.ini"
 
-case_dict = LoadYaml.load_case(CASE_PATH + "\\create_project.yaml")
+case_dict = load_yaml.load_case(CASE_PATH + "\\create_project.yaml")
 
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
@@ -40,7 +40,7 @@ class TestAddProject:
             conf.set_conf("test_data", "project_token_name", "admin")
             cls.result = {"result": True}
             # 更新配置文件中的token
-            cls.token = Token.Token()
+            cls.token = token.Token()
             cls.token.save_token()
 
     def setup(self):
@@ -51,7 +51,7 @@ class TestAddProject:
     def teardown_class(cls):
         with allure.step("新建项目赋权"):
             cls.log.info("给新建项目赋权")
-            role = Add_Role_Admin.Project_Add_Rule()
+            role = add_role_admin.Project_Add_Rule()
             role.project_add_role()
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"])

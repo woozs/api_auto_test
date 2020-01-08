@@ -3,7 +3,7 @@
 # @Time    : 2019/9/26 8:52
 # @Author  : mrwuzs
 # @Site    : 
-# @File    : RandomFloat.py
+# @File    : random_float.py
 # @Software: PyCharm
 import random
 

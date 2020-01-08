@@ -14,7 +14,7 @@ import time
 
 
 from common import assert_pro
-from unit import LoadYaml, Token, Ports
+from unit import load_yaml, token, ports
 from common import request_send
 from conf import conf_relevance
 from common import log
@@ -24,7 +24,7 @@ from common import check_result
 BASE_PATH = str(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 CASE_PATH = BASE_PATH + "\\params\\param\\subnet"
 CONF_PATH = BASE_PATH + "\\conf\\cfg.ini"
-case_dict = LoadYaml.load_case(CASE_PATH + "\\delete_subnet.yaml")
+case_dict = load_yaml.load_case(CASE_PATH + "\\delete_subnet.yaml")
 
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能
@@ -36,7 +36,7 @@ class Test_Delete_Subnet:
         # cls.rel = ini_rel
         cls.result = {"result": True}
         # 更新配置文件中的token
-        cls.token = Token.Token()
+        cls.token = token.Token()
         cls.token.save_token()
         cls.log = log.MyLog()
         cls.Assert = assert_pro.Assertions()
@@ -53,7 +53,7 @@ class Test_Delete_Subnet:
     def test_delete_subnet(self, case_data):
 
         if case_data["request_type"] == "delete":
-            Ports.Ports().delete_all_port()
+            ports.Ports().delete_all_port()
 
         # 参数化修改test_add_project 注释
         for k, v in enumerate(case_dict["test_case"]):  # 遍历用例文件中所有用例的索引和值
